@@ -1,0 +1,32 @@
+{
+  "run_timestamp": "2026-03-18T05:27:56.579221Z",
+  "config_name": "enforcement-news-github",
+  "days_searched": 21,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 3,
+  "unseen_article_count": 3,
+  "relevant_article_count": 1,
+  "unified_item_count": 1,
+  "seen_count_before": 0,
+  "seen_count_after": 1,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\"",
+      "summary": "תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים. כשהגיעו למקום הם גילו כי המקלט הוסב למקום המשמש לזנות, עם מיטה, מטבחון, מקלחת ושירותים. אזרחית זרה שנמצאה במקום עוכבה לחקירה ושוחררה בתנאים, לאחר שסירבה להזדהות",
+      "sources": [
+        {
+          "source_name": "walla",
+          "url": "https://news.walla.co.il/item/3823239"
+        }
+      ],
+      "date": "2026-03-12T13:18:00Z",
+      "category": "brothel",
+      "sub_category": "closure"
+    }
+  ],
+  "errors": []
+}
