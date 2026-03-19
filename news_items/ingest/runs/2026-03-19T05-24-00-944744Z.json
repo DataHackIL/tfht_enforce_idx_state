@@ -1,0 +1,55 @@
+{
+  "run_timestamp": "2026-03-19T05:24:00.944744Z",
+  "started_at": "2026-03-19T05:24:00.944744Z",
+  "finished_at": "2026-03-19T05:28:47.526402Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 4,
+  "unseen_article_count": 4,
+  "relevant_article_count": 2,
+  "unified_item_count": 2,
+  "seen_count_before": 0,
+  "seen_count_after": 2,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\"",
+      "summary": "תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים. כשהגיעו למקום הם גילו כי המקלט הוסב למקום המשמש לזנות, עם מיטה, מטבחון, מקלחת ושירותים. אזרחית זרה שנמצאה במקום עוכבה לחקירה ושוחררה בתנאים, לאחר שסירבה להזדהות",
+      "sources": [
+        {
+          "source_name": "walla",
+          "url": "https://news.walla.co.il/item/3823239"
+        }
+      ],
+      "date": "2026-03-12T13:18:00Z",
+      "category": "brothel",
+      "sub_category": "closure"
+    },
+    {
+      "headline": "הוא הבטיח להן הארה, והפך אותן לקורבנות אונס וסחר בבני אדם",
+      "summary": "הסדרה Twisted Yoga חושפת את מערך הניצול המיני והפסיכולוגי של גורו היוגה גרגוריאן ביבולארו, שפעל באין מפריע במשך 20 שנה",
+      "sources": [
+        {
+          "source_name": "haaretz",
+          "url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000"
+        }
+      ],
+      "date": "2026-03-17T00:00:00Z",
+      "category": "trafficking",
+      "sub_category": "other"
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "result_summary": "ingest completed with 2 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
