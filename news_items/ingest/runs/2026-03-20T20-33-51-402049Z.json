@@ -1,0 +1,46 @@
+{
+  "run_timestamp": "2026-03-20T20:33:51.402049Z",
+  "started_at": "2026-03-20T20:33:51.402049Z",
+  "finished_at": "2026-03-20T20:39:04.286318Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 5,
+  "unseen_article_count": 4,
+  "relevant_article_count": 1,
+  "unified_item_count": 1,
+  "seen_count_before": 2,
+  "seen_count_after": 3,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "הוא הבטיח להן הארה, והפך אותן לקורבנות אונס וסחר בבני אדם",
+      "summary": "הסדרה Twisted Yoga חושפת את מערך הניצול המיני והפסיכולוגי של גורו היוגה גרגוריאן ביבולארו, שפעל באין מפריע במשך 20 שנה",
+      "sources": [
+        {
+          "source_name": "haaretz",
+          "url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000"
+        }
+      ],
+      "date": "2026-03-17T00:00:00Z",
+      "category": "trafficking",
+      "sub_category": "other",
+      "canonical_url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "primary_source_name": "haaretz"
+    }
+  ],
+  "warnings": [
+    "privacy_risk_distribution=sensitive_sexual_offence:1"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 1 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
