@@ -1,0 +1,658 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-03-21T19:45:51.769792+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "result_summary": "ingest completed with 6 unified item(s)",
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "23387299566",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/23387299566"
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 13,
+    "unseen_article_count": 11,
+    "relevant_article_count": 6,
+    "unified_item_count": 6,
+    "seen_count_before": 3,
+    "seen_count_after": 9
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 3,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 9,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 1,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 11,
+    "classified_article_count": 11,
+    "relevant_article_count": 6,
+    "rejected_article_count": 5,
+    "rejected_by_category": {
+      "not_relevant": 5
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "maariv",
+      "ice"
+    ],
+    "all_unseen_rejected": false,
+    "no_relevant_items": false,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results"
+  ],
+  "warnings": [
+    "privacy_risk_distribution=low:5, minor_involved:1"
+  ],
+  "errors": [],
+  "raw_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3823239",
+      "canonical_url": "https://news.walla.co.il/item/3823239",
+      "title": "בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\"",
+      "snippet": "תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים. כשהגיעו למקום הם גילו כי המקלט הוסב למקום המשמש לזנות, עם מיטה, מטבחון, מקלחת ושירותים. אזרחית זרה שנמצאה במקום עוכבה לחקירה ושוחררה בתנאים, לאחר שסירבה להזדהות",
+      "publication_datetime": "2026-03-12T13:18:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3821396",
+      "canonical_url": "https://news.walla.co.il/item/3821396",
+      "title": "משרד החינוך מעדכן: המשך מתווה הלמידה מרחוק לימים חמישי ושישי",
+      "snippet": "משרד החינוך מציג מתווה חדש להמשך השבוע, לפיו הלמידה תמשיך להתקיים במתכונת למידה מרחוק. מועצת התלמידים והנוער הארצית בדרישה ממנהלי בתי הספר: \"התחשבו בתלמידים - קצרו את יום הלימודים, התמקד בחזרה על החומר שכבר נלמד על מנת לא לפתוח פערים והמשיכו בליווי רגשי\"",
+      "publication_datetime": "2026-03-04T15:18:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "title": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "snippet": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "publication_datetime": "2026-03-06T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "title": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "snippet": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "publication_datetime": "2026-03-15T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "canonical_url": "https://mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "title": "אני מממנת את הקריירה שלי משירותי מין",
+      "snippet": "הווידוי המפתיע של הזמרת",
+      "publication_datetime": "2026-03-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "title": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "snippet": "תושבת בת ים נעצרה",
+      "publication_datetime": "2026-03-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "title": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "snippet": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "publication_datetime": "2026-03-08T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "title": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "snippet": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "publication_datetime": "2026-03-04T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "title": "המשטרה סגרה את השווארמה המוכרת בתל אביב",
+      "snippet": "יש חשש שהמקום ימשיך לבצע את העבירה",
+      "publication_datetime": "2026-03-11T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "canonical_url": "https://mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "title": "האם חוק הקשיש מיטיב עם בעלי דירות קשישים?",
+      "snippet": "ליווי מקצועי הוא המפתח למימוש מלא של זכויות",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "canonical_url": "https://haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "title": "הוא הבטיח להן הארה, והפך אותן לקורבנות אונס וסחר בבני אדם",
+      "snippet": "הסדרה Twisted Yoga חושפת את מערך הניצול המיני והפסיכולוגי של גורו היוגה גרגוריאן ביבולארו, שפעל באין מפריע במשך 20 שנה",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    }
+  ],
+  "unseen_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3821396",
+      "canonical_url": "https://news.walla.co.il/item/3821396",
+      "title": "משרד החינוך מעדכן: המשך מתווה הלמידה מרחוק לימים חמישי ושישי",
+      "snippet": "משרד החינוך מציג מתווה חדש להמשך השבוע, לפיו הלמידה תמשיך להתקיים במתכונת למידה מרחוק. מועצת התלמידים והנוער הארצית בדרישה ממנהלי בתי הספר: \"התחשבו בתלמידים - קצרו את יום הלימודים, התמקד בחזרה על החומר שכבר נלמד על מנת לא לפתוח פערים והמשיכו בליווי רגשי\"",
+      "publication_datetime": "2026-03-04T15:18:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "title": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "snippet": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "publication_datetime": "2026-03-06T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "title": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "snippet": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "publication_datetime": "2026-03-15T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "canonical_url": "https://mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "title": "אני מממנת את הקריירה שלי משירותי מין",
+      "snippet": "הווידוי המפתיע של הזמרת",
+      "publication_datetime": "2026-03-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "title": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "snippet": "תושבת בת ים נעצרה",
+      "publication_datetime": "2026-03-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "title": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "snippet": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "publication_datetime": "2026-03-08T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "title": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "snippet": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "publication_datetime": "2026-03-04T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "title": "המשטרה סגרה את השווארמה המוכרת בתל אביב",
+      "snippet": "יש חשש שהמקום ימשיך לבצע את העבירה",
+      "publication_datetime": "2026-03-11T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "canonical_url": "https://mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "title": "האם חוק הקשיש מיטיב עם בעלי דירות קשישים?",
+      "snippet": "ליווי מקצועי הוא המפתח למימוש מלא של זכויות",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    }
+  ],
+  "classified_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3821396",
+      "canonical_url": "https://news.walla.co.il/item/3821396",
+      "title": "משרד החינוך מעדכן: המשך מתווה הלמידה מרחוק לימים חמישי ושישי",
+      "snippet": "משרד החינוך מציג מתווה חדש להמשך השבוע, לפיו הלמידה תמשיך להתקיים במתכונת למידה מרחוק. מועצת התלמידים והנוער הארצית בדרישה ממנהלי בתי הספר: \"התחשבו בתלמידים - קצרו את יום הלימודים, התמקד בחזרה על החומר שכבר נלמד על מנת לא לפתוח פערים והמשיכו בליווי רגשי\"",
+      "publication_datetime": "2026-03-04T15:18:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "title": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "snippet": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "publication_datetime": "2026-03-06T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "title": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "snippet": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "publication_datetime": "2026-03-15T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "canonical_url": "https://mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "title": "אני מממנת את הקריירה שלי משירותי מין",
+      "snippet": "הווידוי המפתיע של הזמרת",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "relevant": true,
+      "category": "prostitution",
+      "sub_category": null,
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "title": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "snippet": "תושבת בת ים נעצרה",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "relevant": true,
+      "category": "brothel",
+      "sub_category": "closure",
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "title": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "snippet": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "publication_datetime": "2026-03-08T00:00:00+00:00",
+      "relevant": true,
+      "category": "brothel",
+      "sub_category": "opening",
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "title": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "snippet": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "publication_datetime": "2026-03-04T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "sentence",
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "title": "המשטרה סגרה את השווארמה המוכרת בתל אביב",
+      "snippet": "יש חשש שהמקום ימשיך לבצע את העבירה",
+      "publication_datetime": "2026-03-11T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "canonical_url": "https://mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "title": "האם חוק הקשיש מיטיב עם בעלי דירות קשישים?",
+      "snippet": "ליווי מקצועי הוא המפתח למימוש מלא של זכויות",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "relevant_articles": [
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "title": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "snippet": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "publication_datetime": "2026-03-06T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "title": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "snippet": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "publication_datetime": "2026-03-15T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "canonical_url": "https://mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "title": "אני מממנת את הקריירה שלי משירותי מין",
+      "snippet": "הווידוי המפתיע של הזמרת",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "relevant": true,
+      "category": "prostitution",
+      "sub_category": null,
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "title": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "snippet": "תושבת בת ים נעצרה",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "relevant": true,
+      "category": "brothel",
+      "sub_category": "closure",
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "title": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "snippet": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "publication_datetime": "2026-03-08T00:00:00+00:00",
+      "relevant": true,
+      "category": "brothel",
+      "sub_category": "opening",
+      "confidence": "medium"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "title": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "snippet": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "publication_datetime": "2026-03-04T00:00:00+00:00",
+      "relevant": true,
+      "category": "trafficking",
+      "sub_category": "sentence",
+      "confidence": "high"
+    }
+  ],
+  "rejected_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3821396",
+      "canonical_url": "https://news.walla.co.il/item/3821396",
+      "title": "משרד החינוך מעדכן: המשך מתווה הלמידה מרחוק לימים חמישי ושישי",
+      "snippet": "משרד החינוך מציג מתווה חדש להמשך השבוע, לפיו הלמידה תמשיך להתקיים במתכונת למידה מרחוק. מועצת התלמידים והנוער הארצית בדרישה ממנהלי בתי הספר: \"התחשבו בתלמידים - קצרו את יום הלימודים, התמקד בחזרה על החומר שכבר נלמד על מנת לא לפתוח פערים והמשיכו בליווי רגשי\"",
+      "publication_datetime": "2026-03-04T15:18:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-2282821c96cdc91026.htm",
+      "title": "המשטרה סגרה את השווארמה המוכרת בתל אביב",
+      "snippet": "יש חשש שהמקום ימשיך לבצע את העבירה",
+      "publication_datetime": "2026-03-11T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "canonical_url": "https://mako.co.il/news-business/duns_100-realestate/Article-8aab225e1fafc91026.htm",
+      "title": "האם חוק הקשיש מיטיב עם בעלי דירות קשישים?",
+      "snippet": "ליווי מקצועי הוא המפתח למימוש מלא של זכויות",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "unified_items": [
+    {
+      "headline": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "summary": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-06T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm"
+        }
+      ]
+    },
+    {
+      "headline": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "summary": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-15T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm"
+        }
+      ]
+    },
+    {
+      "headline": "אני מממנת את הקריירה שלי משירותי מין",
+      "summary": "הווידוי המפתיע של הזמרת",
+      "category": "prostitution",
+      "sub_category": null,
+      "canonical_url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm"
+        }
+      ]
+    },
+    {
+      "headline": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "summary": "תושבת בת ים נעצרה",
+      "category": "brothel",
+      "sub_category": "closure",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-12T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm"
+        }
+      ]
+    },
+    {
+      "headline": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "summary": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "category": "brothel",
+      "sub_category": "opening",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-08T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm"
+        }
+      ]
+    },
+    {
+      "headline": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "summary": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "category": "trafficking",
+      "sub_category": "sentence",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "primary_source_name": "mako",
+      "publication_datetime": "2026-03-04T00:00:00+00:00",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "run_timestamp": "2026-03-21T19:45:51.769792Z",
+  "started_at": "2026-03-21T19:45:51.769792Z",
+  "finished_at": "2026-03-21T19:50:18.227012Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 13,
+  "unseen_article_count": 11,
+  "relevant_article_count": 6,
+  "unified_item_count": 6,
+  "seen_count_before": 3,
+  "seen_count_after": 9,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "ישראלי שידל לזנות קטינה בת 13 מוונצואלה",
+      "summary": "דיווח על עצמו בעצת הפסיכיאטר שלו",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm"
+        }
+      ],
+      "date": "2026-03-06T00:00:00Z",
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-3b76eded9f4cc91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "הוא אמר שהוא קונס אותי, חששתי לחיי",
+      "summary": "תושב באר שבע הואשם שסחט וכלא את חברו",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm"
+        }
+      ],
+      "date": "2026-03-15T00:00:00Z",
+      "category": "trafficking",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-2a0dd236881fc91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "אני מממנת את הקריירה שלי משירותי מין",
+      "summary": "הווידוי המפתיע של הזמרת",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm"
+        }
+      ],
+      "date": "2026-03-12T00:00:00Z",
+      "category": "prostitution",
+      "sub_category": null,
+      "canonical_url": "https://www.mako.co.il/music-news/world/Article-b6d8dc4b6d2ec91026.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "summary": "תושבת בת ים נעצרה",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm"
+        }
+      ],
+      "date": "2026-03-12T00:00:00Z",
+      "category": "brothel",
+      "sub_category": "closure",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "\"מטורף\": העסקים הלא חוקיים שפורחים במלחמה",
+      "summary": "באזעקות הלקוחות והבנות רצים לחדר מדרגות",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm"
+        }
+      ],
+      "date": "2026-03-08T00:00:00Z",
+      "category": "brothel",
+      "sub_category": "opening",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-7f4b0e1ad9acc91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "המושבעים שיכריעו את גורל האחים אלכסנדר",
+      "summary": "התביעה מחקה סעיפי אישום בגין סחר בבני אדם",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm"
+        }
+      ],
+      "date": "2026-03-04T00:00:00Z",
+      "category": "trafficking",
+      "sub_category": "sentence",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-db22b2a8438bc91026.htm",
+      "primary_source_name": "mako"
+    }
+  ],
+  "warnings": [
+    "privacy_risk_distribution=low:5, minor_involved:1"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 6 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
