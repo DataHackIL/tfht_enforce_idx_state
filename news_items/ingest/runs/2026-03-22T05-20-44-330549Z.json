@@ -1,0 +1,28 @@
+{
+  "run_timestamp": "2026-03-22T05:20:44.330549Z",
+  "started_at": "2026-03-22T05:20:44.330549Z",
+  "finished_at": "2026-03-22T05:24:52.707110Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 10,
+  "unseen_article_count": 4,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 9,
+  "seen_count_after": 9,
+  "fatal": false,
+  "items": [],
+  "warnings": [],
+  "errors": [],
+  "result_summary": "no relevant articles found",
+  "release_manifest": null,
+  "backup_manifest": null
+}
