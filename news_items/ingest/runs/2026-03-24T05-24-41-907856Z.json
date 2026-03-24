@@ -1,0 +1,61 @@
+{
+  "run_timestamp": "2026-03-24T05:24:41.907856Z",
+  "started_at": "2026-03-24T05:24:41.907856Z",
+  "finished_at": "2026-03-24T05:28:00.909974Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 15,
+  "unseen_article_count": 7,
+  "relevant_article_count": 2,
+  "unified_item_count": 2,
+  "seen_count_before": 10,
+  "seen_count_after": 12,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "\"בני זוג שעלו מברזיל הפעילו רשת זנות בארץ\"",
+      "summary": "כתב איישום הוגש נגדם",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-7af9db4351b1d91027.htm"
+        }
+      ],
+      "date": "2026-03-24T05:26:07.214380Z",
+      "category": "prostitution",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-7af9db4351b1d91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "לקח כמה רגעים עד שהבנתי שניסו לשדל אותי לזנות באור יום ברמת אביב",
+      "summary": "חרפה ובושה שבמאה ה-21 במקלט ציבורי במרכז תל אביב יש עדיין שירותים מסוג בול פגיעה ■ \"נשואים פלוס\" פשוט ירתה בכל מה שזז ואף אחד לא יצא ממנה מנצח ■ הסיטואציה של מוות שאין ספק שהולך לקרות אוטוטו, היא מאוד מוזרה | התגובות הכי טובות שפורסמו השבוע באתר הארץ",
+      "sources": [
+        {
+          "source_name": "haaretz",
+          "url": "https://www.haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000"
+        }
+      ],
+      "date": "2026-03-22T00:00:00Z",
+      "category": "prostitution",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "primary_source_name": "haaretz"
+    }
+  ],
+  "warnings": [
+    "privacy_risk_distribution=low:2"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 2 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
