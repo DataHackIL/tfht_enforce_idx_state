@@ -1,0 +1,46 @@
+{
+  "run_timestamp": "2026-03-27T05:43:57.400435Z",
+  "started_at": "2026-03-27T05:43:57.400435Z",
+  "finished_at": "2026-03-27T05:47:20.068694Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 13,
+  "unseen_article_count": 5,
+  "relevant_article_count": 1,
+  "unified_item_count": 1,
+  "seen_count_before": 12,
+  "seen_count_after": 13,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "\"היה תור של גברים מחוץ לדירה, גם באזעקות\"",
+      "summary": "בית בושת נחשף בדירה בחולון",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-923a0a193292d91027.htm"
+        }
+      ],
+      "date": "2026-03-27T05:45:22.656992Z",
+      "category": "brothel",
+      "sub_category": "closure",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-923a0a193292d91027.htm",
+      "primary_source_name": "mako"
+    }
+  ],
+  "warnings": [
+    "privacy_risk_distribution=low:1"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 1 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
