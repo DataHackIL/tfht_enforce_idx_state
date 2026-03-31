@@ -1,0 +1,246 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-03-31T05:45:54.817528+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "result_summary": "no relevant articles found",
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "23782480180",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/23782480180"
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 9,
+    "unseen_article_count": 2,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 13,
+    "seen_count_after": 13
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 3,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 4,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 2,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 2,
+    "classified_article_count": 2,
+    "relevant_article_count": 0,
+    "rejected_article_count": 2,
+    "rejected_by_category": {
+      "not_relevant": 2
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "maariv",
+      "ice"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3824626",
+      "canonical_url": "https://news.walla.co.il/item/3824626",
+      "title": "\"שידול לזנות\": עידן דביר הוא עו\"ד החשוד בסחיטה מינית של חיילות בתמורה לייצוג",
+      "snippet": "בית המשפט התיר לפרסם את זהותו של יוצא הפרקליטות הצבאית, שנעצר לאחר שנשים וביניהן חיילות התלוננו נגדו. במשטרה טוענים ללמעלה מ-50 נפגעות ומעריכים כי החשיפה תוביל לעדויות נוספות. החשוד מכחיש את המיוחס לו. סנגורו: \"אנו בטוחים כי החשדות יופרכו בקרוב\"",
+      "publication_datetime": "2026-03-19T15:16:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3823239",
+      "canonical_url": "https://news.walla.co.il/item/3823239",
+      "title": "בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\"",
+      "snippet": "תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים. כשהגיעו למקום הם גילו כי המקלט הוסב למקום המשמש לזנות, עם מיטה, מטבחון, מקלחת ושירותים. אזרחית זרה שנמצאה במקום עוכבה לחקירה ושוחררה בתנאים, לאחר שסירבה להזדהות",
+      "publication_datetime": "2026-03-12T13:18:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-7af9db4351b1d91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-7af9db4351b1d91027.htm",
+      "title": "בני זוג שעלו מברזיל הפעילו רשת זנות בארץ",
+      "snippet": "כתב איישום הוגש נגדם",
+      "publication_datetime": "2026-03-23T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-923a0a193292d91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-923a0a193292d91027.htm",
+      "title": "היה תור של גברים מחוץ לדירה, גם באזעקות",
+      "snippet": "בית בושת נחשף בדירה בחולון",
+      "publication_datetime": "2026-03-26T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-af751f94b02ec91027.htm",
+      "title": "חריג: הפכה את המקלט הציבורי לבית בושת",
+      "snippet": "תושבת בת ים נעצרה",
+      "publication_datetime": "2026-03-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "canonical_url": "https://haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "title": "לקח כמה רגעים עד שהבנתי שניסו לשדל אותי לזנות באור יום ברמת אביב",
+      "snippet": "חרפה ובושה שבמאה ה-21 במקלט ציבורי במרכז תל אביב יש עדיין שירותים מסוג בול פגיעה ■ \"נשואים פלוס\" פשוט ירתה בכל מה שזז ואף אחד לא יצא ממנה מנצח ■ הסיטואציה של מוות שאין ספק שהולך לקרות אוטוטו, היא מאוד מוזרה | התגובות הכי טובות שפורסמו השבוע באתר הארץ",
+      "publication_datetime": "2026-03-22T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "canonical_url": "https://haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "title": "הוא הבטיח להן הארה, והפך אותן לקורבנות אונס וסחר בבני אדם",
+      "snippet": "הסדרה Twisted Yoga חושפת את מערך הניצול המיני והפסיכולוגי של גורו היוגה גרגוריאן ביבולארו, שפעל באין מפריע במשך 20 שנה",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    }
+  ],
+  "unseen_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    }
+  ],
+  "classified_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "relevant_articles": [],
+  "rejected_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3822936",
+      "canonical_url": "https://news.walla.co.il/item/3822936",
+      "title": "משרד החינוך הוציא צו סגירה לבית הספר של ישיבת פוניבז' בבני ברק",
+      "snippet": "המוסד נמצא פעיל בניגוד להנחיות, בצל נפילות הטילים בעיר ואיומי איראן על \"משגרים נסתרים\" באזור. ח\"כ טור פז בוועדת החינוך: \"יש עוד מוסדות פתוחים מהמגזר החרדי, אני קורא לאכוף את ההנחיות\"",
+      "publication_datetime": "2026-03-11T10:32:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    },
+    {
+      "source_name": "mako",
+      "url": "https://www.mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "canonical_url": "https://mako.co.il/men-men_news/Article-3245d3e69cafc91027.htm",
+      "title": "ניקו דם מירי סמוך למסעדה, בלי לדווח למשטרה",
+      "snippet": "צו סגירה למסעדה באשדוד",
+      "publication_datetime": "2026-03-17T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "unified_items": []
+}
