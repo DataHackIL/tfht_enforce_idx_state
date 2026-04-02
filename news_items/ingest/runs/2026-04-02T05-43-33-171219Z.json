@@ -1,0 +1,46 @@
+{
+  "run_timestamp": "2026-04-02T05:43:33.171219Z",
+  "started_at": "2026-04-02T05:43:33.171219Z",
+  "finished_at": "2026-04-02T05:46:52.405912Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 11,
+  "unseen_article_count": 5,
+  "relevant_article_count": 1,
+  "unified_item_count": 1,
+  "seen_count_before": 13,
+  "seen_count_after": 14,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "ראינו תור של גברים בכניסה לבניין",
+      "summary": "שוטרים פשטו על דירה באזור - וזה מה שגילו",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-8d16e7dc9c24d91027.htm"
+        }
+      ],
+      "date": "2026-03-31T00:00:00Z",
+      "category": "enforcement",
+      "sub_category": "operation",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-8d16e7dc9c24d91027.htm",
+      "primary_source_name": "mako"
+    }
+  ],
+  "warnings": [
+    "privacy_risk_distribution=low:1"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 1 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
