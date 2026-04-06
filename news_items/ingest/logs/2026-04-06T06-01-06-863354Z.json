@@ -1,0 +1,129 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-04-06T06:01:06.863354+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "result_summary": "all fetched articles were already seen",
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "24020810333",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/24020810333"
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 3,
+    "unseen_article_count": 0,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 14,
+    "seen_count_after": 14
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 1,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 2,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 0,
+    "classified_article_count": 0,
+    "relevant_article_count": 0,
+    "rejected_article_count": 0,
+    "rejected_by_category": {},
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "mako",
+      "maariv",
+      "ice"
+    ],
+    "all_unseen_rejected": false,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "no_relevant_items"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3824626",
+      "canonical_url": "https://news.walla.co.il/item/3824626",
+      "title": "\"שידול לזנות\": עידן דביר הוא עו\"ד החשוד בסחיטה מינית של חיילות בתמורה לייצוג",
+      "snippet": "בית המשפט התיר לפרסם את זהותו של יוצא הפרקליטות הצבאית, שנעצר לאחר שנשים וביניהן חיילות התלוננו נגדו. במשטרה טוענים ללמעלה מ-50 נפגעות ומעריכים כי החשיפה תוביל לעדויות נוספות. החשוד מכחיש את המיוחס לו. סנגורו: \"אנו בטוחים כי החשדות יופרכו בקרוב\"",
+      "publication_datetime": "2026-03-19T15:16:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "canonical_url": "https://haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "title": "לקח כמה רגעים עד שהבנתי שניסו לשדל אותי לזנות באור יום ברמת אביב",
+      "snippet": "חרפה ובושה שבמאה ה-21 במקלט ציבורי במרכז תל אביב יש עדיין שירותים מסוג בול פגיעה ■ \"נשואים פלוס\" פשוט ירתה בכל מה שזז ואף אחד לא יצא ממנה מנצח ■ הסיטואציה של מוות שאין ספק שהולך לקרות אוטוטו, היא מאוד מוזרה | התגובות הכי טובות שפורסמו השבוע באתר הארץ",
+      "publication_datetime": "2026-03-22T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "canonical_url": "https://haaretz.co.il/gallery/television/2026-03-17/ty-article-magazine/.premium/0000019c-fb1a-dbbc-a7dd-fb9f7d4d0000",
+      "title": "הוא הבטיח להן הארה, והפך אותן לקורבנות אונס וסחר בבני אדם",
+      "snippet": "הסדרה Twisted Yoga חושפת את מערך הניצול המיני והפסיכולוגי של גורו היוגה גרגוריאן ביבולארו, שפעל באין מפריע במשך 20 שנה",
+      "publication_datetime": "2026-03-17T00:00:00+00:00"
+    }
+  ],
+  "unseen_articles": [],
+  "classified_articles": [],
+  "relevant_articles": [],
+  "rejected_articles": [],
+  "unified_items": []
+}
