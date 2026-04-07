@@ -1,0 +1,167 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-04-07T05:48:39.984422+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "result_summary": "no relevant articles found",
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "24066488731",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/24066488731"
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 3,
+    "unseen_article_count": 1,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 14,
+    "seen_count_after": 14
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 1,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 2,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 1,
+    "classified_article_count": 1,
+    "relevant_article_count": 0,
+    "rejected_article_count": 1,
+    "rejected_by_category": {
+      "not_relevant": 1
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "mako",
+      "maariv",
+      "ice"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3824626",
+      "canonical_url": "https://news.walla.co.il/item/3824626",
+      "title": "\"שידול לזנות\": עידן דביר הוא עו\"ד החשוד בסחיטה מינית של חיילות בתמורה לייצוג",
+      "snippet": "בית המשפט התיר לפרסם את זהותו של יוצא הפרקליטות הצבאית, שנעצר לאחר שנשים וביניהן חיילות התלוננו נגדו. במשטרה טוענים ללמעלה מ-50 נפגעות ומעריכים כי החשיפה תוביל לעדויות נוספות. החשוד מכחיש את המיוחס לו. סנגורו: \"אנו בטוחים כי החשדות יופרכו בקרוב\"",
+      "publication_datetime": "2026-03-19T15:16:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "canonical_url": "https://haaretz.co.il/talkback/2026-03-22/ty-article/.premium/0000019d-15f7-dd21-a1df-f7f7c3a80000",
+      "title": "לקח כמה רגעים עד שהבנתי שניסו לשדל אותי לזנות באור יום ברמת אביב",
+      "snippet": "חרפה ובושה שבמאה ה-21 במקלט ציבורי במרכז תל אביב יש עדיין שירותים מסוג בול פגיעה ■ \"נשואים פלוס\" פשוט ירתה בכל מה שזז ואף אחד לא יצא ממנה מנצח ■ הסיטואציה של מוות שאין ספק שהולך לקרות אוטוטו, היא מאוד מוזרה | התגובות הכי טובות שפורסמו השבוע באתר הארץ",
+      "publication_datetime": "2026-03-22T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "canonical_url": "https://haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "title": "מתנחלים הקימו מאחז חדש בצפון הגדה - בליווי חיילים",
+      "snippet": "המתנחלים הגיעו למקום בשעות הבוקר של ערב פסח עם חומרי בנייה ב ליווי כלי רכב צבאיים. תושבים מעידים כי המתנחלים מונעים מהם להגיע לחממות שלהם. בחודש האחרון פלסטינים משתי קהילות באזור נאלצו לעזוב את בתיהם בשל התעמרויות של מתנחלים וחיילים",
+      "publication_datetime": "2026-04-06T00:00:00+00:00"
+    }
+  ],
+  "unseen_articles": [
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "canonical_url": "https://haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "title": "מתנחלים הקימו מאחז חדש בצפון הגדה - בליווי חיילים",
+      "snippet": "המתנחלים הגיעו למקום בשעות הבוקר של ערב פסח עם חומרי בנייה ב ליווי כלי רכב צבאיים. תושבים מעידים כי המתנחלים מונעים מהם להגיע לחממות שלהם. בחודש האחרון פלסטינים משתי קהילות באזור נאלצו לעזוב את בתיהם בשל התעמרויות של מתנחלים וחיילים",
+      "publication_datetime": "2026-04-06T00:00:00+00:00"
+    }
+  ],
+  "classified_articles": [
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "canonical_url": "https://haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "title": "מתנחלים הקימו מאחז חדש בצפון הגדה - בליווי חיילים",
+      "snippet": "המתנחלים הגיעו למקום בשעות הבוקר של ערב פסח עם חומרי בנייה ב ליווי כלי רכב צבאיים. תושבים מעידים כי המתנחלים מונעים מהם להגיע לחממות שלהם. בחודש האחרון פלסטינים משתי קהילות באזור נאלצו לעזוב את בתיהם בשל התעמרויות של מתנחלים וחיילים",
+      "publication_datetime": "2026-04-06T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "relevant_articles": [],
+  "rejected_articles": [
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "canonical_url": "https://haaretz.co.il/news/politics/2026-04-06/ty-article/.premium/0000019d-5e03-db3c-a3df-df87776f0000",
+      "title": "מתנחלים הקימו מאחז חדש בצפון הגדה - בליווי חיילים",
+      "snippet": "המתנחלים הגיעו למקום בשעות הבוקר של ערב פסח עם חומרי בנייה ב ליווי כלי רכב צבאיים. תושבים מעידים כי המתנחלים מונעים מהם להגיע לחממות שלהם. בחודש האחרון פלסטינים משתי קהילות באזור נאלצו לעזוב את בתיהם בשל התעמרויות של מתנחלים וחיילים",
+      "publication_datetime": "2026-04-06T00:00:00+00:00",
+      "relevant": false,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "unified_items": []
+}
