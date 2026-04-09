@@ -1,0 +1,100 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-04-09T05:50:27.837305+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "result_summary": "no relevant articles found",
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 55,
+    "unseen_article_count": 53,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 14,
+    "seen_count_after": 14
+  },
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "24174746343",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/24174746343"
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 1,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 2,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 52,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 53,
+    "classified_article_count": 53,
+    "relevant_article_count": 0,
+    "rejected_article_count": 53,
+    "rejected_by_category": {
+      "not_relevant": 53
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "mako",
+      "maariv"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [
+    "Article count (53) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": []
+}
