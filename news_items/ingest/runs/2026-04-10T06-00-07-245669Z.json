@@ -1,0 +1,30 @@
+{
+  "run_timestamp": "2026-04-10T06:00:07.245669Z",
+  "started_at": "2026-04-10T06:00:07.245669Z",
+  "finished_at": "2026-04-10T06:06:45.477263Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 54,
+  "unseen_article_count": 53,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 14,
+  "seen_count_after": 14,
+  "fatal": false,
+  "items": [],
+  "warnings": [
+    "Article count (53) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": [],
+  "result_summary": "no relevant articles found",
+  "release_manifest": null,
+  "backup_manifest": null
+}
