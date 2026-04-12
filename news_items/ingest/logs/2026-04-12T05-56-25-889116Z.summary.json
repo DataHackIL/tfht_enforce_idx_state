@@ -1,0 +1,200 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-04-12T05:56:25.889116+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "result_summary": "no relevant articles found",
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 52,
+    "unseen_article_count": 52,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 14,
+    "seen_count_after": 14
+  },
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "24299961930",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/24299961930"
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "headless": true,
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        },
+        "searches": [
+          {
+            "keyword": "זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Page.title: Execution context was destroyed, most likely because of a navigation"
+          },
+          {
+            "keyword": "בית בושת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'בית בושת' before the page loaded."
+          },
+          {
+            "keyword": "סרסור",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סרסור' before the page loaded."
+          },
+          {
+            "keyword": "סחר בבני אדם",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סחר בבני אדם' before the page loaded."
+          },
+          {
+            "keyword": "צו סגירה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'צו סגירה' before the page loaded."
+          },
+          {
+            "keyword": "ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'ליווי' before the page loaded."
+          },
+          {
+            "keyword": "נערות ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'נערות ליווי' before the page loaded."
+          },
+          {
+            "keyword": "תעשיית המין",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'תעשיית המין' before the page loaded."
+          },
+          {
+            "keyword": "עיסוי חשוד",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'עיסוי חשוד' before the page loaded."
+          },
+          {
+            "keyword": "זירת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'זירת זנות' before the page loaded."
+          }
+        ],
+        "sections": [
+          {
+            "requested_url": "https://www.mako.co.il/men-men_news",
+            "status": "error",
+            "error": "Mako page never became parseable for men-news section. If Chromium is missing, install it with `python -m playwright install chromium`."
+          }
+        ],
+        "result": {
+          "raw_article_count": 0,
+          "unique_article_count": 0
+        }
+      }
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 52,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 52,
+    "classified_article_count": 52,
+    "relevant_article_count": 0,
+    "rejected_article_count": 52,
+    "rejected_by_category": {
+      "not_relevant": 52
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "walla",
+      "mako",
+      "maariv",
+      "haaretz"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [
+    "Article count (52) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": []
+}
