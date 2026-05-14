@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-05-14T06:25:13.940886+00:00:source_native",
+  "started_at": "2026-05-14T06:25:13.941064Z",
+  "finished_at": "2026-05-14T06:30:52.862339Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "failed",
+  "query_count": 6,
+  "candidate_count": 61,
+  "merged_candidate_count": 61,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "persistence: HTTPStatusError: Client error '404 Not Found' for url 'https://ltafdcsnvppvqyoclkod.supabase.co/rest/v1/persistent_candidates?on_conflict=candidate_id'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+  ]
+}
