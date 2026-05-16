@@ -1,0 +1,153 @@
+{
+  "run_timestamp": "2026-05-16T06:25:05.238800Z",
+  "started_at": "2026-05-16T06:25:05.238800Z",
+  "finished_at": "2026-05-16T06:34:19.567387Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 70,
+  "unseen_article_count": 70,
+  "relevant_article_count": 6,
+  "unified_item_count": 6,
+  "seen_count_before": 14,
+  "seen_count_after": 20,
+  "fatal": false,
+  "items": [
+    {
+      "headline": "יבוצעו השלמות חקירה בפרשת \"משחקי חברה\" שבה אייל גולן נחשד בעבירות מין",
+      "summary": "יום אחרי שזומן לחקירה במסגרת הפרשה שבה נטען לעבירות מין במהלך טיפול קוסמטי, הפרקליטות הורתה למשטרה לבצע פעולות נוספות בפרשת \"משחקי חברה\" - שבה נחקר בעבר בחשד לבעילה אסורה בהסכמה והבאה למעשה זנות, לפני שנסגרה",
+      "sources": [
+        {
+          "source_name": "ynet",
+          "url": "https://www.ynet.co.il/news/article/bycm7qmjfe"
+        }
+      ],
+      "date": "2026-05-14T13:37:06+03:00",
+      "enforcement_related": true,
+      "index_relevant": true,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "pimping_prostitution",
+      "taxonomy_subcategory_id": "bringing_into_prostitution",
+      "category": "prostitution",
+      "sub_category": "arrest",
+      "canonical_url": "https://www.ynet.co.il/news/article/bycm7qmjfe",
+      "primary_source_name": "ynet"
+    },
+    {
+      "headline": "עלייה במאות אחוזים באכיפת החוק לאיסור הזנות בישראל בשנת 2025 לעומת 2024",
+      "summary": "במטה למאבק בסחר בנשים ובזנות טוענים כי המשטרה כמעט אינה מבצעת אכיפה בפריפריה ומתריעים מפני היעדר מדיניות אכיפה ארצית ברורה. בן גביר: המשטרה תמשיך לפעול בנחישות",
+      "sources": [
+        {
+          "source_name": "walla",
+          "url": "https://news.walla.co.il/item/3837403"
+        }
+      ],
+      "date": "2026-05-12T11:29:00Z",
+      "enforcement_related": true,
+      "index_relevant": false,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "pimping_prostitution",
+      "taxonomy_subcategory_id": "nordic_model_law",
+      "category": "prostitution",
+      "sub_category": null,
+      "canonical_url": "https://news.walla.co.il/item/3837403",
+      "primary_source_name": "walla"
+    },
+    {
+      "headline": "שדדו 35 אלף שקלים מקורבן זנות בת\"א",
+      "summary": "הצמיד לי סכין כדי שלא אצעק",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-36f911677952e91027.htm"
+        }
+      ],
+      "date": "2026-05-14T00:00:00Z",
+      "enforcement_related": true,
+      "index_relevant": false,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "pimping_prostitution",
+      "taxonomy_subcategory_id": "phenomenon_coverage",
+      "category": "prostitution",
+      "sub_category": null,
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-36f911677952e91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "\"בתור אישה מקבלים יותר\": גברים במעגל הזנות",
+      "summary": "התופעה הולכת ומתרחבת: \"לא עושה את זה מבחירה\"",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm"
+        }
+      ],
+      "date": "2026-05-14T00:00:00Z",
+      "enforcement_related": false,
+      "index_relevant": false,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "pimping_prostitution",
+      "taxonomy_subcategory_id": "phenomenon_coverage",
+      "category": "prostitution",
+      "sub_category": null,
+      "canonical_url": "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "זרקו לי מדי פעם אוכל, פחדתי שיינקמו בי",
+      "summary": "עדות העובד הזר שהוחזק בתנאים תת-אנושיים",
+      "sources": [
+        {
+          "source_name": "mako",
+          "url": "https://www.mako.co.il/men-men_news/Article-012804a26dcfd91027.htm"
+        }
+      ],
+      "date": "2026-05-06T00:00:00Z",
+      "enforcement_related": true,
+      "index_relevant": true,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "human_trafficking",
+      "taxonomy_subcategory_id": "trafficking_slavery_conditions",
+      "category": "trafficking",
+      "sub_category": "rescue",
+      "canonical_url": "https://www.mako.co.il/men-men_news/Article-012804a26dcfd91027.htm",
+      "primary_source_name": "mako"
+    },
+    {
+      "headline": "המשטרה לא אוכפת איסור צריכת זנות בפריפריה, ו־98% מהדו\"חות ניתנו במרכז",
+      "summary": "במחוזות צפון, דרום וירושלים יחד ניתנו בשנים האחרונות 26 דו\"חות על צריכת שירותי זנות . הזנאים יכולים להמיר את הקנס בהשתתפות בסדנה חינוכית, אך רק 4.5% עשו זאת",
+      "sources": [
+        {
+          "source_name": "haaretz",
+          "url": "https://www.haaretz.co.il/news/law/2026-05-12/ty-article/.premium/0000019e-1b99-dfbd-affe-3f9b24360000"
+        }
+      ],
+      "date": "2026-05-12T00:00:00Z",
+      "enforcement_related": true,
+      "index_relevant": true,
+      "taxonomy_version": "1",
+      "taxonomy_category_id": "brothels",
+      "taxonomy_subcategory_id": "client_fine",
+      "category": "prostitution",
+      "sub_category": "fine",
+      "canonical_url": "https://www.haaretz.co.il/news/law/2026-05-12/ty-article/.premium/0000019e-1b99-dfbd-affe-3f9b24360000",
+      "primary_source_name": "haaretz"
+    }
+  ],
+  "warnings": [
+    "source_native_candidates_persisted=70",
+    "Article count (70) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway.",
+    "privacy_risk_distribution=low:5, sensitive_sexual_offence:1"
+  ],
+  "errors": [],
+  "result_summary": "ingest completed with 6 unified item(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}
