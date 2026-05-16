@@ -1,0 +1,1601 @@
+{
+  "generated_at": "2026-05-16T06:00:12.459751Z",
+  "config_path": "agents/news/github.yaml",
+  "dataset_name": "news_items",
+  "stale_after_days": 7,
+  "latest_candidates_path": "state_repo/news_items/discover/candidates/latest_candidates.jsonl",
+  "scrape_attempts_path": "state_repo/news_items/discover/candidates/scrape_attempts.jsonl",
+  "candidate_provenance_path": "state_repo/news_items/discover/candidates/candidate_provenance.jsonl",
+  "operational_records_available": false,
+  "notes": [
+    "Operational record matching was skipped for this diagnostics artifact.",
+    "No persisted scrape attempts were found."
+  ],
+  "engine_overlap": {
+    "source_native": 70,
+    "brave": 0,
+    "exa": 0,
+    "google_cse": 0,
+    "source_native_brave_shared": 0,
+    "source_native_exa_shared": 0,
+    "source_native_google_cse_shared": 0,
+    "brave_exa_shared": 0,
+    "brave_google_cse_shared": 0,
+    "exa_google_cse_shared": 0,
+    "shared_all_candidates": 0
+  },
+  "source_search_coverage": {
+    "total_candidates": 140,
+    "source_native_candidates": 140,
+    "search_engine_candidates": 0,
+    "source_native_only_candidates": 140,
+    "search_engine_only_candidates": 0,
+    "shared_candidates": 0,
+    "source_native_share": 1.0,
+    "search_engine_share": 0.0,
+    "shared_share": 0.0
+  },
+  "queue_health": {
+    "total_candidates": 140,
+    "new_candidates": 140,
+    "queued_candidates": 0,
+    "scrape_pending_candidates": 0,
+    "scrape_in_progress_candidates": 0,
+    "scrape_failed_candidates": 0,
+    "partially_scraped_candidates": 0,
+    "unsupported_source_candidates": 0,
+    "search_result_only_candidates": 0,
+    "partial_page_candidates": 0,
+    "full_article_page_candidates": 0,
+    "stale_candidates": 52,
+    "retry_backlog_candidates": 0,
+    "self_heal_eligible_candidates": 0,
+    "search_noise_filter_reason_counts": {}
+  },
+  "candidate_conversion": {
+    "total_candidates": 140,
+    "scrape_succeeded_candidates": 0,
+    "partially_scraped_candidates": 0,
+    "scrape_failed_candidates": 0,
+    "unsupported_source_candidates": 0,
+    "never_scraped_candidates": 140,
+    "search_result_only_candidates": 0,
+    "partial_page_candidates": 0,
+    "full_article_page_candidates": 0,
+    "operational_record_matches": 0,
+    "scrape_success_rate": 0.0,
+    "operational_match_rate": 0.0,
+    "per_producer": [
+      {
+        "producer_name": "haaretz",
+        "candidate_count": 4,
+        "scrape_succeeded_candidates": 0,
+        "partially_scraped_candidates": 0,
+        "scrape_failed_candidates": 0,
+        "unsupported_source_candidates": 0,
+        "operational_record_matches": 0,
+        "scrape_success_rate": 0.0,
+        "operational_match_rate": 0.0
+      },
+      {
+        "producer_name": "ice",
+        "candidate_count": 88,
+        "scrape_succeeded_candidates": 0,
+        "partially_scraped_candidates": 0,
+        "scrape_failed_candidates": 0,
+        "unsupported_source_candidates": 0,
+        "operational_record_matches": 0,
+        "scrape_success_rate": 0.0,
+        "operational_match_rate": 0.0
+      },
+      {
+        "producer_name": "mako",
+        "candidate_count": 34,
+        "scrape_succeeded_candidates": 0,
+        "partially_scraped_candidates": 0,
+        "scrape_failed_candidates": 0,
+        "unsupported_source_candidates": 0,
+        "operational_record_matches": 0,
+        "scrape_success_rate": 0.0,
+        "operational_match_rate": 0.0
+      },
+      {
+        "producer_name": "walla",
+        "candidate_count": 12,
+        "scrape_succeeded_candidates": 0,
+        "partially_scraped_candidates": 0,
+        "scrape_failed_candidates": 0,
+        "unsupported_source_candidates": 0,
+        "operational_record_matches": 0,
+        "scrape_success_rate": 0.0,
+        "operational_match_rate": 0.0
+      },
+      {
+        "producer_name": "ynet",
+        "candidate_count": 2,
+        "scrape_succeeded_candidates": 0,
+        "partially_scraped_candidates": 0,
+        "scrape_failed_candidates": 0,
+        "unsupported_source_candidates": 0,
+        "operational_record_matches": 0,
+        "scrape_success_rate": 0.0,
+        "operational_match_rate": 0.0
+      }
+    ]
+  },
+  "top_failure_sources": [],
+  "top_failure_domains": [],
+  "top_failure_codes": [],
+  "scrape_failure_diagnostics": [],
+  "queue_drain": {
+    "max_candidate_budget": 30,
+    "persisted_attempted_candidate_count": 0,
+    "persisted_scrape_attempt_count": 0,
+    "remaining_eligible_candidate_count": 140,
+    "inferred_stop_reason": "no_scrape_attempts_recorded",
+    "persisted_attempted_candidate_order": [],
+    "remaining_eligible_candidate_order": [
+      {
+        "position": 1,
+        "candidate_id": "candidate_0dfec3608d794b367f2ccd88",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851814Z",
+        "current_url": "https://www.ice.co.il/health/news/article/1110899"
+      },
+      {
+        "position": 2,
+        "candidate_id": "candidate_0f612570ce67fbfd3812efba",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851788Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1110974"
+      },
+      {
+        "position": 3,
+        "candidate_id": "candidate_6dd5edc5f37cdf0c24dff44e",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851761Z",
+        "current_url": "https://www.ice.co.il/career/news/article/1110990"
+      },
+      {
+        "position": 4,
+        "candidate_id": "candidate_3dd37f8770002455f5ae7cdb",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851734Z",
+        "current_url": "https://www.ice.co.il/positions/news/article/1111251"
+      },
+      {
+        "position": 5,
+        "candidate_id": "candidate_43e4ab4958c9923cb5974f15",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851706Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1111268"
+      },
+      {
+        "position": 6,
+        "candidate_id": "candidate_cbc17fa14aa984926e79299d",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851675Z",
+        "current_url": "https://www.ice.co.il/consumerism/news/article/1111425"
+      },
+      {
+        "position": 7,
+        "candidate_id": "candidate_fbbf6f7a2cd030db28fc3bb3",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851620Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1111448"
+      },
+      {
+        "position": 8,
+        "candidate_id": "candidate_f441d862c504db695dcf1603",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851593Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1111455"
+      },
+      {
+        "position": 9,
+        "candidate_id": "candidate_821da87f5118f7de04202dd1",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851566Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1111457"
+      },
+      {
+        "position": 10,
+        "candidate_id": "candidate_be243f7a3cff96952525f857",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851538Z",
+        "current_url": "https://www.ice.co.il/food/news/article/1111565"
+      },
+      {
+        "position": 11,
+        "candidate_id": "candidate_341dccc79338d9ebf4fad29f",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851511Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1111593"
+      },
+      {
+        "position": 12,
+        "candidate_id": "candidate_86f09e51968036d204828e27",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851484Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1111712"
+      },
+      {
+        "position": 13,
+        "candidate_id": "candidate_81aacc7a461f10284b2eccbf",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851458Z",
+        "current_url": "https://www.ice.co.il/global-news/news/article/1111733"
+      },
+      {
+        "position": 14,
+        "candidate_id": "candidate_aeb78cd66e2c9e62bf591642",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851431Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1111750"
+      },
+      {
+        "position": 15,
+        "candidate_id": "candidate_a733738fec41f79ddd66851f",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851404Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1111877"
+      },
+      {
+        "position": 16,
+        "candidate_id": "candidate_50663d01815ade7113734fba",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851376Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1111902"
+      },
+      {
+        "position": 17,
+        "candidate_id": "candidate_72f4fec56fd2fdcc41909280",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851341Z",
+        "current_url": "https://www.ice.co.il/consumerism/news/article/1111926"
+      },
+      {
+        "position": 18,
+        "candidate_id": "candidate_48d9d063d281061121865efa",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851287Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1111929"
+      },
+      {
+        "position": 19,
+        "candidate_id": "candidate_381ffc5f28da5032a3ef240e",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851250Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1111943"
+      },
+      {
+        "position": 20,
+        "candidate_id": "candidate_4452997c36021dbbaac5f07a",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851223Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1111981"
+      },
+      {
+        "position": 21,
+        "candidate_id": "candidate_d6c77aed6e4c42d44ed4c13e",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851195Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1112061"
+      },
+      {
+        "position": 22,
+        "candidate_id": "candidate_f5176c48f9ca0e7a2eaabe1c",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851166Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1112065"
+      },
+      {
+        "position": 23,
+        "candidate_id": "candidate_da68578fd73c4493cf02e482",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851139Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1112197"
+      },
+      {
+        "position": 24,
+        "candidate_id": "candidate_e88513e1dc5c90ecd2c446b4",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851112Z",
+        "current_url": "https://www.ice.co.il/advertising-marketing/news/article/1112248"
+      },
+      {
+        "position": 25,
+        "candidate_id": "candidate_ebcc54d15cac623a6cae1565",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851085Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1112485"
+      },
+      {
+        "position": 26,
+        "candidate_id": "candidate_03830d78180393c1d7749e45",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851057Z",
+        "current_url": "https://www.ice.co.il/consumerism/news/article/1112525"
+      },
+      {
+        "position": 27,
+        "candidate_id": "candidate_a2887df8806e338400ea6e8c",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851030Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1112538"
+      },
+      {
+        "position": 28,
+        "candidate_id": "candidate_77ef69eba86a3b269536b39a",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.851003Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1112643"
+      },
+      {
+        "position": 29,
+        "candidate_id": "candidate_70c66a43e47ff3bd42ea0dd4",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850975Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1112714"
+      },
+      {
+        "position": 30,
+        "candidate_id": "candidate_353bac6eb1a0b7c3237084d1",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850947Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1112767"
+      },
+      {
+        "position": 31,
+        "candidate_id": "candidate_8fdd401aa7e6a1c407cd7b5b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850913Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1112781"
+      },
+      {
+        "position": 32,
+        "candidate_id": "candidate_2eaa6103d9e42ef9ff4dda80",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850860Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1112805"
+      },
+      {
+        "position": 33,
+        "candidate_id": "candidate_4c1ddae04a43ed991dd1dc4b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850828Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1112819"
+      },
+      {
+        "position": 34,
+        "candidate_id": "candidate_04faa5a2539253ed29be1ef6",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850802Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1113002"
+      },
+      {
+        "position": 35,
+        "candidate_id": "candidate_e12856667d058b5ef680d26e",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850774Z",
+        "current_url": "https://www.ice.co.il/advertising-marketing/news/article/1113006"
+      },
+      {
+        "position": 36,
+        "candidate_id": "candidate_f760b881fdb8bdda32f7fb44",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850746Z",
+        "current_url": "https://www.ice.co.il/positions/news/article/1113016"
+      },
+      {
+        "position": 37,
+        "candidate_id": "candidate_31a25cf6e19342bc2baff7c0",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850716Z",
+        "current_url": "https://www.ice.co.il/food/news/article/1113019"
+      },
+      {
+        "position": 38,
+        "candidate_id": "candidate_c762edbaa674990ce59c9c7c",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850681Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1113105"
+      },
+      {
+        "position": 39,
+        "candidate_id": "candidate_7727a00ed02d189059e9bd89",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850613Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1110983"
+      },
+      {
+        "position": 40,
+        "candidate_id": "candidate_01d223d704c6b7a07da4e0ef",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850585Z",
+        "current_url": "https://www.ice.co.il/food/news/article/1111419"
+      },
+      {
+        "position": 41,
+        "candidate_id": "candidate_f64f7b2ff9feabcfba81492a",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850555Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1111919"
+      },
+      {
+        "position": 42,
+        "candidate_id": "candidate_bc89d087f0914330b6a03cc0",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850526Z",
+        "current_url": "https://www.ice.co.il/food/news/article/1112074"
+      },
+      {
+        "position": 43,
+        "candidate_id": "candidate_16d2536a2450096e1d35f2d5",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850493Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1112507"
+      },
+      {
+        "position": 44,
+        "candidate_id": "candidate_a41f095a043493317272855b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850460Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1112598"
+      },
+      {
+        "position": 45,
+        "candidate_id": "candidate_3749bdef391daaf45ff2cdda",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850422Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1112205"
+      },
+      {
+        "position": 46,
+        "candidate_id": "candidate_05c5ce50212ef997317bd650",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T06:00:04.850304Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1112548"
+      },
+      {
+        "position": 47,
+        "candidate_id": "candidate_126faf5f605cff50b1202dff",
+        "source": "haaretz",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:59:18.501682Z",
+        "current_url": "https://www.haaretz.co.il/magazine/ayelet-shani/2026-05-13/ty-article-magazine/.highlight/0000019e-2165-d907-ad9e-3fff500d0000"
+      },
+      {
+        "position": 48,
+        "candidate_id": "candidate_493ee0b9525d7c7cfcef6393",
+        "source": "haaretz",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:59:18.501527Z",
+        "current_url": "https://www.haaretz.co.il/news/law/2026-05-12/ty-article/.premium/0000019e-1b99-dfbd-affe-3f9b24360000"
+      },
+      {
+        "position": 49,
+        "candidate_id": "candidate_907a5ac6f88a5a851112e9e0",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349225Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-838e7735b4b1e91027.htm"
+      },
+      {
+        "position": 50,
+        "candidate_id": "candidate_f15da0af46fda640014fe107",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349192Z",
+        "current_url": "https://www.mako.co.il/finances-real-estate/Article-620019e8cc2fd91026.htm"
+      },
+      {
+        "position": 51,
+        "candidate_id": "candidate_4b36d78801b1967f12ced524",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349159Z",
+        "current_url": "https://www.mako.co.il/nexter-news/Article-bc8d933b229dd91027.htm"
+      },
+      {
+        "position": 52,
+        "candidate_id": "candidate_63713cfb7c052381f4b55adf",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349120Z",
+        "current_url": "https://www.mako.co.il/news-law/2026_q2/Article-af47dd503c20e91027.htm"
+      },
+      {
+        "position": 53,
+        "candidate_id": "candidate_c56c0c193cd00bed9fcf87a7",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349089Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-47eba8981662e91026.htm"
+      },
+      {
+        "position": 54,
+        "candidate_id": "candidate_1089aac66f285b6f90e68e69",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349058Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-c1b033ddef7fd91027.htm"
+      },
+      {
+        "position": 55,
+        "candidate_id": "candidate_8a724818941f13d71240c348",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.349025Z",
+        "current_url": "https://www.mako.co.il/news-tip12/2026_q2/Article-8ae0cb27f77fd91027.htm"
+      },
+      {
+        "position": 56,
+        "candidate_id": "candidate_b7d374ffc912f76d21705502",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348990Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-012804a26dcfd91027.htm"
+      },
+      {
+        "position": 57,
+        "candidate_id": "candidate_ef7fb1d1c6f97e1e456de863",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348954Z",
+        "current_url": "https://www.mako.co.il/Sports-football-world/q2_2026/Article-02eac3276da1e91027.htm"
+      },
+      {
+        "position": 58,
+        "candidate_id": "candidate_5cfe4a90ddbe6e1973135e6f",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348918Z",
+        "current_url": "https://www.mako.co.il/Sports-basketball-world/euroleague-q2_2026/Article-81617bff41acd91027.htm"
+      },
+      {
+        "position": 59,
+        "candidate_id": "candidate_5077acf9421cfa9152357594",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348881Z",
+        "current_url": "https://www.mako.co.il/news-tip12/2026_q2/Article-b31c490aeaddd91027.htm"
+      },
+      {
+        "position": 60,
+        "candidate_id": "candidate_5fc7b8bc31e8916230497fc2",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348842Z",
+        "current_url": "https://www.mako.co.il/news-sport/basketball-2026_q2/Article-cc443f5cb6eed91027.htm"
+      },
+      {
+        "position": 61,
+        "candidate_id": "candidate_6b826868f157e5a200c5c8fa",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348794Z",
+        "current_url": "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm"
+      },
+      {
+        "position": 62,
+        "candidate_id": "candidate_31944455e0101b4a4f891044",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:56:42.348669Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-36f911677952e91027.htm"
+      },
+      {
+        "position": 63,
+        "candidate_id": "candidate_fea8faf5d65305bbaad8d6d9",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364719Z",
+        "current_url": "https://news.walla.co.il/item/3833744"
+      },
+      {
+        "position": 64,
+        "candidate_id": "candidate_3a52c88a299484fd7d141bfd",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364679Z",
+        "current_url": "https://news.walla.co.il/item/3835623"
+      },
+      {
+        "position": 65,
+        "candidate_id": "candidate_7d51c30f2c01d7d9e6882e9a",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364608Z",
+        "current_url": "https://news.walla.co.il/item/3835621"
+      },
+      {
+        "position": 66,
+        "candidate_id": "candidate_148ee15326e59966c356f2ae",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364574Z",
+        "current_url": "https://news.walla.co.il/item/3836239"
+      },
+      {
+        "position": 67,
+        "candidate_id": "candidate_ca1240b052b9fd7707c869fd",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364532Z",
+        "current_url": "https://news.walla.co.il/item/3837095"
+      },
+      {
+        "position": 68,
+        "candidate_id": "candidate_3995e31cc1fb2c832385d497",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364489Z",
+        "current_url": "https://news.walla.co.il/item/3837094"
+      },
+      {
+        "position": 69,
+        "candidate_id": "candidate_c58f5d272566229646917a84",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:55:22.364239Z",
+        "current_url": "https://news.walla.co.il/item/3837403"
+      },
+      {
+        "position": 70,
+        "candidate_id": "candidate_1e01e1b999b1b536c4ab2c95",
+        "source": "ynet",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T05:54:26.140847Z",
+        "current_url": "https://www.ynet.co.il/news/article/bycm7qmjfe"
+      },
+      {
+        "position": 71,
+        "candidate_id": "candidate_04d6f28d31e7c0129c21dbc9",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-15T06:40:43.814881Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1110554"
+      },
+      {
+        "position": 72,
+        "candidate_id": "candidate_4f481aefd02d622975146bd6",
+        "source": "haaretz",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-15T06:39:47.447134Z",
+        "current_url": "https://www.haaretz.co.il/magazine/underthesun/2026-05-13/ty-article/.highlight/0000019e-2113-d14f-abfe-2397d5d80000"
+      },
+      {
+        "position": 73,
+        "candidate_id": "candidate_daaf9eefb3b78e2aa2e61557",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-13T06:32:07.677249Z",
+        "current_url": "https://www.ice.co.il/tourism/news/article/1110441"
+      },
+      {
+        "position": 74,
+        "candidate_id": "candidate_062a17b3a81d8efa20b94a7c",
+        "source": "haaretz",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-13T06:31:15.661533Z",
+        "current_url": "https://www.haaretz.co.il/family/2026-04-23/ty-article/.premium/0000019d-a9e2-d834-abbd-f9e2e80d0000"
+      },
+      {
+        "position": 75,
+        "candidate_id": "candidate_436020b32115b94cf079bd03",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-13T06:29:12.916572Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-0346b05e479bd91027.htm"
+      },
+      {
+        "position": 76,
+        "candidate_id": "candidate_01cdec677557a9127fac6f7b",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-13T06:29:12.916431Z",
+        "current_url": "https://www.mako.co.il/finances-law/law-general/Article-e707db27dd51e91026.htm"
+      },
+      {
+        "position": 77,
+        "candidate_id": "candidate_a8a9e01f0b6d5c4b1b53c275",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-13T06:29:12.916382Z",
+        "current_url": "https://www.mako.co.il/news-money/tech12/Article-2319af31499bd91026.htm"
+      },
+      {
+        "position": 78,
+        "candidate_id": "candidate_20c8a38e2b050086767b9906",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-12T06:17:12.422832Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-4a6389c43c6bd91027.htm"
+      },
+      {
+        "position": 79,
+        "candidate_id": "candidate_b71b57a9f47eca26611975e4",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-12T06:17:12.422698Z",
+        "current_url": "https://www.mako.co.il/Sports-football-world/q2_2026/Article-df6935efe00bd91026.htm"
+      },
+      {
+        "position": 80,
+        "candidate_id": "candidate_37cb97386e4e79b35712d8e3",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-11T06:44:18.976069Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1110263"
+      },
+      {
+        "position": 81,
+        "candidate_id": "candidate_9f3baa4e44490a311f6d3cbb",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-11T06:41:49.500936Z",
+        "current_url": "https://www.mako.co.il/tvbee-recap/euphoria_recap/Article-55b1f7c0eccad91027.htm"
+      },
+      {
+        "position": 82,
+        "candidate_id": "candidate_38d422c16947aa0a836995bf",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:16:44.127051Z",
+        "current_url": "https://www.ice.co.il/opinions/news/article/1109439"
+      },
+      {
+        "position": 83,
+        "candidate_id": "candidate_be18f9c1c862ec175f0f0cf3",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:16:44.127028Z",
+        "current_url": "https://www.ice.co.il/all-projects/news/article/1109753"
+      },
+      {
+        "position": 84,
+        "candidate_id": "candidate_dc94cb554b6a1d1779f14423",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:16:44.127006Z",
+        "current_url": "https://www.ice.co.il/bdispot/news/article/1110098"
+      },
+      {
+        "position": 85,
+        "candidate_id": "candidate_cf9dda9cd4663738714e9f73",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:13:59.886307Z",
+        "current_url": "https://www.mako.co.il/news-law_guide/2026_q2/Article-f266b8307b6ad91026.htm"
+      },
+      {
+        "position": 86,
+        "candidate_id": "candidate_cc06b898788b2bf2181f2827",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:13:59.886197Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-41a3601ca57fd91026.htm"
+      },
+      {
+        "position": 87,
+        "candidate_id": "candidate_73a6a0ad0e508fe3b0b8e749",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:12:45.960883Z",
+        "current_url": "https://news.walla.co.il/item/3831725"
+      },
+      {
+        "position": 88,
+        "candidate_id": "candidate_76c67888ece5cc22b055695d",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-10T06:12:45.960857Z",
+        "current_url": "https://news.walla.co.il/item/3831746"
+      },
+      {
+        "position": 89,
+        "candidate_id": "candidate_a1d1fb44c470bf912da6915f",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-09T05:51:02.166166Z",
+        "current_url": "https://www.mako.co.il/finances-law/family-law/Article-34a81b5f9e5ad91027.htm"
+      },
+      {
+        "position": 90,
+        "candidate_id": "candidate_ecc975ab80bce30848c8dfdf",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-08T05:36:10.196532Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1109950"
+      },
+      {
+        "position": 91,
+        "candidate_id": "candidate_4b78253abb8327bb45cc5b14",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-08T05:31:21.763034Z",
+        "current_url": "https://news.walla.co.il/item/3831384"
+      },
+      {
+        "position": 92,
+        "candidate_id": "candidate_5c12694010a5d5327eadcd87",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-07T06:15:15.357395Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1109805"
+      },
+      {
+        "position": 93,
+        "candidate_id": "candidate_4c86c0c36688a5f846388917",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-07T06:15:15.357368Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1109864"
+      },
+      {
+        "position": 94,
+        "candidate_id": "candidate_4bc83f71c484f6127b56250c",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-07T06:15:15.357342Z",
+        "current_url": "https://www.ice.co.il/health/news/article/1109905"
+      },
+      {
+        "position": 95,
+        "candidate_id": "candidate_bff960b37c60dfc44cc4962d",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-07T06:12:35.883035Z",
+        "current_url": "https://www.mako.co.il/Sports-basketball-world/euroleague-q2_2026/Article-599a503af6b9d91026.htm"
+      },
+      {
+        "position": 96,
+        "candidate_id": "candidate_50f99f2326b5fb1e810ab037",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-07T06:11:13.955068Z",
+        "current_url": "https://news.walla.co.il/item/3831103"
+      },
+      {
+        "position": 97,
+        "candidate_id": "candidate_f3aa61871b519478c9166569",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516883Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1109566"
+      },
+      {
+        "position": 98,
+        "candidate_id": "candidate_a60ebe0e1133f011a978c813",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516865Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1109650"
+      },
+      {
+        "position": 99,
+        "candidate_id": "candidate_c05a6fd02642dd4019ebb81b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516847Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1109666"
+      },
+      {
+        "position": 100,
+        "candidate_id": "candidate_57e1b29783f65d6e61fca858",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516830Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1109710"
+      },
+      {
+        "position": 101,
+        "candidate_id": "candidate_5a2a2818b7a8a65fb2f81279",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516794Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1109769"
+      },
+      {
+        "position": 102,
+        "candidate_id": "candidate_89b0b17e035f45103a9aba36",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:02:37.516777Z",
+        "current_url": "https://www.ice.co.il/health/news/article/1109782"
+      },
+      {
+        "position": 103,
+        "candidate_id": "candidate_63991c7cc68c41025d53dbf3",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:00:05.592166Z",
+        "current_url": "https://www.mako.co.il/nexter-news/Article-2c69d1281b9bd91027.htm"
+      },
+      {
+        "position": 104,
+        "candidate_id": "candidate_a3d802028087442938912a1e",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-06T06:00:05.592028Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-e29611ecf469d91026.htm"
+      },
+      {
+        "position": 105,
+        "candidate_id": "candidate_fe49d15a9ecea7f2587c2d6a",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-05T05:48:07.883896Z",
+        "current_url": "https://www.ice.co.il/research/news/article/1109495"
+      },
+      {
+        "position": 106,
+        "candidate_id": "candidate_8db51fd2163f43c30ccd2e6b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-05T05:48:07.883870Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1109499"
+      },
+      {
+        "position": 107,
+        "candidate_id": "candidate_3db58f121c22eb897df109e8",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-05T05:45:29.830953Z",
+        "current_url": "https://www.mako.co.il/living-diy/maintenance/Article-b31c490aeaddd91027.htm"
+      },
+      {
+        "position": 108,
+        "candidate_id": "candidate_991be55b8cef93a5001fb9f2",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-04T06:18:22.552906Z",
+        "current_url": "https://www.ice.co.il/all-projects/news/article/1109195"
+      },
+      {
+        "position": 109,
+        "candidate_id": "candidate_cd0f77d70e8dbf1ae5e7211e",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-04T06:18:22.552877Z",
+        "current_url": "https://www.ice.co.il/research/news/article/1109421"
+      },
+      {
+        "position": 110,
+        "candidate_id": "candidate_8c4db89d934ddb9365e18b20",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-04T06:18:22.552819Z",
+        "current_url": "https://www.ice.co.il/social/news/article/1109445"
+      },
+      {
+        "position": 111,
+        "candidate_id": "candidate_a9f1ccaf47b70ba2e5902a96",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-04T06:18:22.552792Z",
+        "current_url": "https://www.ice.co.il/sport_news/news/article/1109456"
+      },
+      {
+        "position": 112,
+        "candidate_id": "candidate_e3fc6b2d3e4a65a8366894de",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-04T06:18:22.551808Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1109339"
+      },
+      {
+        "position": 113,
+        "candidate_id": "candidate_563c6573929c5d3fb90e6fc2",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:04:14.474421Z",
+        "current_url": "https://www.ice.co.il/contentpoint-sponsored/news/article/1109203"
+      },
+      {
+        "position": 114,
+        "candidate_id": "candidate_834cd847d396eae10b594524",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:04:14.474393Z",
+        "current_url": "https://www.ice.co.il/consumerism/news/article/1109206"
+      },
+      {
+        "position": 115,
+        "candidate_id": "candidate_b8ae47ddb9d2409e981ab43f",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:04:14.474365Z",
+        "current_url": "https://www.ice.co.il/consumerism/news/article/1109228"
+      },
+      {
+        "position": 116,
+        "candidate_id": "candidate_e73eb3bcc8f24478c64d7bb7",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:04:14.474338Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1109322"
+      },
+      {
+        "position": 117,
+        "candidate_id": "candidate_e3bb4c47e9f06d7b77cb7d3a",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:04:14.473419Z",
+        "current_url": "https://www.ice.co.il/food/news/article/1109275"
+      },
+      {
+        "position": 118,
+        "candidate_id": "candidate_78796aabcfd01b88cac28ced",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:01:26.509109Z",
+        "current_url": "https://www.mako.co.il/travel-news/international/Article-d8ab9dd8bf18d91027.htm"
+      },
+      {
+        "position": 119,
+        "candidate_id": "candidate_016c0388dfa9f9e32430a254",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:01:26.508880Z",
+        "current_url": "https://www.mako.co.il/Sports-basketball-world/euroleague-q2_2026/Article-4a0d2db11f58d91026.htm"
+      },
+      {
+        "position": 120,
+        "candidate_id": "candidate_0770ffc34bb1d0c39c49428a",
+        "source": "walla",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T06:00:00.510766Z",
+        "current_url": "https://news.walla.co.il/item/3829980"
+      },
+      {
+        "position": 121,
+        "candidate_id": "candidate_344cd890b057e23607d54cfb",
+        "source": "ynet",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-03T05:59:00.598937Z",
+        "current_url": "https://www.ynet.co.il/news/article/bkctfuca11x"
+      },
+      {
+        "position": 122,
+        "candidate_id": "candidate_75e249a7ad197bacaf6db4ef",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:03:46.897255Z",
+        "current_url": "https://www.ice.co.il/digital-140/news/article/1109035"
+      },
+      {
+        "position": 123,
+        "candidate_id": "candidate_775c7dfac8b08e04e2338703",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:03:46.896366Z",
+        "current_url": "https://www.ice.co.il/realestate/news/article/1108956"
+      },
+      {
+        "position": 124,
+        "candidate_id": "candidate_9ffdbf976f69afc67715731c",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:00:49.860383Z",
+        "current_url": "https://www.mako.co.il/finances-real-estate/Article-146c75767f19d91027.htm"
+      },
+      {
+        "position": 125,
+        "candidate_id": "candidate_249be7f8a4ebb71bd65e75c7",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:00:49.860351Z",
+        "current_url": "https://www.mako.co.il/news-military/2026_q2/Article-b2d2924f6988d91027.htm"
+      },
+      {
+        "position": 126,
+        "candidate_id": "candidate_4d9a15dcb8a4ef4f3004b230",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:00:49.860317Z",
+        "current_url": "https://www.mako.co.il/news-money/2026_q2/Article-9fb782640a78d91027.htm"
+      },
+      {
+        "position": 127,
+        "candidate_id": "candidate_4810cabe8eab55b833c7088e",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:00:49.860137Z",
+        "current_url": "https://www.mako.co.il/men-men_news/Article-c5744822fc08d91027.htm"
+      },
+      {
+        "position": 128,
+        "candidate_id": "candidate_25192dc2316ce4b387de9cff",
+        "source": "mako",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-30T06:00:49.860014Z",
+        "current_url": "https://www.mako.co.il/Sports-football-world/q2_2026/Article-427ca89d7e5bd91027.htm"
+      },
+      {
+        "position": 129,
+        "candidate_id": "candidate_961d17eab9db8a2431229e1c",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.300489Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1107971"
+      },
+      {
+        "position": 130,
+        "candidate_id": "candidate_72ef5f982a5b4044022462d8",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.300453Z",
+        "current_url": "https://www.ice.co.il/opinions/news/article/1108548"
+      },
+      {
+        "position": 131,
+        "candidate_id": "candidate_b746f97dbe61a460f26a1297",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.300277Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1108675"
+      },
+      {
+        "position": 132,
+        "candidate_id": "candidate_736e812967fc6182bd3bbc67",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.300250Z",
+        "current_url": "https://www.ice.co.il/finance/news/article/1108745"
+      },
+      {
+        "position": 133,
+        "candidate_id": "candidate_cd8a01ae583230574c4dc43b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.300219Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1108760"
+      },
+      {
+        "position": 134,
+        "candidate_id": "candidate_e37f4c4cb9fb201a7af25e9d",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-27T06:01:07.299314Z",
+        "current_url": "https://www.ice.co.il/local-news/news/article/1108715"
+      },
+      {
+        "position": 135,
+        "candidate_id": "candidate_5620e90ca66e6202bf95e7e2",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-26T05:46:44.601790Z",
+        "current_url": "https://www.ice.co.il/financial-gossip/news/article/1108482"
+      },
+      {
+        "position": 136,
+        "candidate_id": "candidate_cef39c4fa891a5e99073efb5",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-26T05:46:44.601772Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1108495"
+      },
+      {
+        "position": 137,
+        "candidate_id": "candidate_dad3c5cd8c72df88733fae06",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-26T05:46:44.601130Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1110819"
+      },
+      {
+        "position": 138,
+        "candidate_id": "candidate_cd57bacdc678edfe638ab33b",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-24T05:41:52.094266Z",
+        "current_url": "https://www.ice.co.il/auto/news/article/1108405"
+      },
+      {
+        "position": 139,
+        "candidate_id": "candidate_3d7e853de914b79eae789a11",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-23T05:37:20.633596Z",
+        "current_url": "https://www.ice.co.il/culture/news/article/1108325"
+      },
+      {
+        "position": 140,
+        "candidate_id": "candidate_3cb106243af18bb1978094d2",
+        "source": "ice",
+        "status": "new",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-04-23T05:37:20.633571Z",
+        "current_url": "https://www.ice.co.il/global-news/news/article/1108349"
+      }
+    ],
+    "attempted_source_mix": [],
+    "remaining_eligible_source_mix": [
+      {
+        "source": "haaretz",
+        "candidate_count": 4
+      },
+      {
+        "source": "ice",
+        "candidate_count": 88
+      },
+      {
+        "source": "mako",
+        "candidate_count": 34
+      },
+      {
+        "source": "walla",
+        "candidate_count": 12
+      },
+      {
+        "source": "ynet",
+        "candidate_count": 2
+      }
+    ]
+  },
+  "partial_page_diagnostics": {
+    "operational_matching_enabled": false,
+    "operational_records_available": false,
+    "partial_candidate_count": 0,
+    "retained_operational_record_candidate_count": 0,
+    "retained_operational_record_count": 0,
+    "metadata_only_partial_candidate_count": 0,
+    "search_result_only_candidate_count": 0,
+    "generic_fetch_partial_candidate_count": 0,
+    "source_adapter_partial_candidate_count": 0,
+    "partial_after_source_adapter_attempt_count": 0,
+    "partial_without_source_adapter_attempt_count": 0,
+    "blocked_generic_fetch_candidate_count": 0,
+    "failed_generic_fetch_candidate_count": 0,
+    "timeout_generic_fetch_candidate_count": 0,
+    "partial_candidates_by_domain": [],
+    "partial_candidates_by_source": [],
+    "partial_attempts_by_kind": [],
+    "partial_attempts_by_source_adapter": [],
+    "generic_fetch_error_code_counts": [],
+    "classifier_warning_signals": {
+      "candidate_fallback_record_count": 0,
+      "partial_page_fallback_record_count": 0,
+      "search_result_only_fallback_record_count": 0,
+      "fallback_record_without_taxonomy_count": 0,
+      "partial_page_fallback_without_taxonomy_count": 0,
+      "low_confidence_fallback_record_count": 0,
+      "invalid_taxonomy_pair_record_count": 0,
+      "fallback_record_confidence_counts": [],
+      "fallback_classification_confidence_counts": [],
+      "low_confidence_fallback_records_by_source": [],
+      "low_confidence_fallback_records_by_domain": [],
+      "low_confidence_fallback_records_by_taxonomy": []
+    }
+  },
+  "source_suggestions": {
+    "suggestions": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-05-16T05:54:25.157475Z",
+  "started_at": "2026-05-16T05:54:25.157475Z",
+  "finished_at": "2026-05-16T06:00:12.462074Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 70,
+  "unseen_article_count": 70,
+  "relevant_article_count": 0,
+  "unified_item_count": 70,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": false,
+  "items": [],
+  "warnings": [],
+  "errors": [
+    "brave: missing DENBUST_BRAVE_SEARCH_API_KEY",
+    "exa: missing DENBUST_EXA_API_KEY"
+  ],
+  "result_summary": "discovery persisted 70 merged candidate(s) from 70 discovered result(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}

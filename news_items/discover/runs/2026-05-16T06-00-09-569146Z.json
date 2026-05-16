@@ -1,0 +1,15 @@
+{
+  "run_id": "2026-05-16T05:54:25.157475+00:00:brave",
+  "started_at": "2026-05-16T06:00:09.569146Z",
+  "finished_at": "2026-05-16T06:00:10.327025Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "failed",
+  "query_count": 405,
+  "candidate_count": 0,
+  "merged_candidate_count": 0,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "brave: missing DENBUST_BRAVE_SEARCH_API_KEY"
+  ]
+}
