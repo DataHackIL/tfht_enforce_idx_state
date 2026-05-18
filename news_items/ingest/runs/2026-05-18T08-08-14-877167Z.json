@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-05-18T08:08:14.877167Z",
+  "started_at": "2026-05-18T08:08:14.877167Z",
+  "finished_at": "2026-05-18T08:20:21.271348Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 80,
+  "unseen_article_count": 74,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 20,
+  "seen_count_after": 20,
+  "fatal": false,
+  "items": [],
+  "warnings": [
+    "source_native_candidate_persistence_failed=HTTPStatusError: Client error '400 Bad Request' for url 'https://ltafdcsnvppvqyoclkod.supabase.co/rest/v1/discovery_runs?on_conflict=run_id'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400; response_body={\"code\":\"PGRST204\",\"details\":null,\"hint\":null,\"message\":\"Could not find the 'skipped_query_count' column of 'discovery_runs' in the schema cache\"}",
+    "Article count (74) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": [],
+  "result_summary": "no relevant articles found",
+  "release_manifest": null,
+  "backup_manifest": null
+}
