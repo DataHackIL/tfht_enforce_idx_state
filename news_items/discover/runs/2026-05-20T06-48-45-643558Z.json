@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-05-20T06:48:45.643338+00:00:source_native",
+  "started_at": "2026-05-20T06:48:45.643558Z",
+  "finished_at": "2026-05-20T06:58:19.068203Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "failed",
+  "query_count": 6,
+  "skipped_query_count": 0,
+  "candidate_count": 65,
+  "merged_candidate_count": 65,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "persistence: HTTPStatusError: Client error '400 Bad Request' for url 'https://ltafdcsnvppvqyoclkod.supabase.co/rest/v1/discovery_runs?on_conflict=run_id'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400; response_body={\"code\":\"PGRST204\",\"details\":null,\"hint\":null,\"message\":\"Could not find the 'skipped_query_count' column of 'discovery_runs' in the schema cache\"}"
+  ]
+}
