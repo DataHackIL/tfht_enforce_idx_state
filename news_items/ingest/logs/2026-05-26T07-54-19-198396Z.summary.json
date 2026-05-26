@@ -1,0 +1,379 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-05-26T07:54:19.198396+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "result_summary": "fatal: classifier provider error",
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 70,
+    "unseen_article_count": 68,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 20,
+    "seen_count_after": 20
+  },
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "26439698055",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/26439698055"
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "rss": {
+          "status": "low_coverage",
+          "requested_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "final_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "status_code": 200,
+          "content_type": "application/xml",
+          "payload_length": 34147,
+          "total_entry_count": 30,
+          "recent_entry_count": 30,
+          "keyword_match_count": 0,
+          "article_count": 0,
+          "bozo": false,
+          "bozo_exception": null
+        },
+        "category": {
+          "status": "keyword_zero",
+          "requested_url": "https://www.ynet.co.il/news/category/190",
+          "final_url": "https://www.ynet.co.il/news/category/190",
+          "status_code": 200,
+          "content_type": "text/html; charset=utf-8",
+          "payload_length": 134293,
+          "container_count": 44,
+          "parsed_article_count": 40,
+          "keyword_match_count": 0,
+          "stale_article_count": 0,
+          "article_urls": []
+        },
+        "result": {
+          "rss_article_count": 0,
+          "category_article_count": 0,
+          "deduped_category_article_count": 0,
+          "unique_article_count": 0
+        }
+      }
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 8,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "צו הגבלת שימוש",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות",
+          "נישואין בכפייה",
+          "עבדות מינית",
+          "קורבנות סחר",
+          "רשת סחר",
+          "ניצול מיני",
+          "זנות מקוונת",
+          "קנס צריכת זנות",
+          "החזקת מקום לשם זנות",
+          "השכרת מקום לשם זנות",
+          "פרסום זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "mode": "playwright_headless",
+          "attached_to_chrome": false,
+          "launched_managed_chromium": true,
+          "cdp_url": null,
+          "route_scope": "context",
+          "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        },
+        "searches": [
+          {
+            "keyword": "זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Page.content: Unable to retrieve content because the page is navigating and changing the content."
+          },
+          {
+            "keyword": "בית בושת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'בית בושת' before the page loaded."
+          },
+          {
+            "keyword": "סרסור",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סרסור' before the page loaded."
+          },
+          {
+            "keyword": "סחר בבני אדם",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סחר בבני אדם' before the page loaded."
+          },
+          {
+            "keyword": "צו סגירה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'צו סגירה' before the page loaded."
+          },
+          {
+            "keyword": "צו הגבלת שימוש",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'צו הגבלת שימוש' before the page loaded."
+          },
+          {
+            "keyword": "ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'ליווי' before the page loaded."
+          },
+          {
+            "keyword": "נערות ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'נערות ליווי' before the page loaded."
+          },
+          {
+            "keyword": "תעשיית המין",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'תעשיית המין' before the page loaded."
+          },
+          {
+            "keyword": "עיסוי חשוד",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'עיסוי חשוד' before the page loaded."
+          },
+          {
+            "keyword": "זירת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'זירת זנות' before the page loaded."
+          },
+          {
+            "keyword": "נישואין בכפייה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'נישואין בכפייה' before the page loaded."
+          },
+          {
+            "keyword": "עבדות מינית",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'עבדות מינית' before the page loaded."
+          },
+          {
+            "keyword": "קורבנות סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'קורבנות סחר' before the page loaded."
+          },
+          {
+            "keyword": "רשת סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'רשת סחר' before the page loaded."
+          },
+          {
+            "keyword": "ניצול מיני",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'ניצול מיני' before the page loaded."
+          },
+          {
+            "keyword": "זנות מקוונת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'זנות מקוונת' before the page loaded."
+          },
+          {
+            "keyword": "קנס צריכת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'קנס צריכת זנות' before the page loaded."
+          },
+          {
+            "keyword": "החזקת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'החזקת מקום לשם זנות' before the page loaded."
+          },
+          {
+            "keyword": "השכרת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'השכרת מקום לשם זנות' before the page loaded."
+          },
+          {
+            "keyword": "פרסום זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'פרסום זנות' before the page loaded."
+          }
+        ],
+        "sections": [
+          {
+            "requested_url": "https://www.mako.co.il/men-men_news",
+            "status": "error",
+            "error": "Mako page never became parseable for men-news section. If Chromium is missing, install it with `python -m playwright install chromium`."
+          }
+        ],
+        "result": {
+          "raw_article_count": 0,
+          "unique_article_count": 0
+        }
+      }
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 3,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "צו הגבלת שימוש",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות",
+          "נישואין בכפייה",
+          "עבדות מינית",
+          "קורבנות סחר",
+          "רשת סחר",
+          "ניצול מיני",
+          "זנות מקוונת",
+          "קנס צריכת זנות",
+          "החזקת מקום לשם זנות",
+          "השכרת מקום לשם זנות",
+          "פרסום זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "mode": "playwright_headless",
+          "attached_to_chrome": false,
+          "launched_managed_chromium": true,
+          "cdp_url": null,
+          "route_scope": "context",
+          "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        }
+      }
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 59,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 68,
+    "classified_article_count": 0,
+    "relevant_article_count": 0,
+    "rejected_article_count": 0,
+    "rejected_by_category": {},
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 0
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    },
+    "classification_output_anomaly": true,
+    "classification_failed": true,
+    "classifier_error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified workspace API usage limits. You will regain access on 2026-06-01 at 00:00 UTC.'}, 'request_id': 'req_011CbQqAa6k3zdjzqijTcLqe'}"
+  },
+  "fallback_classifier_summary": null,
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "mako",
+      "maariv"
+    ],
+    "all_unseen_rejected": false,
+    "no_relevant_items": true,
+    "classification_output_anomaly": true,
+    "classification_failed": true
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "no_relevant_items",
+    "classification_output_anomaly",
+    "classifier_provider_error"
+  ],
+  "warnings": [
+    "source_native_candidate_persistence_failed=HTTPStatusError: Client error '400 Bad Request' for url 'https://ltafdcsnvppvqyoclkod.supabase.co/rest/v1/discovery_runs?on_conflict=run_id'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400; response_body={\"code\":\"PGRST204\",\"details\":null,\"hint\":null,\"message\":\"Could not find the 'skipped_query_count' column of 'discovery_runs' in the schema cache\"}",
+    "Article count (68) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": [
+    "classifier_provider_error=Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified workspace API usage limits. You will regain access on 2026-06-01 at 00:00 UTC.'}, 'request_id': 'req_011CbQqAa6k3zdjzqijTcLqe'}"
+  ]
+}

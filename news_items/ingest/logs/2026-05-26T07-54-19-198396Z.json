@@ -1,0 +1,1742 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-05-26T07:54:19.198396+00:00",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "config_name": "enforcement-news-github",
+  "config_path": "agents/news/github.yaml",
+  "days_searched": 21,
+  "result_summary": "fatal: classifier provider error",
+  "workflow": {
+    "workflow_name": "daily-state-run",
+    "job_name": "run-daily-scan",
+    "run_id": "26439698055",
+    "run_attempt": "1",
+    "repository": "DataHackIL/tfht_enforce_idx",
+    "ref_name": "main",
+    "run_url": "https://github.com/DataHackIL/tfht_enforce_idx/actions/runs/26439698055"
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 70,
+    "unseen_article_count": 68,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 20,
+    "seen_count_after": 20
+  },
+  "source_runtime_debug": {
+    "ynet": {
+      "rss": {
+        "status": "low_coverage",
+        "requested_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+        "final_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+        "status_code": 200,
+        "content_type": "application/xml",
+        "payload_length": 34147,
+        "total_entry_count": 30,
+        "recent_entry_count": 30,
+        "keyword_match_count": 0,
+        "article_count": 0,
+        "bozo": false,
+        "bozo_exception": null
+      },
+      "category": {
+        "status": "keyword_zero",
+        "requested_url": "https://www.ynet.co.il/news/category/190",
+        "final_url": "https://www.ynet.co.il/news/category/190",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "payload_length": 134293,
+        "container_count": 44,
+        "parsed_article_count": 40,
+        "keyword_match_count": 0,
+        "stale_article_count": 0,
+        "article_urls": []
+      },
+      "result": {
+        "rss_article_count": 0,
+        "category_article_count": 0,
+        "deduped_category_article_count": 0,
+        "unique_article_count": 0
+      }
+    },
+    "mako": {
+      "days": 21,
+      "keywords": [
+        "זנות",
+        "בית בושת",
+        "סרסור",
+        "סחר בבני אדם",
+        "צו סגירה",
+        "צו הגבלת שימוש",
+        "ליווי",
+        "נערות ליווי",
+        "תעשיית המין",
+        "עיסוי חשוד",
+        "זירת זנות",
+        "נישואין בכפייה",
+        "עבדות מינית",
+        "קורבנות סחר",
+        "רשת סחר",
+        "ניצול מיני",
+        "זנות מקוונת",
+        "קנס צריכת זנות",
+        "החזקת מקום לשם זנות",
+        "השכרת מקום לשם זנות",
+        "פרסום זנות"
+      ],
+      "browser_session": {
+        "status": "ok",
+        "mode": "playwright_headless",
+        "attached_to_chrome": false,
+        "launched_managed_chromium": true,
+        "cdp_url": null,
+        "route_scope": "context",
+        "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+      },
+      "searches": [
+        {
+          "keyword": "זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Page.content: Unable to retrieve content because the page is navigating and changing the content."
+        },
+        {
+          "keyword": "בית בושת",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'בית בושת' before the page loaded."
+        },
+        {
+          "keyword": "סרסור",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'סרסור' before the page loaded."
+        },
+        {
+          "keyword": "סחר בבני אדם",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'סחר בבני אדם' before the page loaded."
+        },
+        {
+          "keyword": "צו סגירה",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'צו סגירה' before the page loaded."
+        },
+        {
+          "keyword": "צו הגבלת שימוש",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'צו הגבלת שימוש' before the page loaded."
+        },
+        {
+          "keyword": "ליווי",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'ליווי' before the page loaded."
+        },
+        {
+          "keyword": "נערות ליווי",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'נערות ליווי' before the page loaded."
+        },
+        {
+          "keyword": "תעשיית המין",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'תעשיית המין' before the page loaded."
+        },
+        {
+          "keyword": "עיסוי חשוד",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'עיסוי חשוד' before the page loaded."
+        },
+        {
+          "keyword": "זירת זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'זירת זנות' before the page loaded."
+        },
+        {
+          "keyword": "נישואין בכפייה",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'נישואין בכפייה' before the page loaded."
+        },
+        {
+          "keyword": "עבדות מינית",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'עבדות מינית' before the page loaded."
+        },
+        {
+          "keyword": "קורבנות סחר",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'קורבנות סחר' before the page loaded."
+        },
+        {
+          "keyword": "רשת סחר",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'רשת סחר' before the page loaded."
+        },
+        {
+          "keyword": "ניצול מיני",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'ניצול מיני' before the page loaded."
+        },
+        {
+          "keyword": "זנות מקוונת",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'זנות מקוונת' before the page loaded."
+        },
+        {
+          "keyword": "קנס צריכת זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'קנס צריכת זנות' before the page loaded."
+        },
+        {
+          "keyword": "החזקת מקום לשם זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'החזקת מקום לשם זנות' before the page loaded."
+        },
+        {
+          "keyword": "השכרת מקום לשם זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'השכרת מקום לשם זנות' before the page loaded."
+        },
+        {
+          "keyword": "פרסום זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "status": "error",
+          "error": "Mako search navigation timed out for 'פרסום זנות' before the page loaded."
+        }
+      ],
+      "sections": [
+        {
+          "requested_url": "https://www.mako.co.il/men-men_news",
+          "status": "error",
+          "error": "Mako page never became parseable for men-news section. If Chromium is missing, install it with `python -m playwright install chromium`."
+        }
+      ],
+      "result": {
+        "raw_article_count": 0,
+        "unique_article_count": 0
+      }
+    },
+    "haaretz": {
+      "days": 21,
+      "keywords": [
+        "זנות",
+        "בית בושת",
+        "סרסור",
+        "סחר בבני אדם",
+        "צו סגירה",
+        "צו הגבלת שימוש",
+        "ליווי",
+        "נערות ליווי",
+        "תעשיית המין",
+        "עיסוי חשוד",
+        "זירת זנות",
+        "נישואין בכפייה",
+        "עבדות מינית",
+        "קורבנות סחר",
+        "רשת סחר",
+        "ניצול מיני",
+        "זנות מקוונת",
+        "קנס צריכת זנות",
+        "החזקת מקום לשם זנות",
+        "השכרת מקום לשם זנות",
+        "פרסום זנות"
+      ],
+      "browser_session": {
+        "status": "ok",
+        "mode": "playwright_headless",
+        "attached_to_chrome": false,
+        "launched_managed_chromium": true,
+        "cdp_url": null,
+        "route_scope": "context",
+        "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+      }
+    }
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "rss": {
+          "status": "low_coverage",
+          "requested_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "final_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "status_code": 200,
+          "content_type": "application/xml",
+          "payload_length": 34147,
+          "total_entry_count": 30,
+          "recent_entry_count": 30,
+          "keyword_match_count": 0,
+          "article_count": 0,
+          "bozo": false,
+          "bozo_exception": null
+        },
+        "category": {
+          "status": "keyword_zero",
+          "requested_url": "https://www.ynet.co.il/news/category/190",
+          "final_url": "https://www.ynet.co.il/news/category/190",
+          "status_code": 200,
+          "content_type": "text/html; charset=utf-8",
+          "payload_length": 134293,
+          "container_count": 44,
+          "parsed_article_count": 40,
+          "keyword_match_count": 0,
+          "stale_article_count": 0,
+          "article_urls": []
+        },
+        "result": {
+          "rss_article_count": 0,
+          "category_article_count": 0,
+          "deduped_category_article_count": 0,
+          "unique_article_count": 0
+        }
+      }
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 8,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "צו הגבלת שימוש",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות",
+          "נישואין בכפייה",
+          "עבדות מינית",
+          "קורבנות סחר",
+          "רשת סחר",
+          "ניצול מיני",
+          "זנות מקוונת",
+          "קנס צריכת זנות",
+          "החזקת מקום לשם זנות",
+          "השכרת מקום לשם זנות",
+          "פרסום זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "mode": "playwright_headless",
+          "attached_to_chrome": false,
+          "launched_managed_chromium": true,
+          "cdp_url": null,
+          "route_scope": "context",
+          "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        },
+        "searches": [
+          {
+            "keyword": "זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Page.content: Unable to retrieve content because the page is navigating and changing the content."
+          },
+          {
+            "keyword": "בית בושת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'בית בושת' before the page loaded."
+          },
+          {
+            "keyword": "סרסור",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סרסור' before the page loaded."
+          },
+          {
+            "keyword": "סחר בבני אדם",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'סחר בבני אדם' before the page loaded."
+          },
+          {
+            "keyword": "צו סגירה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'צו סגירה' before the page loaded."
+          },
+          {
+            "keyword": "צו הגבלת שימוש",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'צו הגבלת שימוש' before the page loaded."
+          },
+          {
+            "keyword": "ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'ליווי' before the page loaded."
+          },
+          {
+            "keyword": "נערות ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'נערות ליווי' before the page loaded."
+          },
+          {
+            "keyword": "תעשיית המין",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'תעשיית המין' before the page loaded."
+          },
+          {
+            "keyword": "עיסוי חשוד",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'עיסוי חשוד' before the page loaded."
+          },
+          {
+            "keyword": "זירת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'זירת זנות' before the page loaded."
+          },
+          {
+            "keyword": "נישואין בכפייה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'נישואין בכפייה' before the page loaded."
+          },
+          {
+            "keyword": "עבדות מינית",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'עבדות מינית' before the page loaded."
+          },
+          {
+            "keyword": "קורבנות סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'קורבנות סחר' before the page loaded."
+          },
+          {
+            "keyword": "רשת סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'רשת סחר' before the page loaded."
+          },
+          {
+            "keyword": "ניצול מיני",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'ניצול מיני' before the page loaded."
+          },
+          {
+            "keyword": "זנות מקוונת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'זנות מקוונת' before the page loaded."
+          },
+          {
+            "keyword": "קנס צריכת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'קנס צריכת זנות' before the page loaded."
+          },
+          {
+            "keyword": "החזקת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'החזקת מקום לשם זנות' before the page loaded."
+          },
+          {
+            "keyword": "השכרת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'השכרת מקום לשם זנות' before the page loaded."
+          },
+          {
+            "keyword": "פרסום זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "status": "error",
+            "error": "Mako search navigation timed out for 'פרסום זנות' before the page loaded."
+          }
+        ],
+        "sections": [
+          {
+            "requested_url": "https://www.mako.co.il/men-men_news",
+            "status": "error",
+            "error": "Mako page never became parseable for men-news section. If Chromium is missing, install it with `python -m playwright install chromium`."
+          }
+        ],
+        "result": {
+          "raw_article_count": 0,
+          "unique_article_count": 0
+        }
+      }
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 3,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "צו הגבלת שימוש",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות",
+          "נישואין בכפייה",
+          "עבדות מינית",
+          "קורבנות סחר",
+          "רשת סחר",
+          "ניצול מיני",
+          "זנות מקוונת",
+          "קנס צריכת זנות",
+          "החזקת מקום לשם זנות",
+          "השכרת מקום לשם זנות",
+          "פרסום זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "mode": "playwright_headless",
+          "attached_to_chrome": false,
+          "launched_managed_chromium": true,
+          "cdp_url": null,
+          "route_scope": "context",
+          "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        }
+      }
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 59,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 68,
+    "classified_article_count": 0,
+    "relevant_article_count": 0,
+    "rejected_article_count": 0,
+    "rejected_by_category": {},
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 0
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    },
+    "classification_output_anomaly": true,
+    "classification_failed": true,
+    "classifier_error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified workspace API usage limits. You will regain access on 2026-06-01 at 00:00 UTC.'}, 'request_id': 'req_011CbQqAa6k3zdjzqijTcLqe'}"
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "mako",
+      "maariv"
+    ],
+    "all_unseen_rejected": false,
+    "no_relevant_items": true,
+    "classification_output_anomaly": true,
+    "classification_failed": true
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "no_relevant_items",
+    "classification_output_anomaly",
+    "classifier_provider_error"
+  ],
+  "warnings": [
+    "source_native_candidate_persistence_failed=HTTPStatusError: Client error '400 Bad Request' for url 'https://ltafdcsnvppvqyoclkod.supabase.co/rest/v1/discovery_runs?on_conflict=run_id'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400; response_body={\"code\":\"PGRST204\",\"details\":null,\"hint\":null,\"message\":\"Could not find the 'skipped_query_count' column of 'discovery_runs' in the schema cache\"}",
+    "Article count (68) exceeds max_articles threshold (30). Consider adding a pre-filter stage or reducing the number of days/sources. Proceeding with classification anyway."
+  ],
+  "errors": [
+    "classifier_provider_error=Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'You have reached your specified workspace API usage limits. You will regain access on 2026-06-01 at 00:00 UTC.'}, 'request_id': 'req_011CbQqAa6k3zdjzqijTcLqe'}"
+  ],
+  "raw_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3839559",
+      "canonical_url": "https://news.walla.co.il/item/3839559",
+      "title": "המדינה אישרה לאב הקשיש להיכנס לישראל - ללא בניו שילוו אותו מאתיופיה",
+      "snippet": "מלקמו פנטה עלה לישראל מאתיופיה יחד עם אימו, בעוד אביו ואחיו נותרו מאחור. 20 שנה עברו, וכעת פנטה רוצה שאביו יגיע לביקור בארץ, בליווי אחיו שיסייעו לו במהלך המסע - אך המדינה לא מאשרת לאחרונים להגיע. \"אני רק רוצה שאבי יכיר את נכדיו לפני שיהיה מאוחר\", מחה פנטה",
+      "publication_datetime": "2026-05-20T12:48:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3838919",
+      "canonical_url": "https://news.walla.co.il/item/3838919",
+      "title": "בעזרת סוכנת סמויה: כתב אישום נגד צעירה ממעלה אדומים בגין סחר בסמים",
+      "snippet": "צעירה בשנות ה-20 לחייה נעצרה לאחר שנחשפה רשת סחר בסמים. כתב אישום הוגש נגדה לאחר שעל פי החשד, במהלך חודש אפריל ביצעה כמה עסקאות סחר בקנביס בבאר שבע, בשדרות ובנתיבות. עם מעצרה ערכו כוחות המשטרה חיפוש בדירתה וברכבה, שם נתפסו בין היתר כסף בסך אלפי שקלים",
+      "publication_datetime": "2026-05-18T09:11:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3837403",
+      "canonical_url": "https://news.walla.co.il/item/3837403",
+      "title": "עלייה במאות אחוזים באכיפת החוק לאיסור הזנות בישראל בשנת 2025 לעומת 2024",
+      "snippet": "במטה למאבק בסחר בנשים ובזנות טוענים כי המשטרה כמעט אינה מבצעת אכיפה בפריפריה ומתריעים מפני היעדר מדיניות אכיפה ארצית ברורה. בן גביר: המשטרה תמשיך לפעול בנחישות",
+      "publication_datetime": "2026-05-12T11:29:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3837094",
+      "canonical_url": "https://news.walla.co.il/item/3837094",
+      "title": "בפעם השניה השבוע: המסעדה המוכרת באשדוד נסגרה בחשד להעסקת שב\"חים",
+      "snippet": "שלושה שוהים בלתי חוקיים אותרו במסעדת \"רובן\" באשדוד ועל פי החשד הועסקו במקום בניגוד לחוק. השב\"חים שאותרו במסעדה נעצרו והועברו לחקירה. בעקבות האירוע, מפקד מחוז דרום במשטרה חתם על צו סגירה מנהלי למסעדה למשך 30 ימים",
+      "publication_datetime": "2026-05-11T10:37:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3837095",
+      "canonical_url": "https://news.walla.co.il/item/3837095",
+      "title": "מת בכלא הרוצח הסדרתי מוחמד חלבי - שהיה אחראי יחד עם אחיו למסע רציחות אכזרי",
+      "snippet": "האחים מוחמד ומחמוד חלבי, היו אחראים לסדרת רציחות אכזרית שזיעזעה את ישראל לפני 37 שנים. קורבנותיהם התגלו באוקטובר 1989, וכללו שבעה בני אדם - נשים וגברים, יהודים וערבים. המניעים נתפסו כשילוב של סכסוכים כספיים בזנות וסמים. טענות מאוחרות לרקע לאומני לא הוכחו",
+      "publication_datetime": "2026-05-11T10:08:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3836239",
+      "canonical_url": "https://news.walla.co.il/item/3836239",
+      "title": "עבדו ללא אישור באתר בנייה בדרום: ארבעה תושבי השטחים נעצרו",
+      "snippet": "שוטרים איתרו ארבעה שוהים בלתי חוקיים, תושבי השטחים ללא אישורי שהייה, אשר הועסקו באתר בנייה ביישוב ערערה בנגב. הארבעה ומעסיקם נעצרו ועוכבו לחקירה, שבעקבות ממצאיה נחתם צו סגירה מנהלי לאתר למשך 30 יום",
+      "publication_datetime": "2026-05-07T13:15:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3835621",
+      "canonical_url": "https://news.walla.co.il/item/3835621",
+      "title": "צו סגירה הוצא למסעדה המוכרת בתל אביב - לאחר העסקת שב\"חים",
+      "snippet": "שני שוהים בלתי חוקיים אותרו במסעדת \"מון סושי בר\" שברחוב בוגרשוב ועל פי החשד הועסקו במקום בניגוד לחוק. בעלת העסק, תושבת תל אביב, עוכבה לחקירה יחד עם החשודים. מפקד מחוז תל אביב חתם על צו סגירה מנהלי למסעדה למשך 30 ימים",
+      "publication_datetime": "2026-05-05T12:07:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3835623",
+      "canonical_url": "https://news.walla.co.il/item/3835623",
+      "title": "בעקבות הפרסום בוואלה: תוכנית \"תעסוקה שווה\" לאנשים עם מוגבלויות לא תיסגר",
+      "snippet": "התכנית מעניקה מדי שנה ליווי תעסוקתי והשמה לאלפי ישראלים עם מוגבלות, כשבין מקבלי השירות גם נפגעי ה-7 באוקטובר, נפגעי פעולות איבה, נכי צה\"ל, מתמודדי פוסט טראומה ותושבי קו העימות. גורמים המעורים בפרטים אמרו כי ההישג הוא תוצאה ישירה של הלחץ הציבורי והתקשורתי",
+      "publication_datetime": "2026-05-05T13:01:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/news/law/2026-05-12/ty-article/.premium/0000019e-1b99-dfbd-affe-3f9b24360000",
+      "canonical_url": "https://haaretz.co.il/news/law/2026-05-12/ty-article/.premium/0000019e-1b99-dfbd-affe-3f9b24360000",
+      "title": "המשטרה לא אוכפת איסור צריכת זנות בפריפריה, ו־98% מהדו\"חות ניתנו במרכז",
+      "snippet": "במחוזות צפון, דרום וירושלים יחד ניתנו בשנים האחרונות 26 דו\"חות על צריכת שירותי זנות . הזנאים יכולים להמיר את הקנס בהשתתפות בסדנה חינוכית, אך רק 4.5% עשו זאת",
+      "publication_datetime": "2026-05-12T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/literature/tarbut-sifrot/2026-05-19/ty-article/.premium/0000019e-3ecf-d0ff-afbe-7ecf291b0000",
+      "canonical_url": "https://haaretz.co.il/literature/tarbut-sifrot/2026-05-19/ty-article/.premium/0000019e-3ecf-d0ff-afbe-7ecf291b0000",
+      "title": "מובן מאליו שהעגלון היה ספרדי",
+      "snippet": "בסיפורו של דב קמחי, \"אהבה: סיפורו של עגלון\" מתוארת בריאליזם נדיר המציאות הארץ ישראלית בעת מלחמת העולם הראשונה, כשהגברים גויסו בכפייה לצבא הטורקי והנשים נאלצו לעבוד ב זנות",
+      "publication_datetime": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/magazine/ayelet-shani/2026-05-13/ty-article-magazine/.highlight/0000019e-2165-d907-ad9e-3fff500d0000",
+      "canonical_url": "https://haaretz.co.il/magazine/ayelet-shani/2026-05-13/ty-article-magazine/.highlight/0000019e-2165-d907-ad9e-3fff500d0000",
+      "title": "\"ההצעות המגונות בכל מקום. פעם הוזמנתי לבית ומישהו הציע לי בת דודה שלו\"",
+      "snippet": "אלדד גרפונקל נחשף ל זנות בכל פינה במדגסקר, והחליט להפוך למפעל הצלה של איש אחד",
+      "publication_datetime": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112548",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112548",
+      "title": "בגיל 69: הרוצח הסדרתי שזעזע את המדינה מת בכלא",
+      "snippet": "הרוצח הסדרתי מוחמד חלבי, שנידון יחד עם אחיו לשבעה מאסרי עולם על סדרת רציחות אכזרית שזעזעה את המדינה בשנות ה-80, מת בגיל 69 בעודו מרצה מאסר | כל הפרטים",
+      "publication_datetime": "2026-05-11T11:21:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112205",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112205",
+      "title": "רשות המסים במרדף: זה החשוד בהעלמת מס בגובה 19 מיליון שקל",
+      "snippet": "חקירה סמויה שהפכה לגלויה חושפת חשד להונאה רחבת היקף באמצעות זיוף חשבוניות של חברות לגיטימיות. החשוד הובא בפני שופט ושוחרר בתנאים מגבילים בעוד החקירה נגדו נמשכת כעת",
+      "publication_datetime": "2026-05-07T13:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/health/news/article/1113728",
+      "canonical_url": "https://ice.co.il/health/news/article/1113728",
+      "title": "האטליז הפופולרי נסגר מיידית: \"ליקויים תברואתיים חמורים ביותר\"",
+      "snippet": "לאחר ביקורת של משרד הבריאות במקום עלו מספר ליקויים שהובילו לסגירה של המקום. לצד העובדה שהמקום פעל ללא אישור המשרד, אותרו בו גם כשלים חמורים שלא אפשרו את המשך פעילותו",
+      "publication_datetime": "2026-05-20T15:37:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1113407",
+      "canonical_url": "https://ice.co.il/law/news/article/1113407",
+      "title": "בית הקפה האהוב בתל אביב נסגר מיידית: חקירה פלילית נגד הבעלים",
+      "snippet": "במהלך פעילות משטרתית יזומה, אותר במקום שוהה בלתי חוקי שהועסק ללא אישור וסיכן את שלום הציבור. מפקד המחוז חתם על צו סגירה מיידי למקום למשך שלושים יום לצד מעצר של הבעלים",
+      "publication_datetime": "2026-05-18T12:18:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1112598",
+      "canonical_url": "https://ice.co.il/law/news/article/1112598",
+      "title": "המסעדה הפופולרית נסגרת מיידית: \"סיכון ממשי לבטחון הציבור\"",
+      "snippet": "במסגרת פעילות של המשטרה נגד עבירות של שהייה בלתי חוקית, הגיעו השוטרים למסעדה האשדודית ונאלצו לסגור אותה למשך 30 יום לאחר הממצאים שאותרו בה",
+      "publication_datetime": "2026-05-11T15:22:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112507",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112507",
+      "title": "פשיטת ענק על דירה סודית בלב מתחם הבורסה - זה מה שנמצא בתוכו | צפו",
+      "snippet": "כוחות משטרה נאלצו לפרוץ לדירה ברחוב רוזן ברמת גן ששימשה כמרכז הימורים. במקום נתפסו עשרות מחשבים וכסף מזומן, כאשר המפעילים נשלחו למעצר בית ורישיונות המקום בוטלו בצו מנהלי חריג",
+      "publication_datetime": "2026-05-11T02:25:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/food/news/article/1112074",
+      "canonical_url": "https://ice.co.il/food/news/article/1112074",
+      "title": "המסעדה הכי מפורסמת בישראל נסגרת: האם הרשת האהובה בדרך לקריסה?",
+      "snippet": "מכה קשה לרשת המסעדות האהובה: הסניף המרכזי ברמת החייל לא יפתח מחדש את שעריו בעקבות הסתבכות עם החוק ונזקים כלכליים כבדים. האם שאר סניפי המותג בסכנה?",
+      "publication_datetime": "2026-05-06T12:43:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1111919",
+      "canonical_url": "https://ice.co.il/law/news/article/1111919",
+      "title": "מסעדת הסושי האהובה בתל אביב נסגרת מיידית: חקירה פלילית נגד הבעלים",
+      "snippet": "המסעדה הפופולרית שממוקמת בלב העיר נסגרה לאחר שעלה החשד כי היא פועלת בניגוד לחוק ומעסיקה שוהים בלתי חוקיים ברשותה. בפעילות של משטרת ישראל אותרו ונעצרו שני שוהים",
+      "publication_datetime": "2026-05-05T12:48:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114246",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114246",
+      "title": "בנק ירושלים מביס את כל המתחרים: ההפתעה בדוחות והזינוק ברווחים",
+      "snippet": "הבנק מסכם את הרבעון הראשון של שנת 2026 עם רווח נקי של 51.3 מיליון שקל, ומציג נתונים חריגים בתחום הפיקדונות הדיגיטליים וכרטיסי האשראי הנטענים. וגם: כך עקף את כל חמשת הבנקים הגדולים בישראל בסיבוב",
+      "publication_datetime": "2026-05-26T08:02:02.528704+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1114225",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1114225",
+      "title": "הרובוט האנושי מגיע לישראל: זו הרשת שתמכור ב-150 אלף שקל בלבד",
+      "snippet": "רשת מחסני חשמל תחל לשווק בישראל רובוטים מבוססי AI לביצוע מטלות ביתיות, לצד כלבלב רובוטי לליווי רגשי וחליפת שלד חכמה להקלה בהליכה ובטיפוס מדרגות. המכירה תתבצע אונליין בלבד",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114169",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114169",
+      "title": "ענקית האשראי מישראל נחשפת: כך השפיעה המלחמה על הרווחים ב-2026",
+      "snippet": "למרות האטה בפעילות המשק במהלך מבצע שאגת הארי, פנינסולה מסכמת את הרבעון הראשון של 2026 עם נתונים יציבים ומכריזה על חלוקת מיליוני שקלים למשקיעים",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1114142",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1114142",
+      "title": "בהשקעת 14 מיליון שקל: אולם האירועים היוקרתי בישראל נפתח מחדש",
+      "snippet": "מתחם האירועים טרויה עבר מתיחת פנים מקיפה שהופכת אותו לאחד ממתחמי האירועים הכי מרהיבים בישראל בהשקעה של מיליוני שקלים",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1114057",
+      "canonical_url": "https://ice.co.il/media/news/article/1114057",
+      "title": "מהפך בשידורי רדיו ת\"א: השינויים הדרמטיים בלוח השידורים נחשפים",
+      "snippet": "תחנת הרדיו 102 תל אביב מודיעה על מהלך דרמטי נוסף בלוח השידורים שלה, הכולל תוכנית חדשה ושיבוצים חדשים ברצועות היומיות. מי המגישים שיובילו את השינוי?",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114011",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114011",
+      "title": "הפניקס גמא מציגה זינוק של 40 % בתיק האשראי: זה הסכום שגלגלה לכיסה",
+      "snippet": "הפניקס גמא מדווחת על רווח נקי מתואם בגובה של 51 מיליון שקלים, מדובר בצמיחה של 20% ביחס לרבעון המקביל אשתקד. בנוסף, תיק האשראי והערבויות עמד על 5.3 מיליארד שקלים, זינוק של 40% בשנה האחרונה ושל 11% ברבעון האחרון",
+      "publication_datetime": "2026-05-24T14:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/bdispot/news/article/1113975",
+      "canonical_url": "https://ice.co.il/bdispot/news/article/1113975",
+      "title": "לא רק מספרים: צ׳ק ליסט לבחירת רואה חשבון בעידן של אמון",
+      "snippet": "כשבוחרים רואה חשבון, הדיון לרוב מתמקד בשינויים רגולטוריים, בדוחות ובמסים. אבל עבור בעלי עסקים, השאלה האמיתית היא אחרת: איך בוחרים את רואה החשבון שילווה את העסק שלי לאורך זמן לא רק מקצועית, אלא גם אסטרטגית?",
+      "publication_datetime": "2026-05-24T11:31:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1113970",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1113970",
+      "title": "רמי לוי במהלך מתבקש: זו המהפכה בטיסות של ישראייר",
+      "snippet": "חברת התעופה של רמי לוי מציגה ערכת הכנה לטיסה המבוססת על כלים טיפוליים, במטרה להפחית חרדות בקרב ילדים ולהקל על ההתמודדות עם האתגרים החושיים בנמל התעופה ובמטוס",
+      "publication_datetime": "2026-05-24T11:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1113967",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1113967",
+      "title": "בהשקעת כחצי מיליארד שקל: זה הריזורט היוקרתי שיוקם בקרוב בישראל",
+      "snippet": "עם היתר בנייה מלא ומסגרת אשראי של מאות מיליוני שקלים, החלו העבודות על ריזורט ענק בצפון הארץ. אלו הפרטים המלאים על המלון החדש ומתי הוא ייפתח",
+      "publication_datetime": "2026-05-24T10:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1113959",
+      "canonical_url": "https://ice.co.il/finance/news/article/1113959",
+      "title": "מהפכה בשוק האשראי: המהלך שיחסוך מיליארדים לעסקים בישראל",
+      "snippet": "ועדת הכלכלה אישרה את הצעת החוק להקמת מאגר נתוני אשראי לעסקים. המהלך הדרמטי צפוי לחסוך לפחות 1.5 מיליארד שקל בשנה, להגביר תחרות ולהוביל להוזלת יוקר המחיה",
+      "publication_datetime": "2026-05-24T10:10:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1113840",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1113840",
+      "title": "לאחר שנתיים וחצי: ענקית התעופה הטורקית תנחת היום בישראל",
+      "snippet": "החברה הטורקית שעזבה את ישראל מיד עם פרוץ מלחמת 7 באוקטובר, צפויה לנחות היום בארץ. אמנם היא הסירה את ישראל מרשימת הטיסות שלה והודיעה כי אין בכוונתה לשוב לכאן, מגיעה היום לישראל עבור מטרה ספציפית מאוד",
+      "publication_datetime": "2026-05-21T10:13:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113772",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113772",
+      "title": "יובל מעתוק מתפנקת: זה מה שרכשה ב-650 אלף שקל מכספי הזכייה",
+      "snippet": "שנתיים וקצת אחרי שזכתה בתואר היוקרתי וגרפה לכיסה מיליון שקלים, כעת היא חושפת איך בחרה לנצל את הסכום הגדול בצורה החכמה ביותר. הרכש היוקרתי והמשתלם כלל טיסה למדינה השכנה, וחתימה על חוזה נוצץ",
+      "publication_datetime": "2026-05-20T19:51:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1113712",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1113712",
+      "title": "השר בן גביר התעמת עם פעילי המשט הכפותים: \"נגמרה הקייטנה\"",
+      "snippet": "השר לביטחון לאומי הגיע לנמל אשדוד, הניף דגל מול העצורים הכפותים ששכבו על הרצפה ועורר סערה ברשת. אלו האמירות הקשות שהכעיסו חלק מהגולשים",
+      "publication_datetime": "2026-05-20T14:27:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tv/news/article/1113690",
+      "canonical_url": "https://ice.co.il/tv/news/article/1113690",
+      "title": "הג'וב החדש של עמוס תמם: עולה על המגרש",
+      "snippet": "מהבמות של הבימה ישירות לגביע העולם בכדורגל המהלך של המונדיאל שישנה את כל מה שחשבתם על שידורי ספורט",
+      "publication_datetime": "2026-05-20T11:13:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/social/news/article/1113579",
+      "canonical_url": "https://ice.co.il/social/news/article/1113579",
+      "title": "פותחים צ'קים: כמה כסף שמו הסלבס בחתונה של אושר כהן ועדן פינס",
+      "snippet": "אחרי חתונת השנה שאיחדה את הדוגמנית הבינלאומית והזמר המצליח, סרטון חדש חורך את הרשת ובו האורחים המפורסמים עמדו אל מול השאלה הכי חטטנית ומביכה שיש: \"כמה שמתם בצ'ק?\" | כל הפרטים",
+      "publication_datetime": "2026-05-19T17:05:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113518",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113518",
+      "title": "עירום על הבמה מול 20 אלף איש: המופע המטורף של אביהו פנחסוב",
+      "snippet": "לצד עומסי תנועה כבדים ותורים ארוכים בקופות, פסטיבל המוזיקה \"ג'נסיס\" סיפק בסוף השבוע האחרון חוויה סוחפת ואסקפיסטית לחוגגים, והמחירים נחשפים",
+      "publication_datetime": "2026-05-19T10:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/social/news/article/1113489",
+      "canonical_url": "https://ice.co.il/social/news/article/1113489",
+      "title": "אליקו שובר שתיקה: \"מה שמספרים לכם זה קשקוש\"",
+      "snippet": "אחרי הראיון של האקסית שצעירה ממנו ב-27: שדרן הרדיו הוותיק התייצב אמש בחתונה הנוצצת של עדן פינס ואושר כהן, כשהוא מלווה בביתו אלין ושלח רמז עבה: \"אחרי שנפרדים יש לאנשים הרבה מה להגיד, אותי לא תשמעו אומר מילה רעה\"",
+      "publication_datetime": "2026-05-18T22:54:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/all-projects/news/article/1113444",
+      "canonical_url": "https://ice.co.il/all-projects/news/article/1113444",
+      "title": "המהפך של באר יעקב: כך תוכלו למנף את תוכנית המטרו לזכות לדירה בעיר",
+      "snippet": "",
+      "publication_datetime": "2026-05-26T08:02:05.519139+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113393",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113393",
+      "title": "הפיקוח על הבנקים באזהרה: זינוק של 40 % באשראי של הקבלנים",
+      "snippet": "בפיקוח על הבנקים טוענים כי להאטה במספר העסקות לרכישת דירות חדשות, התייקרות עלויות הבנייה ולמבצעי המימון שהציעו היזמים לרוכשים היו השלכות בשנה החולפת",
+      "publication_datetime": "2026-05-19T09:18:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113345",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113345",
+      "title": "שלומי מהמירוץ למיליון על הירידה במשקל: \"אני בשבר\"",
+      "snippet": "אחד המתמודדים האהובים ב\"המירוץ למיליון\", השחקן שלומי יפרח לא מסתיר ושיתף את עוקביו מדוע הוא הפסיק לעת עתה את התהליך של הירידה במשקל",
+      "publication_datetime": "2026-05-17T21:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/digital-140/news/article/1113303",
+      "canonical_url": "https://ice.co.il/digital-140/news/article/1113303",
+      "title": "הענקית Meta בבשורה לישראלים: האירוע המיוחד שיתקיים בתל אביב",
+      "snippet": "חברת Meta בבשורה ליזמים בישראל: ענקית הטכנולוגיה משיקה תוכנית לליווי סטארט-אפים בשלבים מוקדמים. האירוע יתקיים במשרדי החברה בתל אביב, ההרשמה החלה | כל הפרטים",
+      "publication_datetime": "2026-05-17T17:15:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113236",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113236",
+      "title": "עדן הראל ועודד מנשה בעסקת ענק: זה מה שרכשו ביותר מ-7 מיליון שקל",
+      "snippet": "בני הזוג האהובים רכשו מיני פנטהאוז בפרויקט התחדשות עירונית ברעננה. כמה שילמו על הנכס החדש בקומה השישית, ומי האדריכל המפורסם שאחראי על עיצוב הבניין שיוצא כעת לדרך?",
+      "publication_datetime": "2026-05-17T11:14:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/positions/news/article/1113216",
+      "canonical_url": "https://ice.co.il/positions/news/article/1113216",
+      "title": "משרד רואי החשבון ערן בוכריס מתרחב: זו הבכירה החדשה שמצטרפת",
+      "snippet": "פירמת ראיית החשבון והייעוץ האסטרטגי לעסקים של ערן בוכריס ממשיכה להתרחב, ומודיעה ה על מינויה של רו\"ח שרית קירמאיר למנהלת תחום שירותי ה-CFO במיקור חוץ",
+      "publication_datetime": "2026-05-17T09:05:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113194",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113194",
+      "title": "קרן פלס מגיבה לנועם בתן ולמקום השני: \"ישראל משחזרת את ההיסטוריה\"",
+      "snippet": "יחד עם כל עם ישראל, גם הזמרת והיוצרת לא הצליחה לעצור את ההתרגשות ושיתפה את ההישג האדיר של נועם בתן בגמר האירוויזיון. \"איזה לילה מטורף\", כתבה",
+      "publication_datetime": "2026-05-17T07:22:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1113181",
+      "canonical_url": "https://ice.co.il/media/news/article/1113181",
+      "title": "שדר האירוויזיון תחת מתקפה: \"חוסם ומדכא קולות חילונים וליברליים\"",
+      "snippet": "בזמן שנועם בתן הופיע בגמר בווינה, פעיל המחאה נאור נרקיס תקף את בחירת המנחים של כאן 11 וטען כי מדובר ב\"השתלטות\" על אירוע של הקהילה הגאה",
+      "publication_datetime": "2026-05-16T22:56:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113168",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113168",
+      "title": "אירוויזיון 2026",
+      "snippet": "נועם בתן כבש את גמר האירוויזיון: \"מישל\" זכה לתשואות בווינה",
+      "publication_datetime": "2026-05-16T22:31:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113105",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113105",
+      "title": "בנק הפועלים יממן 5.7 מיליארד שקל: תחנת כוח חדשה תוקם בישראל",
+      "snippet": "דליה חברות אנרגיה חתמה על עסקת מימון להקמת תחנת הכוח \"אשכול אבשל\" בהיקף של כ-5.7 מיליארד שקלים עם בנק הפועלים. עובד דבי, מנכ\"ל דליה חברות אנרגיה, הוסיף: \"אנו מקדמים במקביל תכנון הקמת תחנת נחיתה לכבל תת ימי בתחנת אשכול\"",
+      "publication_datetime": "2026-05-15T09:35:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/food/news/article/1113019",
+      "canonical_url": "https://ice.co.il/food/news/article/1113019",
+      "title": "השף אסף גרניט בצעד עסקי מפתיע: זה המותג החדש שהקים",
+      "snippet": "השף המפורסם יוצא מהמטבח ומשתף פעולה עם יזם מוכר להשקת מותג יין חדש בשם ALEF. כמה יעלה לכם הבקבוק הראשון ומה הסיפור המיוחד מאחורי החיבור ליקב הישראלי?",
+      "publication_datetime": "2026-05-14T14:30:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/positions/news/article/1113016",
+      "canonical_url": "https://ice.co.il/positions/news/article/1113016",
+      "title": "אחרי 20 שנה: הבכירה מרשות המסים שחצתה את הקווים",
+      "snippet": "עו״ד יעל נוה, ששימשה ב-9 השנים האחרונות כסגנית בכירה ליועץ המשפטי ברשות המסים והיועצת המשפטית הראשית של מערך המיסוי העקיף האזרחי, מצטרפת כשותפה מובילה למשרד ארנון, תדמור-לוי ותוביל את תחום המיסוי העקיף",
+      "publication_datetime": "2026-05-14T14:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/advertising-marketing/news/article/1113006",
+      "canonical_url": "https://ice.co.il/advertising-marketing/news/article/1113006",
+      "title": "עם שתי מדליות זהב בכיס: משרד היח\"צ החדש של ארגון החרשים בישראל",
+      "snippet": "משרדה של שירן פרץ ינהל את מערך הדוברות של \"אסח\", ומתחיל עם רוח גבית משמעותית: יהודה גרינפלד בן ה-70 קטף שתי מדליות זהב באליפות העולם בשחמט שנערכה בספרד",
+      "publication_datetime": "2026-05-14T13:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1113002",
+      "canonical_url": "https://ice.co.il/finance/news/article/1113002",
+      "title": "ביקור טראמפ בסין: אלו המניות שכדאי לעקוב אחריהן מקרוב",
+      "snippet": "נשיא ארה\"ב נמצא בבייג'ינג לשיחות עם נשיא סין שי ג'ינפינג בליווי של שורת מנכ\"לים בכירים - ובוול סטריט כבר מחפשים מי אלו חברות עשויות להרוויח. מטוסי בואינג, שבבים, חקלאות ורכבים חשמליים - אלו המניות ששווה לשים אליהן לב בימים הקרובים",
+      "publication_datetime": "2026-05-14T12:55:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112819",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112819",
+      "title": "בזמן ההופעה של נועם בתן: לאן נעלמו כל דגלי ישראל מחנות האירוויזיון?",
+      "snippet": "הנציג הישראלי רשם אמש הופעה נדירה במיוחד ואף העפיל לגמר הגדול שייערך ביום שבת. אלא שמעריצים סיפרו כי הפריט הכי חשוב אזל לחלוטין מהמלאי של החנות הרשמית",
+      "publication_datetime": "2026-05-13T08:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112805",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112805",
+      "title": "נועם בתן כבש את בימת האירוויזיון: \"מישל\" זכה לתשואות בווינה",
+      "snippet": "נציג ישראל סיים את הופעתו המרשימה בחצי גמר האירוויזיון 2026 עם ביצוע מצוין לשיר \"מישל\", מול אלפי צופים באולם ה\"שטדהאלה\" בווינה. לצד תשואות רמות נשמעו גם שריקות בוז בודדות, בעוד הרקדנית ליהיא פרויד, שנפצעה בחזרת השופטים, עלתה לבמה כמתוכנן",
+      "publication_datetime": "2026-05-12T23:01:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112781",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112781",
+      "title": "בדרך לבורסה בתל אביב: ענקית הנדל\"ן מגייסת 500 מיליון שקלים",
+      "snippet": "חברת \"איגל פרופרטיז\", המחזיקה בנכסי משרדים בארה\"ב בשווי של כמעט מיליארד דולר, פרסמה טיוטת תשקיף להנפקת אג\"ח ראשונה בישראל. התקבולים מיועדים למחזור חוב קיים של הקבוצה הבינלאומית",
+      "publication_datetime": "2026-05-12T18:57:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112767",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112767",
+      "title": "דנית גרינברג מצטרפת לקשת 12: זה הג'וב החדש שקטפה",
+      "snippet": "תוכנית הריאליטי האהובה \"חתונה ממבט ראשון\" צפויה לצאת לשידור כבר בשבוע הבא. לצידה, תושק גם באפליקציית V1 תוכנית ליווי שתנתח את כל הסיטואציות הכי מרגשות, רומנטיות ומפתיעות שיעלו בתוכנית",
+      "publication_datetime": "2026-05-12T17:04:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1112714",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1112714",
+      "title": "אם יש האטה בשוק הנדל\"ן - איך זה שהאשראי למגורים מזנק?",
+      "snippet": "לפי נתוני בנק ישראל, 39% מסך האשראי העסקה ו-21% מהפרטי ניתן עבור נדל\"ן ובנייה. חברות הנדל\"ן לקחו הרבה יותר אשראי וממנפות את עצמן לדעת. איך מסבירים את זה בבנק ישראל ומה קורה בתחום האשראי הקרקעות",
+      "publication_datetime": "2026-05-13T06:46:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112643",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112643",
+      "title": "בהיקף של 26 מיליון דולר: המהלך של קרן ההון סיכון Skinos Ventures",
+      "snippet": "קרן ההון-סיכון Skinos Ventures השיקה את קרן הבכורה שלה בהיקף של 26 מיליון דולר. הקרן החדשה תשקיע בחברות בשלב הסיד ותתמקד בסטארט-אפים המתמחים בסייבר ובבינה מלאכותית",
+      "publication_datetime": "2026-05-11T21:30:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112538",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112538",
+      "title": "בנק הפועלים בבשורה משמחת: מענקים בסך 305,000 שקלים יחולקו",
+      "snippet": "בנק הפועלים במהלך ענק: בשיתוף עם מיס פיקס - ההרשמה למיזם \"מיס פיקס דה יוניברס 2026\" נפתחה רשמית - אלו הזכאים להגשת מועמדות",
+      "publication_datetime": "2026-05-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1112525",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1112525",
+      "title": "רשת האופנה הפופולארית בישראל מפתיעה: תעשה את זה לראשונה אי פעם",
+      "snippet": "מותג האופנה והבייסיק מרחיב את פעילותו עם השקת קטגוריית TEENS המיועדת לגילאי 13–17. המהלך, המלווה בהשקעה של כ-2.5 מיליון שקל | כל הפרטים",
+      "publication_datetime": "2026-05-11T08:50:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112485",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112485",
+      "title": "אליהו יוסיאן נגד נפתלי בנט: \"נערת ליווי, מוכן לשכב עם כל אחד\"",
+      "snippet": "אליהו יוסיאן, שהפך לאחד הקולות הבולטים בתקשורת מאז ה-7 באוקטובר, יוצא למתקפה חריפה נגד ראש הממשלה לשעבר וטוען שהוא \"נערת ליווי פוליטית\" ו-\"מוכן לשכב עם כל אחד שייתן לו 61 קולות\" | כל הפרטים על התבטאויותיו של הפרשן",
+      "publication_datetime": "2026-05-10T20:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/advertising-marketing/news/article/1112248",
+      "canonical_url": "https://ice.co.il/advertising-marketing/news/article/1112248",
+      "title": "פרסומת השבוע",
+      "snippet": "אייל שני ועומר קולי כובשים את המסכים בקמפיין חדש: פרסומת השבוע",
+      "publication_datetime": "2026-05-08T07:09:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1112197",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1112197",
+      "title": "שער הדולר צונח - וכך אזורים מנסה לפתות רוכשי דירות מחו\"ל",
+      "snippet": "הדולר ירד לשפל, וכפי שפורסם ב-ice הרוכשים האמריקאים בורחים מעסקאות. אזורים גידרה את שער הדולר, אבל השאלה הגדולה היא האם ההטבה, בשווי 4%-3%, היא במקום הנחה או בנוסף לה?",
+      "publication_datetime": "2026-05-07T12:06:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112065",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112065",
+      "title": "מבנק הפועלים למשפחת רוטשילד: זה הבכיר שמצטרף לענקית ההשקעות",
+      "snippet": "חטיבת ניהול העושר של Rothschild & Co  מינתה את הבכיר לשעבר בבנק הפועלים, אורן בוכמן, למנהל לקוחות בכיר, כחלק מהמשך הרחבת נוכחותה של החברה בישראל",
+      "publication_datetime": "2026-05-06T11:37:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112061",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112061",
+      "title": "קרן פלס ושירי מימון מבקשות עזרה בתרומות: \"מציאות מורכבת\"",
+      "snippet": "שופטות הכוכב הבא יגיעו לערב הגאלה השנתי של עמותת גדולים מהחיים באוניברסיטת תל אביב הבנחיית צביקה הדר. כל ההכנסות מהאירוע ייתרמו למימון תרופות וטיפולים מצילי חיים עבור ילדים חולי סרטן ומשפחותיהם ברחבי הארץ.",
+      "publication_datetime": "2026-05-06T11:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1111981",
+      "canonical_url": "https://ice.co.il/media/news/article/1111981",
+      "title": "פרטנר במהלך דרמטי: זה מה שיקרה כשתתקשרו למוקד השירות",
+      "snippet": "החברה משיקה את בר, רומי ורותם: סוכנות בינה מלאכותית שיענו לכם בטלפון ובוואטסאפ 24/7. אלו התחומים שבהם כבר לא תצטרכו להמתין לנציג אנושי כדי לקבל פתרון מלא",
+      "publication_datetime": "2026-05-05T20:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1111943",
+      "canonical_url": "https://ice.co.il/media/news/article/1111943",
+      "title": "צפו",
+      "snippet": "גיא פלג הגן על מרדכי דוד: כתב חדשות 12 בהתבטאות חריגה במיוחד",
+      "publication_datetime": "2026-05-05T15:16:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1111929",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1111929",
+      "title": "מעיין אדם נכנסת לענף הנדל\"ן: \"זוכים לקנות דירה במחיר נגיש\"",
+      "snippet": "מועדון הלקוחות \"מאמי\" של מעיין אדן ובוני התיכון בשיתוף פעולה אסטרטגי ראשון מסוגו בישראל. במסגרת המהלך ישווקו עשרות דירות בפרויקט ענק במרכז הארץ, עם תנאי מימון חריגים ומחיר סופי ללא הצמדה למדד",
+      "publication_datetime": "2026-05-05T16:16:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1111926",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1111926",
+      "title": "בשורה אדירה להמוני ישראלים: מענקים בהיקף חצי מיליארד שקל",
+      "snippet": "מנגנון תמיכה חדש אושר עבור עסקים הפועלים בסביבת עבודות התשתית של המטרו. המתווה כולל שלושה מענקים שונים ותשלום שוטף במטרה למנוע קריסה כלכלית כפי שקרה בקו האדום",
+      "publication_datetime": "2026-05-05T13:21:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1111902",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1111902",
+      "title": "היישוב היוקרתי בדרך לשינוי: 320 דירות בדרך - ואלה המחירים",
+      "snippet": "חברת שיכון ובינוי תבנה דירות באחד היישובים הכי פסטורליים ויוקרתיים בשרון, שמכיל בעיקר צמודי קרקע. כמה עולה דירה באזור ומה חושב המנכ\"ל שלה על התוכנית?",
+      "publication_datetime": "2026-05-05T13:50:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1111877",
+      "canonical_url": "https://ice.co.il/culture/news/article/1111877",
+      "title": "איתי לוי בבשורת ענק: \"תעשו טובה לעצמכם\"",
+      "snippet": "איתי לוי נערך למופע ענק באמפי מאקס. אלא שהפעם הזמר המצליח מבטיח חוויה שונה לגמרי: \"אירגנתי לכם שקיעה קטלנית\". הנה כל מה שיקרה לפני שהמיקרופון יהיה בכלל דולק | כל הפרטים",
+      "publication_datetime": "2026-05-05T08:24:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1112282",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1112282",
+      "title": "רמי לוי מרסק מחיר למותג הכי מבוקש: 2,990 שקל בלבד",
+      "snippet": "רשת \"רמי לוי סטוק\" ממשיכה להפתיע עם מבצעי ענק: שואב Dreame X50 Ultra Complete נמכר ב־2,990 שקל, אייפון 17 ב־2,600 שקל. אלו מבצעי השבוע ברשת החדשה שכבשה את איזור השרון עם הסניף הראשון בישראל",
+      "publication_datetime": "2026-05-07T22:58:00+00:00"
+    }
+  ],
+  "unseen_articles": [
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3839559",
+      "canonical_url": "https://news.walla.co.il/item/3839559",
+      "title": "המדינה אישרה לאב הקשיש להיכנס לישראל - ללא בניו שילוו אותו מאתיופיה",
+      "snippet": "מלקמו פנטה עלה לישראל מאתיופיה יחד עם אימו, בעוד אביו ואחיו נותרו מאחור. 20 שנה עברו, וכעת פנטה רוצה שאביו יגיע לביקור בארץ, בליווי אחיו שיסייעו לו במהלך המסע - אך המדינה לא מאשרת לאחרונים להגיע. \"אני רק רוצה שאבי יכיר את נכדיו לפני שיהיה מאוחר\", מחה פנטה",
+      "publication_datetime": "2026-05-20T12:48:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3838919",
+      "canonical_url": "https://news.walla.co.il/item/3838919",
+      "title": "בעזרת סוכנת סמויה: כתב אישום נגד צעירה ממעלה אדומים בגין סחר בסמים",
+      "snippet": "צעירה בשנות ה-20 לחייה נעצרה לאחר שנחשפה רשת סחר בסמים. כתב אישום הוגש נגדה לאחר שעל פי החשד, במהלך חודש אפריל ביצעה כמה עסקאות סחר בקנביס בבאר שבע, בשדרות ובנתיבות. עם מעצרה ערכו כוחות המשטרה חיפוש בדירתה וברכבה, שם נתפסו בין היתר כסף בסך אלפי שקלים",
+      "publication_datetime": "2026-05-18T09:11:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3837094",
+      "canonical_url": "https://news.walla.co.il/item/3837094",
+      "title": "בפעם השניה השבוע: המסעדה המוכרת באשדוד נסגרה בחשד להעסקת שב\"חים",
+      "snippet": "שלושה שוהים בלתי חוקיים אותרו במסעדת \"רובן\" באשדוד ועל פי החשד הועסקו במקום בניגוד לחוק. השב\"חים שאותרו במסעדה נעצרו והועברו לחקירה. בעקבות האירוע, מפקד מחוז דרום במשטרה חתם על צו סגירה מנהלי למסעדה למשך 30 ימים",
+      "publication_datetime": "2026-05-11T10:37:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3837095",
+      "canonical_url": "https://news.walla.co.il/item/3837095",
+      "title": "מת בכלא הרוצח הסדרתי מוחמד חלבי - שהיה אחראי יחד עם אחיו למסע רציחות אכזרי",
+      "snippet": "האחים מוחמד ומחמוד חלבי, היו אחראים לסדרת רציחות אכזרית שזיעזעה את ישראל לפני 37 שנים. קורבנותיהם התגלו באוקטובר 1989, וכללו שבעה בני אדם - נשים וגברים, יהודים וערבים. המניעים נתפסו כשילוב של סכסוכים כספיים בזנות וסמים. טענות מאוחרות לרקע לאומני לא הוכחו",
+      "publication_datetime": "2026-05-11T10:08:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3836239",
+      "canonical_url": "https://news.walla.co.il/item/3836239",
+      "title": "עבדו ללא אישור באתר בנייה בדרום: ארבעה תושבי השטחים נעצרו",
+      "snippet": "שוטרים איתרו ארבעה שוהים בלתי חוקיים, תושבי השטחים ללא אישורי שהייה, אשר הועסקו באתר בנייה ביישוב ערערה בנגב. הארבעה ומעסיקם נעצרו ועוכבו לחקירה, שבעקבות ממצאיה נחתם צו סגירה מנהלי לאתר למשך 30 יום",
+      "publication_datetime": "2026-05-07T13:15:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3835621",
+      "canonical_url": "https://news.walla.co.il/item/3835621",
+      "title": "צו סגירה הוצא למסעדה המוכרת בתל אביב - לאחר העסקת שב\"חים",
+      "snippet": "שני שוהים בלתי חוקיים אותרו במסעדת \"מון סושי בר\" שברחוב בוגרשוב ועל פי החשד הועסקו במקום בניגוד לחוק. בעלת העסק, תושבת תל אביב, עוכבה לחקירה יחד עם החשודים. מפקד מחוז תל אביב חתם על צו סגירה מנהלי למסעדה למשך 30 ימים",
+      "publication_datetime": "2026-05-05T12:07:00+00:00"
+    },
+    {
+      "source_name": "walla",
+      "url": "https://news.walla.co.il/item/3835623",
+      "canonical_url": "https://news.walla.co.il/item/3835623",
+      "title": "בעקבות הפרסום בוואלה: תוכנית \"תעסוקה שווה\" לאנשים עם מוגבלויות לא תיסגר",
+      "snippet": "התכנית מעניקה מדי שנה ליווי תעסוקתי והשמה לאלפי ישראלים עם מוגבלות, כשבין מקבלי השירות גם נפגעי ה-7 באוקטובר, נפגעי פעולות איבה, נכי צה\"ל, מתמודדי פוסט טראומה ותושבי קו העימות. גורמים המעורים בפרטים אמרו כי ההישג הוא תוצאה ישירה של הלחץ הציבורי והתקשורתי",
+      "publication_datetime": "2026-05-05T13:01:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/literature/tarbut-sifrot/2026-05-19/ty-article/.premium/0000019e-3ecf-d0ff-afbe-7ecf291b0000",
+      "canonical_url": "https://haaretz.co.il/literature/tarbut-sifrot/2026-05-19/ty-article/.premium/0000019e-3ecf-d0ff-afbe-7ecf291b0000",
+      "title": "מובן מאליו שהעגלון היה ספרדי",
+      "snippet": "בסיפורו של דב קמחי, \"אהבה: סיפורו של עגלון\" מתוארת בריאליזם נדיר המציאות הארץ ישראלית בעת מלחמת העולם הראשונה, כשהגברים גויסו בכפייה לצבא הטורקי והנשים נאלצו לעבוד ב זנות",
+      "publication_datetime": "2026-05-19T00:00:00+00:00"
+    },
+    {
+      "source_name": "haaretz",
+      "url": "https://www.haaretz.co.il/magazine/ayelet-shani/2026-05-13/ty-article-magazine/.highlight/0000019e-2165-d907-ad9e-3fff500d0000",
+      "canonical_url": "https://haaretz.co.il/magazine/ayelet-shani/2026-05-13/ty-article-magazine/.highlight/0000019e-2165-d907-ad9e-3fff500d0000",
+      "title": "\"ההצעות המגונות בכל מקום. פעם הוזמנתי לבית ומישהו הציע לי בת דודה שלו\"",
+      "snippet": "אלדד גרפונקל נחשף ל זנות בכל פינה במדגסקר, והחליט להפוך למפעל הצלה של איש אחד",
+      "publication_datetime": "2026-05-13T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112548",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112548",
+      "title": "בגיל 69: הרוצח הסדרתי שזעזע את המדינה מת בכלא",
+      "snippet": "הרוצח הסדרתי מוחמד חלבי, שנידון יחד עם אחיו לשבעה מאסרי עולם על סדרת רציחות אכזרית שזעזעה את המדינה בשנות ה-80, מת בגיל 69 בעודו מרצה מאסר | כל הפרטים",
+      "publication_datetime": "2026-05-11T11:21:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112205",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112205",
+      "title": "רשות המסים במרדף: זה החשוד בהעלמת מס בגובה 19 מיליון שקל",
+      "snippet": "חקירה סמויה שהפכה לגלויה חושפת חשד להונאה רחבת היקף באמצעות זיוף חשבוניות של חברות לגיטימיות. החשוד הובא בפני שופט ושוחרר בתנאים מגבילים בעוד החקירה נגדו נמשכת כעת",
+      "publication_datetime": "2026-05-07T13:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/health/news/article/1113728",
+      "canonical_url": "https://ice.co.il/health/news/article/1113728",
+      "title": "האטליז הפופולרי נסגר מיידית: \"ליקויים תברואתיים חמורים ביותר\"",
+      "snippet": "לאחר ביקורת של משרד הבריאות במקום עלו מספר ליקויים שהובילו לסגירה של המקום. לצד העובדה שהמקום פעל ללא אישור המשרד, אותרו בו גם כשלים חמורים שלא אפשרו את המשך פעילותו",
+      "publication_datetime": "2026-05-20T15:37:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1113407",
+      "canonical_url": "https://ice.co.il/law/news/article/1113407",
+      "title": "בית הקפה האהוב בתל אביב נסגר מיידית: חקירה פלילית נגד הבעלים",
+      "snippet": "במהלך פעילות משטרתית יזומה, אותר במקום שוהה בלתי חוקי שהועסק ללא אישור וסיכן את שלום הציבור. מפקד המחוז חתם על צו סגירה מיידי למקום למשך שלושים יום לצד מעצר של הבעלים",
+      "publication_datetime": "2026-05-18T12:18:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1112598",
+      "canonical_url": "https://ice.co.il/law/news/article/1112598",
+      "title": "המסעדה הפופולרית נסגרת מיידית: \"סיכון ממשי לבטחון הציבור\"",
+      "snippet": "במסגרת פעילות של המשטרה נגד עבירות של שהייה בלתי חוקית, הגיעו השוטרים למסעדה האשדודית ונאלצו לסגור אותה למשך 30 יום לאחר הממצאים שאותרו בה",
+      "publication_datetime": "2026-05-11T15:22:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112507",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112507",
+      "title": "פשיטת ענק על דירה סודית בלב מתחם הבורסה - זה מה שנמצא בתוכו | צפו",
+      "snippet": "כוחות משטרה נאלצו לפרוץ לדירה ברחוב רוזן ברמת גן ששימשה כמרכז הימורים. במקום נתפסו עשרות מחשבים וכסף מזומן, כאשר המפעילים נשלחו למעצר בית ורישיונות המקום בוטלו בצו מנהלי חריג",
+      "publication_datetime": "2026-05-11T02:25:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/food/news/article/1112074",
+      "canonical_url": "https://ice.co.il/food/news/article/1112074",
+      "title": "המסעדה הכי מפורסמת בישראל נסגרת: האם הרשת האהובה בדרך לקריסה?",
+      "snippet": "מכה קשה לרשת המסעדות האהובה: הסניף המרכזי ברמת החייל לא יפתח מחדש את שעריו בעקבות הסתבכות עם החוק ונזקים כלכליים כבדים. האם שאר סניפי המותג בסכנה?",
+      "publication_datetime": "2026-05-06T12:43:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/law/news/article/1111919",
+      "canonical_url": "https://ice.co.il/law/news/article/1111919",
+      "title": "מסעדת הסושי האהובה בתל אביב נסגרת מיידית: חקירה פלילית נגד הבעלים",
+      "snippet": "המסעדה הפופולרית שממוקמת בלב העיר נסגרה לאחר שעלה החשד כי היא פועלת בניגוד לחוק ומעסיקה שוהים בלתי חוקיים ברשותה. בפעילות של משטרת ישראל אותרו ונעצרו שני שוהים",
+      "publication_datetime": "2026-05-05T12:48:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114246",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114246",
+      "title": "בנק ירושלים מביס את כל המתחרים: ההפתעה בדוחות והזינוק ברווחים",
+      "snippet": "הבנק מסכם את הרבעון הראשון של שנת 2026 עם רווח נקי של 51.3 מיליון שקל, ומציג נתונים חריגים בתחום הפיקדונות הדיגיטליים וכרטיסי האשראי הנטענים. וגם: כך עקף את כל חמשת הבנקים הגדולים בישראל בסיבוב",
+      "publication_datetime": "2026-05-26T08:02:02.528704+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1114225",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1114225",
+      "title": "הרובוט האנושי מגיע לישראל: זו הרשת שתמכור ב-150 אלף שקל בלבד",
+      "snippet": "רשת מחסני חשמל תחל לשווק בישראל רובוטים מבוססי AI לביצוע מטלות ביתיות, לצד כלבלב רובוטי לליווי רגשי וחליפת שלד חכמה להקלה בהליכה ובטיפוס מדרגות. המכירה תתבצע אונליין בלבד",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114169",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114169",
+      "title": "ענקית האשראי מישראל נחשפת: כך השפיעה המלחמה על הרווחים ב-2026",
+      "snippet": "למרות האטה בפעילות המשק במהלך מבצע שאגת הארי, פנינסולה מסכמת את הרבעון הראשון של 2026 עם נתונים יציבים ומכריזה על חלוקת מיליוני שקלים למשקיעים",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1114142",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1114142",
+      "title": "בהשקעת 14 מיליון שקל: אולם האירועים היוקרתי בישראל נפתח מחדש",
+      "snippet": "מתחם האירועים טרויה עבר מתיחת פנים מקיפה שהופכת אותו לאחד ממתחמי האירועים הכי מרהיבים בישראל בהשקעה של מיליוני שקלים",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1114057",
+      "canonical_url": "https://ice.co.il/media/news/article/1114057",
+      "title": "מהפך בשידורי רדיו ת\"א: השינויים הדרמטיים בלוח השידורים נחשפים",
+      "snippet": "תחנת הרדיו 102 תל אביב מודיעה על מהלך דרמטי נוסף בלוח השידורים שלה, הכולל תוכנית חדשה ושיבוצים חדשים ברצועות היומיות. מי המגישים שיובילו את השינוי?",
+      "publication_datetime": "2026-05-25T00:00:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1114011",
+      "canonical_url": "https://ice.co.il/finance/news/article/1114011",
+      "title": "הפניקס גמא מציגה זינוק של 40 % בתיק האשראי: זה הסכום שגלגלה לכיסה",
+      "snippet": "הפניקס גמא מדווחת על רווח נקי מתואם בגובה של 51 מיליון שקלים, מדובר בצמיחה של 20% ביחס לרבעון המקביל אשתקד. בנוסף, תיק האשראי והערבויות עמד על 5.3 מיליארד שקלים, זינוק של 40% בשנה האחרונה ושל 11% ברבעון האחרון",
+      "publication_datetime": "2026-05-24T14:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/bdispot/news/article/1113975",
+      "canonical_url": "https://ice.co.il/bdispot/news/article/1113975",
+      "title": "לא רק מספרים: צ׳ק ליסט לבחירת רואה חשבון בעידן של אמון",
+      "snippet": "כשבוחרים רואה חשבון, הדיון לרוב מתמקד בשינויים רגולטוריים, בדוחות ובמסים. אבל עבור בעלי עסקים, השאלה האמיתית היא אחרת: איך בוחרים את רואה החשבון שילווה את העסק שלי לאורך זמן לא רק מקצועית, אלא גם אסטרטגית?",
+      "publication_datetime": "2026-05-24T11:31:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1113970",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1113970",
+      "title": "רמי לוי במהלך מתבקש: זו המהפכה בטיסות של ישראייר",
+      "snippet": "חברת התעופה של רמי לוי מציגה ערכת הכנה לטיסה המבוססת על כלים טיפוליים, במטרה להפחית חרדות בקרב ילדים ולהקל על ההתמודדות עם האתגרים החושיים בנמל התעופה ובמטוס",
+      "publication_datetime": "2026-05-24T11:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tourism/news/article/1113967",
+      "canonical_url": "https://ice.co.il/tourism/news/article/1113967",
+      "title": "בהשקעת כחצי מיליארד שקל: זה הריזורט היוקרתי שיוקם בקרוב בישראל",
+      "snippet": "עם היתר בנייה מלא ומסגרת אשראי של מאות מיליוני שקלים, החלו העבודות על ריזורט ענק בצפון הארץ. אלו הפרטים המלאים על המלון החדש ומתי הוא ייפתח",
+      "publication_datetime": "2026-05-24T10:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1113959",
+      "canonical_url": "https://ice.co.il/finance/news/article/1113959",
+      "title": "מהפכה בשוק האשראי: המהלך שיחסוך מיליארדים לעסקים בישראל",
+      "snippet": "ועדת הכלכלה אישרה את הצעת החוק להקמת מאגר נתוני אשראי לעסקים. המהלך הדרמטי צפוי לחסוך לפחות 1.5 מיליארד שקל בשנה, להגביר תחרות ולהוביל להוזלת יוקר המחיה",
+      "publication_datetime": "2026-05-24T10:10:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1113840",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1113840",
+      "title": "לאחר שנתיים וחצי: ענקית התעופה הטורקית תנחת היום בישראל",
+      "snippet": "החברה הטורקית שעזבה את ישראל מיד עם פרוץ מלחמת 7 באוקטובר, צפויה לנחות היום בארץ. אמנם היא הסירה את ישראל מרשימת הטיסות שלה והודיעה כי אין בכוונתה לשוב לכאן, מגיעה היום לישראל עבור מטרה ספציפית מאוד",
+      "publication_datetime": "2026-05-21T10:13:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113772",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113772",
+      "title": "יובל מעתוק מתפנקת: זה מה שרכשה ב-650 אלף שקל מכספי הזכייה",
+      "snippet": "שנתיים וקצת אחרי שזכתה בתואר היוקרתי וגרפה לכיסה מיליון שקלים, כעת היא חושפת איך בחרה לנצל את הסכום הגדול בצורה החכמה ביותר. הרכש היוקרתי והמשתלם כלל טיסה למדינה השכנה, וחתימה על חוזה נוצץ",
+      "publication_datetime": "2026-05-20T19:51:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1113712",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1113712",
+      "title": "השר בן גביר התעמת עם פעילי המשט הכפותים: \"נגמרה הקייטנה\"",
+      "snippet": "השר לביטחון לאומי הגיע לנמל אשדוד, הניף דגל מול העצורים הכפותים ששכבו על הרצפה ועורר סערה ברשת. אלו האמירות הקשות שהכעיסו חלק מהגולשים",
+      "publication_datetime": "2026-05-20T14:27:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/tv/news/article/1113690",
+      "canonical_url": "https://ice.co.il/tv/news/article/1113690",
+      "title": "הג'וב החדש של עמוס תמם: עולה על המגרש",
+      "snippet": "מהבמות של הבימה ישירות לגביע העולם בכדורגל המהלך של המונדיאל שישנה את כל מה שחשבתם על שידורי ספורט",
+      "publication_datetime": "2026-05-20T11:13:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/social/news/article/1113579",
+      "canonical_url": "https://ice.co.il/social/news/article/1113579",
+      "title": "פותחים צ'קים: כמה כסף שמו הסלבס בחתונה של אושר כהן ועדן פינס",
+      "snippet": "אחרי חתונת השנה שאיחדה את הדוגמנית הבינלאומית והזמר המצליח, סרטון חדש חורך את הרשת ובו האורחים המפורסמים עמדו אל מול השאלה הכי חטטנית ומביכה שיש: \"כמה שמתם בצ'ק?\" | כל הפרטים",
+      "publication_datetime": "2026-05-19T17:05:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113518",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113518",
+      "title": "עירום על הבמה מול 20 אלף איש: המופע המטורף של אביהו פנחסוב",
+      "snippet": "לצד עומסי תנועה כבדים ותורים ארוכים בקופות, פסטיבל המוזיקה \"ג'נסיס\" סיפק בסוף השבוע האחרון חוויה סוחפת ואסקפיסטית לחוגגים, והמחירים נחשפים",
+      "publication_datetime": "2026-05-19T10:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/social/news/article/1113489",
+      "canonical_url": "https://ice.co.il/social/news/article/1113489",
+      "title": "אליקו שובר שתיקה: \"מה שמספרים לכם זה קשקוש\"",
+      "snippet": "אחרי הראיון של האקסית שצעירה ממנו ב-27: שדרן הרדיו הוותיק התייצב אמש בחתונה הנוצצת של עדן פינס ואושר כהן, כשהוא מלווה בביתו אלין ושלח רמז עבה: \"אחרי שנפרדים יש לאנשים הרבה מה להגיד, אותי לא תשמעו אומר מילה רעה\"",
+      "publication_datetime": "2026-05-18T22:54:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/all-projects/news/article/1113444",
+      "canonical_url": "https://ice.co.il/all-projects/news/article/1113444",
+      "title": "המהפך של באר יעקב: כך תוכלו למנף את תוכנית המטרו לזכות לדירה בעיר",
+      "snippet": "",
+      "publication_datetime": "2026-05-26T08:02:05.519139+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113393",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113393",
+      "title": "הפיקוח על הבנקים באזהרה: זינוק של 40 % באשראי של הקבלנים",
+      "snippet": "בפיקוח על הבנקים טוענים כי להאטה במספר העסקות לרכישת דירות חדשות, התייקרות עלויות הבנייה ולמבצעי המימון שהציעו היזמים לרוכשים היו השלכות בשנה החולפת",
+      "publication_datetime": "2026-05-19T09:18:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113345",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113345",
+      "title": "שלומי מהמירוץ למיליון על הירידה במשקל: \"אני בשבר\"",
+      "snippet": "אחד המתמודדים האהובים ב\"המירוץ למיליון\", השחקן שלומי יפרח לא מסתיר ושיתף את עוקביו מדוע הוא הפסיק לעת עתה את התהליך של הירידה במשקל",
+      "publication_datetime": "2026-05-17T21:58:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/digital-140/news/article/1113303",
+      "canonical_url": "https://ice.co.il/digital-140/news/article/1113303",
+      "title": "הענקית Meta בבשורה לישראלים: האירוע המיוחד שיתקיים בתל אביב",
+      "snippet": "חברת Meta בבשורה ליזמים בישראל: ענקית הטכנולוגיה משיקה תוכנית לליווי סטארט-אפים בשלבים מוקדמים. האירוע יתקיים במשרדי החברה בתל אביב, ההרשמה החלה | כל הפרטים",
+      "publication_datetime": "2026-05-17T17:15:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113236",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113236",
+      "title": "עדן הראל ועודד מנשה בעסקת ענק: זה מה שרכשו ביותר מ-7 מיליון שקל",
+      "snippet": "בני הזוג האהובים רכשו מיני פנטהאוז בפרויקט התחדשות עירונית ברעננה. כמה שילמו על הנכס החדש בקומה השישית, ומי האדריכל המפורסם שאחראי על עיצוב הבניין שיוצא כעת לדרך?",
+      "publication_datetime": "2026-05-17T11:14:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/positions/news/article/1113216",
+      "canonical_url": "https://ice.co.il/positions/news/article/1113216",
+      "title": "משרד רואי החשבון ערן בוכריס מתרחב: זו הבכירה החדשה שמצטרפת",
+      "snippet": "פירמת ראיית החשבון והייעוץ האסטרטגי לעסקים של ערן בוכריס ממשיכה להתרחב, ומודיעה ה על מינויה של רו\"ח שרית קירמאיר למנהלת תחום שירותי ה-CFO במיקור חוץ",
+      "publication_datetime": "2026-05-17T09:05:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113194",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113194",
+      "title": "קרן פלס מגיבה לנועם בתן ולמקום השני: \"ישראל משחזרת את ההיסטוריה\"",
+      "snippet": "יחד עם כל עם ישראל, גם הזמרת והיוצרת לא הצליחה לעצור את ההתרגשות ושיתפה את ההישג האדיר של נועם בתן בגמר האירוויזיון. \"איזה לילה מטורף\", כתבה",
+      "publication_datetime": "2026-05-17T07:22:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1113181",
+      "canonical_url": "https://ice.co.il/media/news/article/1113181",
+      "title": "שדר האירוויזיון תחת מתקפה: \"חוסם ומדכא קולות חילונים וליברליים\"",
+      "snippet": "בזמן שנועם בתן הופיע בגמר בווינה, פעיל המחאה נאור נרקיס תקף את בחירת המנחים של כאן 11 וטען כי מדובר ב\"השתלטות\" על אירוע של הקהילה הגאה",
+      "publication_datetime": "2026-05-16T22:56:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1113168",
+      "canonical_url": "https://ice.co.il/culture/news/article/1113168",
+      "title": "אירוויזיון 2026",
+      "snippet": "נועם בתן כבש את גמר האירוויזיון: \"מישל\" זכה לתשואות בווינה",
+      "publication_datetime": "2026-05-16T22:31:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1113105",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1113105",
+      "title": "בנק הפועלים יממן 5.7 מיליארד שקל: תחנת כוח חדשה תוקם בישראל",
+      "snippet": "דליה חברות אנרגיה חתמה על עסקת מימון להקמת תחנת הכוח \"אשכול אבשל\" בהיקף של כ-5.7 מיליארד שקלים עם בנק הפועלים. עובד דבי, מנכ\"ל דליה חברות אנרגיה, הוסיף: \"אנו מקדמים במקביל תכנון הקמת תחנת נחיתה לכבל תת ימי בתחנת אשכול\"",
+      "publication_datetime": "2026-05-15T09:35:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/food/news/article/1113019",
+      "canonical_url": "https://ice.co.il/food/news/article/1113019",
+      "title": "השף אסף גרניט בצעד עסקי מפתיע: זה המותג החדש שהקים",
+      "snippet": "השף המפורסם יוצא מהמטבח ומשתף פעולה עם יזם מוכר להשקת מותג יין חדש בשם ALEF. כמה יעלה לכם הבקבוק הראשון ומה הסיפור המיוחד מאחורי החיבור ליקב הישראלי?",
+      "publication_datetime": "2026-05-14T14:30:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/positions/news/article/1113016",
+      "canonical_url": "https://ice.co.il/positions/news/article/1113016",
+      "title": "אחרי 20 שנה: הבכירה מרשות המסים שחצתה את הקווים",
+      "snippet": "עו״ד יעל נוה, ששימשה ב-9 השנים האחרונות כסגנית בכירה ליועץ המשפטי ברשות המסים והיועצת המשפטית הראשית של מערך המיסוי העקיף האזרחי, מצטרפת כשותפה מובילה למשרד ארנון, תדמור-לוי ותוביל את תחום המיסוי העקיף",
+      "publication_datetime": "2026-05-14T14:07:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/advertising-marketing/news/article/1113006",
+      "canonical_url": "https://ice.co.il/advertising-marketing/news/article/1113006",
+      "title": "עם שתי מדליות זהב בכיס: משרד היח\"צ החדש של ארגון החרשים בישראל",
+      "snippet": "משרדה של שירן פרץ ינהל את מערך הדוברות של \"אסח\", ומתחיל עם רוח גבית משמעותית: יהודה גרינפלד בן ה-70 קטף שתי מדליות זהב באליפות העולם בשחמט שנערכה בספרד",
+      "publication_datetime": "2026-05-14T13:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1113002",
+      "canonical_url": "https://ice.co.il/finance/news/article/1113002",
+      "title": "ביקור טראמפ בסין: אלו המניות שכדאי לעקוב אחריהן מקרוב",
+      "snippet": "נשיא ארה\"ב נמצא בבייג'ינג לשיחות עם נשיא סין שי ג'ינפינג בליווי של שורת מנכ\"לים בכירים - ובוול סטריט כבר מחפשים מי אלו חברות עשויות להרוויח. מטוסי בואינג, שבבים, חקלאות ורכבים חשמליים - אלו המניות ששווה לשים אליהן לב בימים הקרובים",
+      "publication_datetime": "2026-05-14T12:55:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112819",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112819",
+      "title": "בזמן ההופעה של נועם בתן: לאן נעלמו כל דגלי ישראל מחנות האירוויזיון?",
+      "snippet": "הנציג הישראלי רשם אמש הופעה נדירה במיוחד ואף העפיל לגמר הגדול שייערך ביום שבת. אלא שמעריצים סיפרו כי הפריט הכי חשוב אזל לחלוטין מהמלאי של החנות הרשמית",
+      "publication_datetime": "2026-05-13T08:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112805",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112805",
+      "title": "נועם בתן כבש את בימת האירוויזיון: \"מישל\" זכה לתשואות בווינה",
+      "snippet": "נציג ישראל סיים את הופעתו המרשימה בחצי גמר האירוויזיון 2026 עם ביצוע מצוין לשיר \"מישל\", מול אלפי צופים באולם ה\"שטדהאלה\" בווינה. לצד תשואות רמות נשמעו גם שריקות בוז בודדות, בעוד הרקדנית ליהיא פרויד, שנפצעה בחזרת השופטים, עלתה לבמה כמתוכנן",
+      "publication_datetime": "2026-05-12T23:01:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112781",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112781",
+      "title": "בדרך לבורסה בתל אביב: ענקית הנדל\"ן מגייסת 500 מיליון שקלים",
+      "snippet": "חברת \"איגל פרופרטיז\", המחזיקה בנכסי משרדים בארה\"ב בשווי של כמעט מיליארד דולר, פרסמה טיוטת תשקיף להנפקת אג\"ח ראשונה בישראל. התקבולים מיועדים למחזור חוב קיים של הקבוצה הבינלאומית",
+      "publication_datetime": "2026-05-12T18:57:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112767",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112767",
+      "title": "דנית גרינברג מצטרפת לקשת 12: זה הג'וב החדש שקטפה",
+      "snippet": "תוכנית הריאליטי האהובה \"חתונה ממבט ראשון\" צפויה לצאת לשידור כבר בשבוע הבא. לצידה, תושק גם באפליקציית V1 תוכנית ליווי שתנתח את כל הסיטואציות הכי מרגשות, רומנטיות ומפתיעות שיעלו בתוכנית",
+      "publication_datetime": "2026-05-12T17:04:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1112714",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1112714",
+      "title": "אם יש האטה בשוק הנדל\"ן - איך זה שהאשראי למגורים מזנק?",
+      "snippet": "לפי נתוני בנק ישראל, 39% מסך האשראי העסקה ו-21% מהפרטי ניתן עבור נדל\"ן ובנייה. חברות הנדל\"ן לקחו הרבה יותר אשראי וממנפות את עצמן לדעת. איך מסבירים את זה בבנק ישראל ומה קורה בתחום האשראי הקרקעות",
+      "publication_datetime": "2026-05-13T06:46:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112643",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112643",
+      "title": "בהיקף של 26 מיליון דולר: המהלך של קרן ההון סיכון Skinos Ventures",
+      "snippet": "קרן ההון-סיכון Skinos Ventures השיקה את קרן הבכורה שלה בהיקף של 26 מיליון דולר. הקרן החדשה תשקיע בחברות בשלב הסיד ותתמקד בסטארט-אפים המתמחים בסייבר ובבינה מלאכותית",
+      "publication_datetime": "2026-05-11T21:30:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112538",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112538",
+      "title": "בנק הפועלים בבשורה משמחת: מענקים בסך 305,000 שקלים יחולקו",
+      "snippet": "בנק הפועלים במהלך ענק: בשיתוף עם מיס פיקס - ההרשמה למיזם \"מיס פיקס דה יוניברס 2026\" נפתחה רשמית - אלו הזכאים להגשת מועמדות",
+      "publication_datetime": "2026-05-11T10:32:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1112525",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1112525",
+      "title": "רשת האופנה הפופולארית בישראל מפתיעה: תעשה את זה לראשונה אי פעם",
+      "snippet": "מותג האופנה והבייסיק מרחיב את פעילותו עם השקת קטגוריית TEENS המיועדת לגילאי 13–17. המהלך, המלווה בהשקעה של כ-2.5 מיליון שקל | כל הפרטים",
+      "publication_datetime": "2026-05-11T08:50:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/local-news/news/article/1112485",
+      "canonical_url": "https://ice.co.il/local-news/news/article/1112485",
+      "title": "אליהו יוסיאן נגד נפתלי בנט: \"נערת ליווי, מוכן לשכב עם כל אחד\"",
+      "snippet": "אליהו יוסיאן, שהפך לאחד הקולות הבולטים בתקשורת מאז ה-7 באוקטובר, יוצא למתקפה חריפה נגד ראש הממשלה לשעבר וטוען שהוא \"נערת ליווי פוליטית\" ו-\"מוכן לשכב עם כל אחד שייתן לו 61 קולות\" | כל הפרטים על התבטאויותיו של הפרשן",
+      "publication_datetime": "2026-05-10T20:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/advertising-marketing/news/article/1112248",
+      "canonical_url": "https://ice.co.il/advertising-marketing/news/article/1112248",
+      "title": "פרסומת השבוע",
+      "snippet": "אייל שני ועומר קולי כובשים את המסכים בקמפיין חדש: פרסומת השבוע",
+      "publication_datetime": "2026-05-08T07:09:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1112197",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1112197",
+      "title": "שער הדולר צונח - וכך אזורים מנסה לפתות רוכשי דירות מחו\"ל",
+      "snippet": "הדולר ירד לשפל, וכפי שפורסם ב-ice הרוכשים האמריקאים בורחים מעסקאות. אזורים גידרה את שער הדולר, אבל השאלה הגדולה היא האם ההטבה, בשווי 4%-3%, היא במקום הנחה או בנוסף לה?",
+      "publication_datetime": "2026-05-07T12:06:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/finance/news/article/1112065",
+      "canonical_url": "https://ice.co.il/finance/news/article/1112065",
+      "title": "מבנק הפועלים למשפחת רוטשילד: זה הבכיר שמצטרף לענקית ההשקעות",
+      "snippet": "חטיבת ניהול העושר של Rothschild & Co  מינתה את הבכיר לשעבר בבנק הפועלים, אורן בוכמן, למנהל לקוחות בכיר, כחלק מהמשך הרחבת נוכחותה של החברה בישראל",
+      "publication_datetime": "2026-05-06T11:37:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1112061",
+      "canonical_url": "https://ice.co.il/culture/news/article/1112061",
+      "title": "קרן פלס ושירי מימון מבקשות עזרה בתרומות: \"מציאות מורכבת\"",
+      "snippet": "שופטות הכוכב הבא יגיעו לערב הגאלה השנתי של עמותת גדולים מהחיים באוניברסיטת תל אביב הבנחיית צביקה הדר. כל ההכנסות מהאירוע ייתרמו למימון תרופות וטיפולים מצילי חיים עבור ילדים חולי סרטן ומשפחותיהם ברחבי הארץ.",
+      "publication_datetime": "2026-05-06T11:08:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1111981",
+      "canonical_url": "https://ice.co.il/media/news/article/1111981",
+      "title": "פרטנר במהלך דרמטי: זה מה שיקרה כשתתקשרו למוקד השירות",
+      "snippet": "החברה משיקה את בר, רומי ורותם: סוכנות בינה מלאכותית שיענו לכם בטלפון ובוואטסאפ 24/7. אלו התחומים שבהם כבר לא תצטרכו להמתין לנציג אנושי כדי לקבל פתרון מלא",
+      "publication_datetime": "2026-05-05T20:02:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/media/news/article/1111943",
+      "canonical_url": "https://ice.co.il/media/news/article/1111943",
+      "title": "צפו",
+      "snippet": "גיא פלג הגן על מרדכי דוד: כתב חדשות 12 בהתבטאות חריגה במיוחד",
+      "publication_datetime": "2026-05-05T15:16:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1111929",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1111929",
+      "title": "מעיין אדם נכנסת לענף הנדל\"ן: \"זוכים לקנות דירה במחיר נגיש\"",
+      "snippet": "מועדון הלקוחות \"מאמי\" של מעיין אדן ובוני התיכון בשיתוף פעולה אסטרטגי ראשון מסוגו בישראל. במסגרת המהלך ישווקו עשרות דירות בפרויקט ענק במרכז הארץ, עם תנאי מימון חריגים ומחיר סופי ללא הצמדה למדד",
+      "publication_datetime": "2026-05-05T16:16:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1111926",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1111926",
+      "title": "בשורה אדירה להמוני ישראלים: מענקים בהיקף חצי מיליארד שקל",
+      "snippet": "מנגנון תמיכה חדש אושר עבור עסקים הפועלים בסביבת עבודות התשתית של המטרו. המתווה כולל שלושה מענקים שונים ותשלום שוטף במטרה למנוע קריסה כלכלית כפי שקרה בקו האדום",
+      "publication_datetime": "2026-05-05T13:21:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/realestate/news/article/1111902",
+      "canonical_url": "https://ice.co.il/realestate/news/article/1111902",
+      "title": "היישוב היוקרתי בדרך לשינוי: 320 דירות בדרך - ואלה המחירים",
+      "snippet": "חברת שיכון ובינוי תבנה דירות באחד היישובים הכי פסטורליים ויוקרתיים בשרון, שמכיל בעיקר צמודי קרקע. כמה עולה דירה באזור ומה חושב המנכ\"ל שלה על התוכנית?",
+      "publication_datetime": "2026-05-05T13:50:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/culture/news/article/1111877",
+      "canonical_url": "https://ice.co.il/culture/news/article/1111877",
+      "title": "איתי לוי בבשורת ענק: \"תעשו טובה לעצמכם\"",
+      "snippet": "איתי לוי נערך למופע ענק באמפי מאקס. אלא שהפעם הזמר המצליח מבטיח חוויה שונה לגמרי: \"אירגנתי לכם שקיעה קטלנית\". הנה כל מה שיקרה לפני שהמיקרופון יהיה בכלל דולק | כל הפרטים",
+      "publication_datetime": "2026-05-05T08:24:00+00:00"
+    },
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/consumerism/news/article/1112282",
+      "canonical_url": "https://ice.co.il/consumerism/news/article/1112282",
+      "title": "רמי לוי מרסק מחיר למותג הכי מבוקש: 2,990 שקל בלבד",
+      "snippet": "רשת \"רמי לוי סטוק\" ממשיכה להפתיע עם מבצעי ענק: שואב Dreame X50 Ultra Complete נמכר ב־2,990 שקל, אייפון 17 ב־2,600 שקל. אלו מבצעי השבוע ברשת החדשה שכבשה את איזור השרון עם הסניף הראשון בישראל",
+      "publication_datetime": "2026-05-07T22:58:00+00:00"
+    }
+  ],
+  "classified_articles": [],
+  "relevant_articles": [],
+  "rejected_articles": [],
+  "unified_items": []
+}
