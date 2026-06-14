@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-05-20T11:37:54.972093+00:00:exa:10",
+  "started_at": "2026-05-20T13:08:45.661933Z",
+  "finished_at": "2026-05-20T13:08:46.929674Z",
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "failed",
+  "query_count": 123,
+  "skipped_query_count": 162,
+  "candidate_count": 0,
+  "merged_candidate_count": 0,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "exa: HTTPStatusError: Client error '402 Payment Required' for url 'https://api.exa.ai/search'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "suggestions": [
+    {
+      "domain": "example.com",
+      "candidate_count": 5,
+      "run_count": 1984,
+      "candidate_only_count": 0,
+      "search_result_only_count": 3,
+      "scrape_attempt_count": 2324,
+      "scrape_success_count": 964,
+      "scrape_partial_count": 0,
+      "scrape_failure_count": 1360,
+      "unsupported_count": 0,
+      "score": 3095.0,
+      "diagnostic_classification": null,
+      "diagnostic_note": null
+    },
+    {
+      "domain": "themarker.com",
+      "candidate_count": 1842,
+      "run_count": 39,
+      "candidate_only_count": 1824,
+      "search_result_only_count": 0,
+      "scrape_attempt_count": 18,
+      "scrape_success_count": 0,
+      "scrape_partial_count": 18,
+      "scrape_failure_count": 0,
+      "unsupported_count": 1445,
+      "score": 1614.5,
+      "diagnostic_classification": null,
+      "diagnostic_note": null
+    },
+    {
+      "domain": "globes.co.il",
+      "candidate_count": 1303,
+      "run_count": 39,
+      "candidate_only_count": 1292,
+      "search_result_only_count": 0,
+      "scrape_attempt_count": 13,
+      "scrape_success_count": 0,
+      "scrape_partial_count": 13,
+      "scrape_failure_count": 0,
+      "unsupported_count": 976,
+      "score": 1177.0,
+      "diagnostic_classification": null,
+      "diagnostic_note": null
+    },
+    {
+      "domain": "sport1.maariv.co.il",
+      "candidate_count": 1149,
+      "run_count": 31,
+      "candidate_only_count": 1149,
+      "search_result_only_count": 0,
+      "scrape_attempt_count": 0,
+      "scrape_success_count": 0,
+      "scrape_partial_count": 0,
+      "scrape_failure_count": 0,
+      "unsupported_count": 1037,
+      "score": 948.75,
+      "diagnostic_classification": null,
+      "diagnostic_note": null
+    },
+    {
+      "domain": "he.wikipedia.org",
+      "candidate_count": 871,
+      "run_count": 32,
+      "candidate_only_count": 871,
+      "search_result_only_count": 0,
+      "scrape_attempt_count": 0,
+      "scrape_success_count": 0,
+      "scrape_partial_count": 0,
+      "scrape_failure_count": 0,
+      "unsupported_count": 765,
+      "score": 738.25,
+      "diagnostic_classification": null,
+      "diagnostic_note": null
+    }
+  ]
+}

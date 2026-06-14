@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-05-23T05:11:19.775523+00:00:brave",
+  "started_at": "2026-05-23T05:17:53.812448Z",
+  "finished_at": "2026-05-23T05:17:54.539843Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "failed",
+  "query_count": 435,
+  "skipped_query_count": 0,
+  "candidate_count": 0,
+  "merged_candidate_count": 0,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "brave: HTTPStatusError: Client error '422 Unprocessable Entity' for url 'https://api.search.brave.com/res/v1/web/search?q=%D7%96%D7%A0%D7%95%D7%AA+-site%3Aatzat-nefesh.org+-site%3Abizportal.co.il+-site%3Acalcalist.co.il+-site%3Acollab.mako.co.il+-site%3Adin.org.il+-site%3Adok.co.il+-site%3Aealaw.co.il+-site%3Aglobes.co.il+-site%3Ahe.wikipedia.org+-site%3Ahe.wikiquote.org+-site%3Ail.bongogirls.ru+-site%3Aitim.org.il+-site%3Akikar.co.il+-site%3Akolzchut.org.il+-site%3Alawbuzz.co.il+-site%3Anevo.co.il+-site%3Aparks.org.il+-site%3Apolisa.news+-site%3Asport1.maariv.co.il+-site%3Asrugim.co.il+-site%3Athemarker.com+-site%3Atodojustice.co.il+-site%3Atomoko.co.il+-site%3Avietnam.vn&count=20&search_lang=he'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422"
+  ]
+}

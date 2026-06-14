@@ -1,0 +1,17 @@
+{
+  "schema_version": null,
+  "run_timestamp": null,
+  "dataset_name": null,
+  "job_name": null,
+  "config_name": null,
+  "result_summary": null,
+  "counts": {},
+  "workflow": {},
+  "source_summaries": [],
+  "classifier_summary": {},
+  "fallback_classifier_summary": null,
+  "problems": {},
+  "suspicions": [],
+  "warnings": [],
+  "errors": []
+}

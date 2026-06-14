@@ -1,0 +1,891 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-06-02T20:19:47.976118+00:00",
+  "dataset_name": "news_items",
+  "job_name": "scrape_candidates",
+  "config_name": "enforcement-news-local-search-brave-exa",
+  "config_path": "agents/news/local_search_brave_exa.yaml",
+  "days_searched": 21,
+  "result_summary": "no relevant articles found",
+  "workflow": {
+    "workflow_name": null,
+    "job_name": null,
+    "run_id": null,
+    "run_attempt": null,
+    "repository": null,
+    "ref_name": null,
+    "run_url": null
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 1,
+    "unseen_article_count": 1,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 0,
+    "seen_count_after": 0
+  },
+  "source_runtime_debug": {
+    "ynet": {
+      "rss": {
+        "status": "ok",
+        "requested_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+        "final_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+        "status_code": 200,
+        "content_type": "application/xml",
+        "payload_length": 35173,
+        "total_entry_count": 30,
+        "recent_entry_count": 30,
+        "keyword_match_count": 1,
+        "article_count": 1,
+        "bozo": false,
+        "bozo_exception": null
+      },
+      "category": {
+        "status": "ok",
+        "requested_url": "https://www.ynet.co.il/news/category/190",
+        "final_url": "https://www.ynet.co.il/news/category/190",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "payload_length": 137691,
+        "container_count": 44,
+        "parsed_article_count": 40,
+        "keyword_match_count": 1,
+        "stale_article_count": 0,
+        "article_urls": [
+          "https://www.ynet.co.il/news/article/hy6pgc9gmx"
+        ]
+      },
+      "result": {
+        "rss_article_count": 1,
+        "category_article_count": 1,
+        "deduped_category_article_count": 0,
+        "unique_article_count": 1
+      }
+    },
+    "mako": {
+      "days": 21,
+      "keywords": [
+        "זנות",
+        "בית בושת",
+        "סרסור",
+        "סחר בבני אדם",
+        "צו סגירה",
+        "צו הגבלת שימוש",
+        "ליווי",
+        "נערות ליווי",
+        "תעשיית המין",
+        "עיסוי חשוד",
+        "זירת זנות",
+        "נישואין בכפייה",
+        "עבדות מינית",
+        "קורבנות סחר",
+        "רשת סחר",
+        "ניצול מיני",
+        "זנות מקוונת",
+        "קנס צריכת זנות",
+        "החזקת מקום לשם זנות",
+        "השכרת מקום לשם זנות",
+        "פרסום זנות"
+      ],
+      "browser_session": {
+        "status": "ok",
+        "mode": "playwright_headless",
+        "attached_to_chrome": false,
+        "launched_managed_chromium": true,
+        "cdp_url": null,
+        "route_scope": "context",
+        "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+        "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+      },
+      "searches": [
+        {
+          "keyword": "זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 381255,
+          "parsed_article_count": 5,
+          "article_urls": [
+            "https://www.mako.co.il/men-men_news/Article-36f911677952e91027.htm",
+            "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm",
+            "https://www.mako.co.il/Sports-basketball-world/euroleague-q2_2026/Article-04d11803e8b5e91027.htm",
+            "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm",
+            "https://www.mako.co.il/news-sport/basketball-2026_q2/Article-79573348e528e91027.htm"
+          ]
+        },
+        {
+          "keyword": "בית בושת",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379232,
+          "parsed_article_count": 2,
+          "article_urls": [
+            "https://www.mako.co.il/men-men_news/Article-c3e819856586e91027.htm",
+            "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm"
+          ]
+        },
+        {
+          "keyword": "סרסור",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379876,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "סחר בבני אדם",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379615,
+          "parsed_article_count": 1,
+          "article_urls": [
+            "https://www.mako.co.il/hix-special/Article-1e1cc9e07804e91027.htm"
+          ]
+        },
+        {
+          "keyword": "צו סגירה",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 380435,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "צו הגבלת שימוש",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379780,
+          "parsed_article_count": 5,
+          "article_urls": [
+            "https://www.mako.co.il/men-men_news/Article-c3e819856586e91027.htm",
+            "https://www.mako.co.il/men-men_news/Article-4edfa54631c2e91027.htm",
+            "https://www.mako.co.il/news-money/2026_q2/Article-623cb2fd45e6e91027.htm",
+            "https://www.mako.co.il/news-politics/2026_q2/Article-8fc025551954e91026.htm",
+            "https://www.mako.co.il/men-men_news/Article-47eba8981662e91026.htm"
+          ]
+        },
+        {
+          "keyword": "ליווי",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 380899,
+          "parsed_article_count": 2,
+          "article_urls": [
+            "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm",
+            "https://www.mako.co.il/music-news/Article-6cef879f8538e91026.htm"
+          ]
+        },
+        {
+          "keyword": "נערות ליווי",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 380690,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "תעשיית המין",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379156,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "עיסוי חשוד",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 378793,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "זירת זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379021,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "נישואין בכפייה",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379532,
+          "parsed_article_count": 1,
+          "article_urls": [
+            "https://www.mako.co.il/news-israel/2026_q2/Article-7a16165c5f26e91027.htm"
+          ]
+        },
+        {
+          "keyword": "עבדות מינית",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379490,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "קורבנות סחר",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379912,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "רשת סחר",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379321,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "ניצול מיני",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 382118,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "זנות מקוונת",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 378923,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "קנס צריכת זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379240,
+          "parsed_article_count": 1,
+          "article_urls": [
+            "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm"
+          ]
+        },
+        {
+          "keyword": "החזקת מקום לשם זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379461,
+          "parsed_article_count": 0,
+          "article_urls": []
+        },
+        {
+          "keyword": "השכרת מקום לשם זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 380358,
+          "parsed_article_count": 1,
+          "article_urls": [
+            "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm"
+          ]
+        },
+        {
+          "keyword": "פרסום זנות",
+          "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+          "page_title": "mako חדשות. בידור. טלוויזיה",
+          "terminal_state": "results",
+          "html_present": true,
+          "payload_length": 379595,
+          "parsed_article_count": 0,
+          "article_urls": []
+        }
+      ],
+      "sections": [
+        {
+          "requested_url": "https://www.mako.co.il/men-men_news",
+          "final_url": "https://www.mako.co.il/men-men_news",
+          "page_title": "חדשות פלילים+ | mako פלילים+",
+          "status": "ok",
+          "payload_length": 412494,
+          "container_count": 238,
+          "parsed_article_count": 0,
+          "article_urls": []
+        }
+      ],
+      "result": {
+        "raw_article_count": 18,
+        "unique_article_count": 13
+      }
+    }
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "rss": {
+          "status": "ok",
+          "requested_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "final_url": "https://www.ynet.co.il/Integration/StoryRss190.xml",
+          "status_code": 200,
+          "content_type": "application/xml",
+          "payload_length": 35173,
+          "total_entry_count": 30,
+          "recent_entry_count": 30,
+          "keyword_match_count": 1,
+          "article_count": 1,
+          "bozo": false,
+          "bozo_exception": null
+        },
+        "category": {
+          "status": "ok",
+          "requested_url": "https://www.ynet.co.il/news/category/190",
+          "final_url": "https://www.ynet.co.il/news/category/190",
+          "status_code": 200,
+          "content_type": "text/html; charset=utf-8",
+          "payload_length": 137691,
+          "container_count": 44,
+          "parsed_article_count": 40,
+          "keyword_match_count": 1,
+          "stale_article_count": 0,
+          "article_urls": [
+            "https://www.ynet.co.il/news/article/hy6pgc9gmx"
+          ]
+        },
+        "result": {
+          "rss_article_count": 1,
+          "category_article_count": 1,
+          "deduped_category_article_count": 0,
+          "unique_article_count": 1
+        }
+      }
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": {
+        "days": 21,
+        "keywords": [
+          "זנות",
+          "בית בושת",
+          "סרסור",
+          "סחר בבני אדם",
+          "צו סגירה",
+          "צו הגבלת שימוש",
+          "ליווי",
+          "נערות ליווי",
+          "תעשיית המין",
+          "עיסוי חשוד",
+          "זירת זנות",
+          "נישואין בכפייה",
+          "עבדות מינית",
+          "קורבנות סחר",
+          "רשת סחר",
+          "ניצול מיני",
+          "זנות מקוונת",
+          "קנס צריכת זנות",
+          "החזקת מקום לשם זנות",
+          "השכרת מקום לשם זנות",
+          "פרסום זנות"
+        ],
+        "browser_session": {
+          "status": "ok",
+          "mode": "playwright_headless",
+          "attached_to_chrome": false,
+          "launched_managed_chromium": true,
+          "cdp_url": null,
+          "route_scope": "context",
+          "requested_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "effective_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+          "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+        },
+        "searches": [
+          {
+            "keyword": "זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 381255,
+            "parsed_article_count": 5,
+            "article_urls": [
+              "https://www.mako.co.il/men-men_news/Article-36f911677952e91027.htm",
+              "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm",
+              "https://www.mako.co.il/Sports-basketball-world/euroleague-q2_2026/Article-04d11803e8b5e91027.htm",
+              "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm",
+              "https://www.mako.co.il/news-sport/basketball-2026_q2/Article-79573348e528e91027.htm"
+            ]
+          },
+          {
+            "keyword": "בית בושת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%91%D7%99%D7%AA+%D7%91%D7%95%D7%A9%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379232,
+            "parsed_article_count": 2,
+            "article_urls": [
+              "https://www.mako.co.il/men-men_news/Article-c3e819856586e91027.htm",
+              "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm"
+            ]
+          },
+          {
+            "keyword": "סרסור",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%A8%D7%A1%D7%95%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379876,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "סחר בבני אדם",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A1%D7%97%D7%A8+%D7%91%D7%91%D7%A0%D7%99+%D7%90%D7%93%D7%9D&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379615,
+            "parsed_article_count": 1,
+            "article_urls": [
+              "https://www.mako.co.il/hix-special/Article-1e1cc9e07804e91027.htm"
+            ]
+          },
+          {
+            "keyword": "צו סגירה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%A1%D7%92%D7%99%D7%A8%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 380435,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "צו הגבלת שימוש",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A6%D7%95+%D7%94%D7%92%D7%91%D7%9C%D7%AA+%D7%A9%D7%99%D7%9E%D7%95%D7%A9&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379780,
+            "parsed_article_count": 5,
+            "article_urls": [
+              "https://www.mako.co.il/men-men_news/Article-c3e819856586e91027.htm",
+              "https://www.mako.co.il/men-men_news/Article-4edfa54631c2e91027.htm",
+              "https://www.mako.co.il/news-money/2026_q2/Article-623cb2fd45e6e91027.htm",
+              "https://www.mako.co.il/news-politics/2026_q2/Article-8fc025551954e91026.htm",
+              "https://www.mako.co.il/men-men_news/Article-47eba8981662e91026.htm"
+            ]
+          },
+          {
+            "keyword": "ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 380899,
+            "parsed_article_count": 2,
+            "article_urls": [
+              "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm",
+              "https://www.mako.co.il/music-news/Article-6cef879f8538e91026.htm"
+            ]
+          },
+          {
+            "keyword": "נערות ליווי",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%A2%D7%A8%D7%95%D7%AA+%D7%9C%D7%99%D7%95%D7%95%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 380690,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "תעשיית המין",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%AA%D7%A2%D7%A9%D7%99%D7%99%D7%AA+%D7%94%D7%9E%D7%99%D7%9F&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379156,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "עיסוי חשוד",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%99%D7%A1%D7%95%D7%99+%D7%97%D7%A9%D7%95%D7%93&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 378793,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "זירת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%99%D7%A8%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379021,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "נישואין בכפייה",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A9%D7%95%D7%90%D7%99%D7%9F+%D7%91%D7%9B%D7%A4%D7%99%D7%99%D7%94&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379532,
+            "parsed_article_count": 1,
+            "article_urls": [
+              "https://www.mako.co.il/news-israel/2026_q2/Article-7a16165c5f26e91027.htm"
+            ]
+          },
+          {
+            "keyword": "עבדות מינית",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A2%D7%91%D7%93%D7%95%D7%AA+%D7%9E%D7%99%D7%A0%D7%99%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379490,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "קורבנות סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%95%D7%A8%D7%91%D7%A0%D7%95%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379912,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "רשת סחר",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A8%D7%A9%D7%AA+%D7%A1%D7%97%D7%A8&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379321,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "ניצול מיני",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A0%D7%99%D7%A6%D7%95%D7%9C+%D7%9E%D7%99%D7%A0%D7%99&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 382118,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "זנות מקוונת",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%96%D7%A0%D7%95%D7%AA+%D7%9E%D7%A7%D7%95%D7%95%D7%A0%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 378923,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "קנס צריכת זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A7%D7%A0%D7%A1+%D7%A6%D7%A8%D7%99%D7%9B%D7%AA+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379240,
+            "parsed_article_count": 1,
+            "article_urls": [
+              "https://www.mako.co.il/men-men_news/Article-14a9be9bb053e91027.htm"
+            ]
+          },
+          {
+            "keyword": "החזקת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%97%D7%96%D7%A7%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379461,
+            "parsed_article_count": 0,
+            "article_urls": []
+          },
+          {
+            "keyword": "השכרת מקום לשם זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%94%D7%A9%D7%9B%D7%A8%D7%AA+%D7%9E%D7%A7%D7%95%D7%9D+%D7%9C%D7%A9%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 380358,
+            "parsed_article_count": 1,
+            "article_urls": [
+              "https://www.mako.co.il/news-n12_magazine/63a5640d65f8c910/Article-287e74e1f771e91027.htm"
+            ]
+          },
+          {
+            "keyword": "פרסום זנות",
+            "requested_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "final_url": "https://www.mako.co.il/Search?searchstring_input=%D7%A4%D7%A8%D7%A1%D7%95%D7%9D+%D7%96%D7%A0%D7%95%D7%AA&page=1&tab=search_results_tab_general&formType=regular&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&vgnextoid=3d385dd2dd5d4110VgnVCM100000290c10acRCRD",
+            "page_title": "mako חדשות. בידור. טלוויזיה",
+            "terminal_state": "results",
+            "html_present": true,
+            "payload_length": 379595,
+            "parsed_article_count": 0,
+            "article_urls": []
+          }
+        ],
+        "sections": [
+          {
+            "requested_url": "https://www.mako.co.il/men-men_news",
+            "final_url": "https://www.mako.co.il/men-men_news",
+            "page_title": "חדשות פלילים+ | mako פלילים+",
+            "status": "ok",
+            "payload_length": 412494,
+            "container_count": 238,
+            "parsed_article_count": 0,
+            "article_urls": []
+          }
+        ],
+        "result": {
+          "raw_article_count": 18,
+          "unique_article_count": 13
+        }
+      }
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 1,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 1,
+    "classified_article_count": 1,
+    "relevant_article_count": 0,
+    "rejected_article_count": 1,
+    "rejected_by_category": {
+      "not_relevant": 1
+    },
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 0
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    },
+    "classification_output_anomaly": false,
+    "classification_failed": false,
+    "classifier_error": null
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "walla",
+      "mako",
+      "maariv",
+      "haaretz"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false,
+    "classification_failed": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [],
+  "errors": [],
+  "raw_articles": [
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/business-dictionary/news/article/1114774",
+      "canonical_url": "https://ice.co.il/business-dictionary/news/article/1114774",
+      "title": "איציק חדד",
+      "snippet": "",
+      "publication_datetime": "2026-05-29T12:43:00+00:00"
+    }
+  ],
+  "unseen_articles": [
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/business-dictionary/news/article/1114774",
+      "canonical_url": "https://ice.co.il/business-dictionary/news/article/1114774",
+      "title": "איציק חדד",
+      "snippet": "",
+      "publication_datetime": "2026-05-29T12:43:00+00:00"
+    }
+  ],
+  "classified_articles": [
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/business-dictionary/news/article/1114774",
+      "canonical_url": "https://ice.co.il/business-dictionary/news/article/1114774",
+      "title": "איציק חדד",
+      "snippet": "",
+      "publication_datetime": "2026-05-29T12:43:00+00:00",
+      "relevant": false,
+      "enforcement_related": false,
+      "index_relevant": false,
+      "taxonomy_version": null,
+      "taxonomy_category_id": null,
+      "taxonomy_subcategory_id": null,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "relevant_articles": [],
+  "rejected_articles": [
+    {
+      "source_name": "ice",
+      "url": "https://www.ice.co.il/business-dictionary/news/article/1114774",
+      "canonical_url": "https://ice.co.il/business-dictionary/news/article/1114774",
+      "title": "איציק חדד",
+      "snippet": "",
+      "publication_datetime": "2026-05-29T12:43:00+00:00",
+      "relevant": false,
+      "enforcement_related": false,
+      "index_relevant": false,
+      "taxonomy_version": null,
+      "taxonomy_category_id": null,
+      "taxonomy_subcategory_id": null,
+      "category": "not_relevant",
+      "sub_category": null,
+      "confidence": "high"
+    }
+  ],
+  "unified_items": []
+}

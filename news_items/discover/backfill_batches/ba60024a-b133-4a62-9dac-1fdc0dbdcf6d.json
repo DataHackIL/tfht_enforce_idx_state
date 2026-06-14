@@ -1,0 +1,70 @@
+{
+  "batch_id": "ba60024a-b133-4a62-9dac-1fdc0dbdcf6d",
+  "created_at": "2026-05-17T21:37:21.651825Z",
+  "updated_at": "2026-05-17T22:55:04.410019Z",
+  "started_at": "2026-05-17T21:37:21.651825Z",
+  "finished_at": null,
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "partial",
+  "requested_date_from": "2026-01-08T00:00:00Z",
+  "requested_date_to": "2026-05-17T00:00:00Z",
+  "window_count": 19,
+  "query_count": 4050,
+  "candidate_count": 20876,
+  "merged_candidate_count": 10998,
+  "queued_for_scrape_count": 5852,
+  "scrape_attempt_count": 0,
+  "scraped_candidate_count": 0,
+  "warnings": [
+    "ynet: historical window discovery is unsupported",
+    "walla: historical window discovery is unsupported",
+    "mako: historical window discovery is unsupported",
+    "maariv: historical window discovery is unsupported",
+    "haaretz: historical window discovery is unsupported",
+    "ice: historical window discovery is unsupported",
+    "candidate cap 20000 reached after window 7/19"
+  ],
+  "errors": [
+    "google_cse: HTTPStatusError: Client error '403 Forbidden' for url 'https://customsearch.googleapis.com/customsearch/v1?key=AIza_REDACTED_ROTATED_KEY&cx=05970d38312324723&q=%D7%96%D7%A0%D7%95%D7%AA&num=10&lr=lang_he' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  ],
+  "metadata": {
+    "requested_date_from_env": "DENBUST_BACKFILL_DATE_FROM",
+    "requested_date_to_env": "DENBUST_BACKFILL_DATE_TO",
+    "keywords": [
+      "זנות",
+      "בית בושת",
+      "סרסור",
+      "סחר בבני אדם",
+      "צו סגירה",
+      "צו הגבלת שימוש",
+      "ליווי",
+      "נערות ליווי",
+      "תעשיית המין",
+      "עיסוי חשוד",
+      "זירת זנות",
+      "נישואין בכפייה",
+      "עבדות מינית",
+      "קורבנות סחר",
+      "רשת סחר",
+      "ניצול מיני",
+      "זנות מקוונת",
+      "קנס צריכת זנות",
+      "החזקת מקום לשם זנות",
+      "השכרת מקום לשם זנות",
+      "פרסום זנות"
+    ],
+    "keyword_count": 21,
+    "engines": [
+      "brave",
+      "exa",
+      "google_cse"
+    ],
+    "query_kinds": [
+      "broad",
+      "source_targeted",
+      "taxonomy_targeted",
+      "social_targeted"
+    ]
+  }
+}

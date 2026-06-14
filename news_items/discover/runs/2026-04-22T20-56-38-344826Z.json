@@ -1,0 +1,27 @@
+{
+  "run_timestamp": "2026-04-22T20:56:38.344826Z",
+  "started_at": "2026-04-22T20:56:38.344826Z",
+  "finished_at": "2026-04-22T21:01:24.160243Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "config_name": "enforcement-news",
+  "config_path": "agents/news/local.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli"
+  ],
+  "raw_article_count": 62,
+  "unseen_article_count": 62,
+  "relevant_article_count": 0,
+  "unified_item_count": 62,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": false,
+  "items": [],
+  "warnings": [],
+  "errors": [],
+  "result_summary": "discovery persisted 62 merged candidate(s) from 62 discovered result(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}

@@ -1,0 +1,46 @@
+{
+  "dataset_name": "news_items",
+  "release_version": "2026-04-18",
+  "release_datetime": "2026-04-18T14:22:45.760497Z",
+  "schema_version": "news_items-v1",
+  "row_count": 0,
+  "primary_files": [
+    {
+      "path": "data/news_items/release/publication/2026-04-18/news_items.parquet",
+      "format": "parquet",
+      "row_count": 0,
+      "sha256": "f072313b31dcd3bd973bc76ff33024cc721c0eb5d17147830899091baebf1544"
+    },
+    {
+      "path": "data/news_items/release/publication/2026-04-18/news_items.csv",
+      "format": "csv",
+      "row_count": 0,
+      "sha256": "fedea4a4bf26e8ca2b39f515ffc8a0ba9f8151ae4587338e9799efe98e5d9abd"
+    },
+    {
+      "path": "data/news_items/release/publication/2026-04-18/SCHEMA.json",
+      "format": "json",
+      "row_count": 0,
+      "sha256": "e31254abb8f07618f87aeeb7f682567e740dcfcfc39211109033480c0575df40"
+    },
+    {
+      "path": "data/news_items/release/publication/2026-04-18/SCHEMA.md",
+      "format": "markdown",
+      "row_count": 0,
+      "sha256": "9c7c7135737720d01b5115e1fb9c3d74319f7f55041ec6b3fd56ab8d5277e33f"
+    },
+    {
+      "path": "data/news_items/release/publication/2026-04-18/README.md",
+      "format": "markdown",
+      "row_count": 0,
+      "sha256": "74f0ee23a25bdfe9d6e3a10f58edd37d18c81014a7880bc9dc714fc2415e16cb"
+    }
+  ],
+  "notes": null,
+  "source_coverage_window": null,
+  "rights_policy_version": "news_items-v1",
+  "privacy_policy_version": "news_items-v1",
+  "warnings": [
+    "Release contains zero publicly releasable rows."
+  ]
+}

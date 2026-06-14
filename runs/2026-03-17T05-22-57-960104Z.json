@@ -1,0 +1,18 @@
+{
+  "run_timestamp": "2026-03-17T05:22:57.960104Z",
+  "config_name": "enforcement-news-github",
+  "days_searched": 21,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 1,
+  "unseen_article_count": 1,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": false,
+  "items": [],
+  "errors": []
+}

@@ -1,0 +1,26 @@
+{
+  "month": "2026-02-01",
+  "month_key": "2026-02",
+  "month_label_he": "פברואר 2026",
+  "stats": {
+    "administrative_closure": 1
+  },
+  "stats_labels_he": {
+    "administrative_closure": "סגירה מנהלית / צו מנהלי לפי חוק הגבלת שימוש במקום לשם ביצוע עבירה"
+  },
+  "selected_cases": [
+    {
+      "headline": "בית בושת נחשף בחולון, המשטרה סגרה את המקום - וואלה חדשות",
+      "narrative": "בית בושת נחשף בחולון, המשטרה סגרה את המקום - וואלה חדשות.",
+      "source_url": "https://news.walla.co.il/break/3813950",
+      "publication_datetime": "2026-02-03T14:21:00Z",
+      "taxonomy_category_id": "brothels",
+      "taxonomy_subcategory_id": "administrative_closure",
+      "category": "brothel",
+      "sub_category": "closure"
+    }
+  ],
+  "hq_activity": null,
+  "hq_activity_placeholder": "טרם הוזן עדכון פעילות מטה לחודש זה.",
+  "rendered_markdown": "# מדד האכיפה — נלחמות בתעשיית המין\n\n## דו\"ח חודשי פברואר 2026\n\n### הנתונים החודשיים\n- 1 מקרים: סגירה מנהלית / צו מנהלי לפי חוק הגבלת שימוש במקום לשם ביצוע עבירה\n\n### פירוט המקרים\n- **בית בושת נחשף בחולון, המשטרה סגרה את המקום - וואלה חדשות**: בית בושת נחשף בחולון, המשטרה סגרה את המקום - וואלה חדשות. ([מקור](https://news.walla.co.il/break/3813950))\n\n### פעילות המטה\n- טרם הוזן עדכון פעילות מטה לחודש זה.\n\n### הערת שימוש\n- הדו\"ח מבוסס על רשומות ציבוריות מאושרות בלבד מתוך `news_items`.\n- טיוטה זו מיועדת לעריכה אנושית לפני פרסום חיצוני.\n"
+}

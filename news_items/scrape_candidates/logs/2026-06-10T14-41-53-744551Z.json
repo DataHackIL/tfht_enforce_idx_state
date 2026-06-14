@@ -1,0 +1,104 @@
+{
+  "schema_version": "news_items.scrape_candidates.debug.v1",
+  "run_timestamp": "2026-06-10T14:41:53.744551+00:00",
+  "dataset_name": "news_items",
+  "job_name": "scrape_candidates",
+  "config_name": "enforcement-news-local-search-brave-exa",
+  "config_path": "agents/news/local_search_brave_exa.yaml",
+  "days_searched": 21,
+  "result_summary": "fallback retention completed with 9 provisional row(s)",
+  "workflow": {
+    "workflow_name": null,
+    "job_name": null,
+    "run_id": null,
+    "run_attempt": null,
+    "repository": null,
+    "ref_name": null,
+    "run_url": null
+  },
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 0,
+    "selected_candidate_count": 60,
+    "fallback_candidate_count": 60,
+    "fallback_operational_record_count": 9,
+    "scrape_attempt_count": 79,
+    "unified_item_count": 9,
+    "seen_count_before": 0,
+    "seen_count_after": 0
+  },
+  "batch_id": null,
+  "classifier_summary": {
+    "unseen_article_count": 0,
+    "classified_article_count": 0,
+    "relevant_article_count": 0,
+    "rejected_article_count": 0,
+    "rejected_by_category": {},
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 1
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    },
+    "classification_output_anomaly": false,
+    "classification_failed": false,
+    "classifier_error": null
+  },
+  "fallback_classifier_summary": {
+    "fallback_classifier_input_count": 60,
+    "fallback_operational_record_count": 9,
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 1
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    }
+  },
+  "problems": {
+    "classification_failed": false,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [],
+  "warnings": [
+    "candidate_scrape_failures=4",
+    "fallback_operational_records=9"
+  ],
+  "errors": [
+    "candidate_afebd63b7246e7e454dae476: Generic fetch returned HTTP 403",
+    "candidate_aaee26a34ed3cbbef58b9d03: Generic fetch returned HTTP 403",
+    "candidate_e3a72cdeed8432fbd2efcb5c: Generic fetch returned HTTP 403",
+    "candidate_5a41e63491efedc6148c7a40: Generic fetch returned HTTP 410"
+  ]
+}

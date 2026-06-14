@@ -1,0 +1,352 @@
+{
+  "$defs": {
+    "Category": {
+      "description": "Article category.",
+      "enum": [
+        "brothel",
+        "prostitution",
+        "pimping",
+        "trafficking",
+        "enforcement",
+        "not_relevant"
+      ],
+      "title": "Category",
+      "type": "string"
+    },
+    "PrivacyRisk": {
+      "description": "Privacy risk categories.",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "sensitive_sexual_offence",
+        "minor_involved",
+        "victim_identifying_risk"
+      ],
+      "title": "PrivacyRisk",
+      "type": "string"
+    },
+    "PublicationStatus": {
+      "description": "Publication lifecycle states.",
+      "enum": [
+        "draft",
+        "approved",
+        "suppressed",
+        "published",
+        "internal_only"
+      ],
+      "title": "PublicationStatus",
+      "type": "string"
+    },
+    "ReviewStatus": {
+      "description": "Human review requirements.",
+      "enum": [
+        "none",
+        "needs_rights_review",
+        "needs_privacy_review",
+        "needs_fact_review",
+        "needs_dedup_review",
+        "needs_anonymization_review"
+      ],
+      "title": "ReviewStatus",
+      "type": "string"
+    },
+    "RightsClass": {
+      "description": "Rights/publication classes.",
+      "enum": [
+        "open_fulltext",
+        "metadata_only",
+        "licensed_fulltext",
+        "internal_only",
+        "restricted_review"
+      ],
+      "title": "RightsClass",
+      "type": "string"
+    },
+    "SubCategory": {
+      "description": "Article sub-category.",
+      "enum": [
+        "closure",
+        "opening",
+        "arrest",
+        "fine",
+        "sentence",
+        "rescue",
+        "operation",
+        "other"
+      ],
+      "title": "SubCategory",
+      "type": "string"
+    },
+    "TakedownStatus": {
+      "description": "Takedown or suppression lifecycle.",
+      "enum": [
+        "none",
+        "requested",
+        "suppressed"
+      ],
+      "title": "TakedownStatus",
+      "type": "string"
+    }
+  },
+  "description": "Public, metadata-only row for the news_items dataset.",
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "source_name": {
+      "title": "Source Name",
+      "type": "string"
+    },
+    "source_domain": {
+      "title": "Source Domain",
+      "type": "string"
+    },
+    "url": {
+      "title": "Url",
+      "type": "string"
+    },
+    "canonical_url": {
+      "title": "Canonical Url",
+      "type": "string"
+    },
+    "publication_datetime": {
+      "format": "date-time",
+      "title": "Publication Datetime",
+      "type": "string"
+    },
+    "retrieval_datetime": {
+      "format": "date-time",
+      "title": "Retrieval Datetime",
+      "type": "string"
+    },
+    "language": {
+      "default": "he",
+      "title": "Language",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "taxonomy_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Taxonomy Version"
+    },
+    "taxonomy_category_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Taxonomy Category Id"
+    },
+    "taxonomy_subcategory_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Taxonomy Subcategory Id"
+    },
+    "index_relevant": {
+      "default": false,
+      "title": "Index Relevant",
+      "type": "boolean"
+    },
+    "category": {
+      "$ref": "#/$defs/Category"
+    },
+    "sub_category": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SubCategory"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "summary_one_sentence": {
+      "title": "Summary One Sentence",
+      "type": "string"
+    },
+    "geography_country": {
+      "default": "Israel",
+      "title": "Geography Country",
+      "type": "string"
+    },
+    "geography_region": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Geography Region"
+    },
+    "geography_city": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Geography City"
+    },
+    "manual_address": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Manual Address"
+    },
+    "manual_event_label": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Manual Event Label"
+    },
+    "manual_status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Manual Status"
+    },
+    "organizations_mentioned": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Organizations Mentioned",
+      "type": "array"
+    },
+    "topic_tags": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Topic Tags",
+      "type": "array"
+    },
+    "rights_class": {
+      "$ref": "#/$defs/RightsClass",
+      "default": "metadata_only"
+    },
+    "privacy_risk_level": {
+      "$ref": "#/$defs/PrivacyRisk",
+      "default": "low"
+    },
+    "review_status": {
+      "$ref": "#/$defs/ReviewStatus",
+      "default": "none"
+    },
+    "publication_status": {
+      "$ref": "#/$defs/PublicationStatus",
+      "default": "approved"
+    },
+    "takedown_status": {
+      "$ref": "#/$defs/TakedownStatus",
+      "default": "none"
+    },
+    "manually_overridden": {
+      "default": false,
+      "title": "Manually Overridden",
+      "type": "boolean"
+    },
+    "annotation_source": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Annotation Source"
+    },
+    "event_candidate_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Event Candidate Ids",
+      "type": "array"
+    },
+    "created_at": {
+      "format": "date-time",
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "format": "date-time",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "release_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Release Version"
+    }
+  },
+  "required": [
+    "id",
+    "source_name",
+    "source_domain",
+    "url",
+    "canonical_url",
+    "publication_datetime",
+    "retrieval_datetime",
+    "title",
+    "category",
+    "summary_one_sentence"
+  ],
+  "title": "NewsItemPublicRecord",
+  "type": "object"
+}

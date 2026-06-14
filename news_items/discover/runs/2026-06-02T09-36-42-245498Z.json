@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-06-02T09:32:00.883638+00:00:brave",
+  "started_at": "2026-06-02T09:36:42.245498Z",
+  "finished_at": "2026-06-02T09:40:56.043608Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "succeeded",
+  "query_count": 435,
+  "skipped_query_count": 0,
+  "candidate_count": 4491,
+  "merged_candidate_count": 1865,
+  "queued_for_scrape_count": 0,
+  "errors": []
+}

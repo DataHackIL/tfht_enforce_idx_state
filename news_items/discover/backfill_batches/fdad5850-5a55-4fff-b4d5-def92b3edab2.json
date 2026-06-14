@@ -1,0 +1,67 @@
+{
+  "batch_id": "fdad5850-5a55-4fff-b4d5-def92b3edab2",
+  "created_at": "2026-05-16T20:41:55.784916Z",
+  "updated_at": "2026-05-16T20:53:42.831584Z",
+  "started_at": "2026-05-16T20:41:55.784916Z",
+  "finished_at": null,
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "discovered",
+  "requested_date_from": "2026-01-01T00:00:00Z",
+  "requested_date_to": "2026-05-15T00:00:00Z",
+  "window_count": 20,
+  "query_count": 504,
+  "candidate_count": 5881,
+  "merged_candidate_count": 3060,
+  "queued_for_scrape_count": 2318,
+  "scrape_attempt_count": 0,
+  "scraped_candidate_count": 0,
+  "warnings": [
+    "ynet: historical window discovery is unsupported",
+    "walla: historical window discovery is unsupported",
+    "mako: historical window discovery is unsupported",
+    "maariv: historical window discovery is unsupported",
+    "haaretz: historical window discovery is unsupported",
+    "ice: historical window discovery is unsupported",
+    "candidate cap 5000 reached after window 1/20"
+  ],
+  "errors": [],
+  "metadata": {
+    "requested_date_from_env": "DENBUST_BACKFILL_DATE_FROM",
+    "requested_date_to_env": "DENBUST_BACKFILL_DATE_TO",
+    "keywords": [
+      "זנות",
+      "בית בושת",
+      "סרסור",
+      "סחר בבני אדם",
+      "צו סגירה",
+      "צו הגבלת שימוש",
+      "ליווי",
+      "נערות ליווי",
+      "תעשיית המין",
+      "עיסוי חשוד",
+      "זירת זנות",
+      "נישואין בכפייה",
+      "עבדות מינית",
+      "קורבנות סחר",
+      "רשת סחר",
+      "ניצול מיני",
+      "זנות מקוונת",
+      "קנס צריכת זנות",
+      "החזקת מקום לשם זנות",
+      "השכרת מקום לשם זנות",
+      "פרסום זנות"
+    ],
+    "keyword_count": 21,
+    "engines": [
+      "brave",
+      "exa"
+    ],
+    "query_kinds": [
+      "broad",
+      "source_targeted",
+      "taxonomy_targeted",
+      "social_targeted"
+    ]
+  }
+}

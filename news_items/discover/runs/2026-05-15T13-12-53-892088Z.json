@@ -1,0 +1,13 @@
+{
+  "run_id": "2026-05-15T13:02:47.395191+00:00:exa",
+  "started_at": "2026-05-15T13:12:53.892088Z",
+  "finished_at": "2026-05-15T13:20:55.130327Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "succeeded",
+  "query_count": 405,
+  "candidate_count": 8093,
+  "merged_candidate_count": 2396,
+  "queued_for_scrape_count": 0,
+  "errors": []
+}

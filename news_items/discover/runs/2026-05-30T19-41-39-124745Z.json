@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-05-30T19:41:39.124509+00:00",
+  "started_at": "2026-05-30T19:41:39.124745Z",
+  "finished_at": "2026-05-30T19:41:40.863969Z",
+  "dataset_name": "news_items",
+  "job_name": "ingest",
+  "status": "succeeded",
+  "query_count": 0,
+  "skipped_query_count": 0,
+  "candidate_count": 1,
+  "merged_candidate_count": 1,
+  "queued_for_scrape_count": 0,
+  "errors": []
+}

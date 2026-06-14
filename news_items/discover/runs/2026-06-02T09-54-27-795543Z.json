@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-06-02T09:54:27.795327+00:00:source_native",
+  "started_at": "2026-06-02T09:54:27.795543Z",
+  "finished_at": "2026-06-02T09:59:04.620844Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "succeeded",
+  "query_count": 6,
+  "skipped_query_count": 0,
+  "candidate_count": 71,
+  "merged_candidate_count": 71,
+  "queued_for_scrape_count": 0,
+  "errors": []
+}

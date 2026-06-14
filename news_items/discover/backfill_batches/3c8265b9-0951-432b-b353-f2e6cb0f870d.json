@@ -1,0 +1,70 @@
+{
+  "batch_id": "3c8265b9-0951-432b-b353-f2e6cb0f870d",
+  "created_at": "2026-05-20T11:37:54.972093Z",
+  "updated_at": "2026-05-20T13:14:56.036011Z",
+  "started_at": "2026-05-20T11:37:54.972093Z",
+  "finished_at": null,
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "partial",
+  "requested_date_from": "2026-02-26T00:00:00Z",
+  "requested_date_to": "2026-05-17T00:00:00Z",
+  "window_count": 12,
+  "query_count": 6522,
+  "candidate_count": 16144,
+  "merged_candidate_count": 8045,
+  "queued_for_scrape_count": 4352,
+  "scrape_attempt_count": 0,
+  "scraped_candidate_count": 0,
+  "warnings": [
+    "ynet: historical window discovery is unsupported",
+    "walla: historical window discovery is unsupported",
+    "mako: historical window discovery is unsupported",
+    "maariv: historical window discovery is unsupported",
+    "haaretz: historical window discovery is unsupported",
+    "ice: historical window discovery is unsupported"
+  ],
+  "errors": [
+    "google_cse: HTTPStatusError: Client error '403 Forbidden' for url 'https://customsearch.googleapis.com/customsearch/v1?key=AIza_REDACTED_ROTATED_KEY&cx=05970d38312324723&q=%D7%96%D7%A0%D7%95%D7%AA&num=10&lr=lang_he' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403",
+    "exa: HTTPStatusError: Client error '402 Payment Required' for url 'https://api.exa.ai/search' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402"
+  ],
+  "metadata": {
+    "requested_date_from_env": "DENBUST_BACKFILL_DATE_FROM",
+    "requested_date_to_env": "DENBUST_BACKFILL_DATE_TO",
+    "keywords": [
+      "זנות",
+      "בית בושת",
+      "סרסור",
+      "סחר בבני אדם",
+      "צו סגירה",
+      "צו הגבלת שימוש",
+      "ליווי",
+      "נערות ליווי",
+      "תעשיית המין",
+      "עיסוי חשוד",
+      "זירת זנות",
+      "נישואין בכפייה",
+      "עבדות מינית",
+      "קורבנות סחר",
+      "רשת סחר",
+      "ניצול מיני",
+      "זנות מקוונת",
+      "קנס צריכת זנות",
+      "החזקת מקום לשם זנות",
+      "השכרת מקום לשם זנות",
+      "פרסום זנות"
+    ],
+    "keyword_count": 21,
+    "engines": [
+      "brave",
+      "exa",
+      "google_cse"
+    ],
+    "query_kinds": [
+      "broad",
+      "source_targeted",
+      "taxonomy_targeted",
+      "social_targeted"
+    ]
+  }
+}

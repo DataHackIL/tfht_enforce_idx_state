@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-05-17T21:37:21.651825+00:00:brave:3",
+  "started_at": "2026-05-17T21:51:39.408815Z",
+  "finished_at": "2026-05-17T21:53:47.970310Z",
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "succeeded",
+  "query_count": 123,
+  "skipped_query_count": 162,
+  "candidate_count": 472,
+  "merged_candidate_count": 281,
+  "queued_for_scrape_count": 0,
+  "errors": []
+}

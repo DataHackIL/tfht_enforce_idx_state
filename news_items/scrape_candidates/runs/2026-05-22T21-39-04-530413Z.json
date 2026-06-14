@@ -1,0 +1,29 @@
+{
+  "run_timestamp": "2026-05-22T21:39:04.530413Z",
+  "started_at": "2026-05-22T21:39:04.530413Z",
+  "finished_at": "2026-05-22T21:39:04.530590Z",
+  "dataset_name": "news_items",
+  "job_name": "scrape_candidates",
+  "config_name": "enforcement-news-local-search-brave-exa",
+  "config_path": "agents/news/local_search_brave_exa.yaml",
+  "days_searched": 21,
+  "source_count": 0,
+  "output_formats": [
+    "cli"
+  ],
+  "raw_article_count": 0,
+  "unseen_article_count": 0,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": true,
+  "items": [],
+  "warnings": [],
+  "errors": [
+    "ANTHROPIC_API_KEY not set"
+  ],
+  "result_summary": "fatal: missing anthropic api key",
+  "release_manifest": null,
+  "backup_manifest": null
+}

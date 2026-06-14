@@ -1,0 +1,38 @@
+{
+  "month": "2026-03-01",
+  "month_key": "2026-03",
+  "month_label_he": "מרץ 2026",
+  "stats": {
+    "trafficking_sexual_exploitation": 1,
+    "keeping_brothel": 1
+  },
+  "stats_labels_he": {
+    "trafficking_sexual_exploitation": "סחר למטרת ניצול מיני (זנות)",
+    "keeping_brothel": "החזקת מקום לשם זנות"
+  },
+  "selected_cases": [
+    {
+      "headline": "בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\" - וואלה חדשות",
+      "narrative": "תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים.",
+      "source_url": "https://news.walla.co.il/item/3823239",
+      "publication_datetime": "2026-03-12T10:12:00Z",
+      "taxonomy_category_id": "brothels",
+      "taxonomy_subcategory_id": "keeping_brothel",
+      "category": "brothel",
+      "sub_category": null
+    },
+    {
+      "headline": "האחים הישראלים הורשעו: המיליונרים ניהלו רשת סחר במין",
+      "narrative": "האחים הישראלים, אלון, אורן וטל אלכסנדר הורשעו על ידי בית המשפט לאחר שבית המשפט קבע כי ניהלו רשת סחר במין, גזר הדין ייקבע בחודש אוגוסט.",
+      "source_url": "https://ice.co.il/law/news/article/1105599",
+      "publication_datetime": "2026-03-10T08:21:44Z",
+      "taxonomy_category_id": "human_trafficking",
+      "taxonomy_subcategory_id": "trafficking_sexual_exploitation",
+      "category": "trafficking",
+      "sub_category": "arrest"
+    }
+  ],
+  "hq_activity": null,
+  "hq_activity_placeholder": "טרם הוזן עדכון פעילות מטה לחודש זה.",
+  "rendered_markdown": "# מדד האכיפה — נלחמות בתעשיית המין\n\n## דו\"ח חודשי מרץ 2026\n\n### הנתונים החודשיים\n- 1 מקרים: סחר למטרת ניצול מיני (זנות)\n- 1 מקרים: החזקת מקום לשם זנות\n\n### פירוט המקרים\n- **בית בושת אותר בתוך מקלט ציבורי: \"לא נתנו להיכנס בזמן אזעקה\" - וואלה חדשות**: תלונה למוקד העירוני בבת ים על מקלט ציבורי שננעל מבפנים בזמן אזעקות הובילה לבדיקת הפקחים. ([מקור](https://news.walla.co.il/item/3823239))\n- **האחים הישראלים הורשעו: המיליונרים ניהלו רשת סחר במין**: האחים הישראלים, אלון, אורן וטל אלכסנדר הורשעו על ידי בית המשפט לאחר שבית המשפט קבע כי ניהלו רשת סחר במין, גזר הדין ייקבע בחודש אוגוסט. ([מקור](https://ice.co.il/law/news/article/1105599))\n\n### פעילות המטה\n- טרם הוזן עדכון פעילות מטה לחודש זה.\n\n### הערת שימוש\n- הדו\"ח מבוסס על רשומות ציבוריות מאושרות בלבד מתוך `news_items`.\n- טיוטה זו מיועדת לעריכה אנושית לפני פרסום חיצוני.\n"
+}

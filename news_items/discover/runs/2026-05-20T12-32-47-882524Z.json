@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-05-20T11:37:54.972093+00:00:google_cse:4",
+  "started_at": "2026-05-20T12:32:47.882524Z",
+  "finished_at": "2026-05-20T12:32:48.065976Z",
+  "dataset_name": "news_items",
+  "job_name": "backfill_discover",
+  "status": "failed",
+  "query_count": 285,
+  "skipped_query_count": 0,
+  "candidate_count": 0,
+  "merged_candidate_count": 0,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "google_cse: HTTPStatusError: Client error '403 Forbidden' for url 'https://customsearch.googleapis.com/customsearch/v1?key=AIza_REDACTED_ROTATED_KEY&cx=05970d38312324723&q=%D7%96%D7%A0%D7%95%D7%AA&num=10&lr=lang_he'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+  ]
+}

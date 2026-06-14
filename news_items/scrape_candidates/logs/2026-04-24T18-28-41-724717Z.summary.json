@@ -1,0 +1,106 @@
+{
+  "schema_version": "news_items.ingest.debug.v1",
+  "run_timestamp": "2026-04-24T18:28:41.724717+00:00",
+  "dataset_name": "news_items",
+  "job_name": "scrape_candidates",
+  "config_name": "enforcement-news",
+  "result_summary": "no relevant articles found",
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 28,
+    "unseen_article_count": 28,
+    "relevant_article_count": 0,
+    "unified_item_count": 0,
+    "seen_count_before": 0,
+    "seen_count_after": 0
+  },
+  "workflow": {
+    "workflow_name": null,
+    "job_name": null,
+    "run_id": null,
+    "run_attempt": null,
+    "repository": null,
+    "ref_name": null,
+    "run_url": null
+  },
+  "source_summaries": [
+    {
+      "source_name": "ynet",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "walla",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "mako",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "maariv",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "haaretz",
+      "raw_article_count": 0,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": true,
+      "runtime_debug": null
+    },
+    {
+      "source_name": "ice",
+      "raw_article_count": 28,
+      "had_error": false,
+      "error_messages": [],
+      "returned_zero_results": false,
+      "runtime_debug": null
+    }
+  ],
+  "classifier_summary": {
+    "unseen_article_count": 28,
+    "classified_article_count": 28,
+    "relevant_article_count": 0,
+    "rejected_article_count": 28,
+    "rejected_by_category": {
+      "not_relevant": 28
+    },
+    "classification_output_anomaly": false
+  },
+  "problems": {
+    "source_errors": [],
+    "zero_result_sources": [
+      "ynet",
+      "walla",
+      "mako",
+      "maariv",
+      "haaretz"
+    ],
+    "all_unseen_rejected": true,
+    "no_relevant_items": true,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [
+    "sources_returned_zero_results",
+    "all_unseen_rejected",
+    "no_relevant_items"
+  ],
+  "warnings": [],
+  "errors": []
+}

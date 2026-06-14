@@ -1,0 +1,94 @@
+{
+  "schema_version": "news_items.scrape_candidates.debug.v1",
+  "run_timestamp": "2026-05-23T05:10:05.993531+00:00",
+  "dataset_name": "news_items",
+  "job_name": "scrape_candidates",
+  "config_name": "enforcement-news-local-search-brave-exa",
+  "result_summary": "candidate scrape completed with no materializable rows",
+  "counts": {
+    "source_count": 6,
+    "raw_article_count": 0,
+    "selected_candidate_count": 5,
+    "fallback_candidate_count": 5,
+    "fallback_operational_record_count": 0,
+    "scrape_attempt_count": 7,
+    "unified_item_count": 0,
+    "seen_count_before": 0,
+    "seen_count_after": 0
+  },
+  "workflow": {
+    "workflow_name": null,
+    "job_name": null,
+    "run_id": null,
+    "run_attempt": null,
+    "repository": null,
+    "ref_name": null,
+    "run_url": null
+  },
+  "source_summaries": [],
+  "classifier_summary": {
+    "unseen_article_count": 0,
+    "classified_article_count": 0,
+    "relevant_article_count": 0,
+    "rejected_article_count": 0,
+    "rejected_by_category": {},
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 0
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    },
+    "classification_output_anomaly": false,
+    "classification_failed": false,
+    "classifier_error": null
+  },
+  "fallback_classifier_summary": {
+    "fallback_classifier_input_count": 5,
+    "fallback_operational_record_count": 0,
+    "warning_counts": {
+      "parse_failure_count": 0,
+      "invalid_taxonomy_pair_count": 0,
+      "invalid_legacy_pair_count": 0,
+      "relevant_without_usable_taxonomy_count": 0,
+      "double_wrapper_recovery_count": 0
+    },
+    "parse_failure_diagnostics": {
+      "category_counts": {
+        "empty_response": 0,
+        "json_decode_error": 0,
+        "non_object_json_array": 0,
+        "non_object_json_scalar": 0,
+        "object_like_non_json": 0,
+        "truncated_response": 0,
+        "other_parse_failure": 0
+      },
+      "samples": [],
+      "sample_count": 0,
+      "sample_max_count": 8,
+      "sample_shape_max_length": 80
+    }
+  },
+  "problems": {
+    "classification_failed": false,
+    "classification_output_anomaly": false
+  },
+  "suspicions": [],
+  "warnings": [],
+  "errors": []
+}
