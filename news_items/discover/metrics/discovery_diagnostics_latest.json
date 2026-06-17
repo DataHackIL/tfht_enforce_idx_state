@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T07:28:41.020195Z",
+  "generated_at": "2026-06-17T21:17:49.947505Z",
   "config_path": "agents/news/local_search_brave_exa.yaml",
   "dataset_name": "news_items",
   "stale_after_days": 7,
-  "latest_candidates_path": "data/news_items/discover/candidates/latest_candidates.jsonl",
-  "scrape_attempts_path": "data/news_items/discover/candidates/scrape_attempts.jsonl",
-  "candidate_provenance_path": "data/news_items/discover/candidates/candidate_provenance.jsonl",
+  "latest_candidates_path": "state_repo/news_items/discover/candidates/latest_candidates.jsonl",
+  "scrape_attempts_path": "state_repo/news_items/discover/candidates/scrape_attempts.jsonl",
+  "candidate_provenance_path": "state_repo/news_items/discover/candidates/candidate_provenance.jsonl",
   "operational_records_available": false,
   "notes": [
     "Operational record matching was skipped for this diagnostics artifact."
   ],
   "engine_overlap": {
-    "source_native": 76,
-    "brave": 40,
+    "source_native": 0,
+    "brave": 0,
     "exa": 0,
     "google_cse": 0,
     "source_native_brave_shared": 0,
@@ -36,18 +36,18 @@
   },
   "queue_health": {
     "total_candidates": 27568,
-    "new_candidates": 10830,
+    "new_candidates": 10811,
     "queued_candidates": 0,
     "scrape_pending_candidates": 0,
     "scrape_in_progress_candidates": 0,
     "scrape_failed_candidates": 17,
-    "partially_scraped_candidates": 175,
+    "partially_scraped_candidates": 194,
     "unsupported_source_candidates": 11430,
     "search_result_only_candidates": 22,
-    "partial_page_candidates": 251,
+    "partial_page_candidates": 270,
     "full_article_page_candidates": 31,
     "stale_candidates": 22066,
-    "retry_backlog_candidates": 9,
+    "retry_backlog_candidates": 17,
     "self_heal_eligible_candidates": 17,
     "search_noise_filter_reason_counts": {
       "app_store": 2,
@@ -59,12 +59,12 @@
   "candidate_conversion": {
     "total_candidates": 27568,
     "scrape_succeeded_candidates": 31,
-    "partially_scraped_candidates": 175,
+    "partially_scraped_candidates": 194,
     "scrape_failed_candidates": 17,
     "unsupported_source_candidates": 11430,
-    "never_scraped_candidates": 10830,
+    "never_scraped_candidates": 10811,
     "search_result_only_candidates": 22,
-    "partial_page_candidates": 251,
+    "partial_page_candidates": 270,
     "full_article_page_candidates": 31,
     "operational_record_matches": 0,
     "scrape_success_rate": 0.001124492164828787,
@@ -74,7 +74,7 @@
         "producer_name": "brave",
         "candidate_count": 9438,
         "scrape_succeeded_candidates": 1,
-        "partially_scraped_candidates": 4,
+        "partially_scraped_candidates": 5,
         "scrape_failed_candidates": 0,
         "unsupported_source_candidates": 3518,
         "operational_record_matches": 0,
@@ -85,7 +85,7 @@
         "producer_name": "exa",
         "candidate_count": 18553,
         "scrape_succeeded_candidates": 0,
-        "partially_scraped_candidates": 165,
+        "partially_scraped_candidates": 183,
         "scrape_failed_candidates": 11,
         "unsupported_source_candidates": 8071,
         "operational_record_matches": 0,
@@ -174,59 +174,59 @@
   "top_failure_sources": [
     {
       "name": "unknown",
-      "count": 1733
+      "count": 1833
     },
     {
       "name": "ynet",
-      "count": 34
+      "count": 40
     },
     {
       "name": "mako",
-      "count": 29
+      "count": 37
     },
     {
       "name": "ice",
-      "count": 28
+      "count": 33
     },
     {
-      "name": "maariv",
-      "count": 17
+      "name": "haaretz",
+      "count": 18
     }
   ],
   "top_failure_domains": [
     {
       "name": "example.com",
-      "count": 1360
-    },
-    {
-      "name": "ynet.co.il",
-      "count": 65
+      "count": 1400
     },
     {
       "name": "mako.co.il",
-      "count": 64
+      "count": 80
+    },
+    {
+      "name": "ynet.co.il",
+      "count": 80
     },
     {
       "name": "ice.co.il",
-      "count": 57
+      "count": 67
     },
     {
-      "name": "maariv.co.il",
-      "count": 34
+      "name": "haaretz.co.il",
+      "count": 36
     }
   ],
   "top_failure_codes": [
     {
       "name": "generic_fetch_http_404",
-      "count": 1333
+      "count": 1376
     },
     {
       "name": "unknown",
-      "count": 347
+      "count": 401
     },
     {
       "name": "candidate_not_found",
-      "count": 138
+      "count": 163
     },
     {
       "name": "generic_fetch_error",
@@ -234,7 +234,7 @@
     },
     {
       "name": "generic_fetch_http_403",
-      "count": 12
+      "count": 14
     }
   ],
   "scrape_failure_diagnostics": [
@@ -244,9 +244,9 @@
       "error_code": "generic_fetch_http_404",
       "source_adapter_name": "unknown",
       "domain": "example.com",
-      "count": 1328,
-      "self_heal_eligible_count": 1328,
-      "latest_attempt_at": "2026-06-11T21:25:38.202618Z"
+      "count": 1368,
+      "self_heal_eligible_count": 1368,
+      "latest_attempt_at": "2026-06-12T14:12:19.148728Z"
     },
     {
       "attempt_kind": "generic_fetch",
@@ -261,12 +261,12 @@
     {
       "attempt_kind": "generic_fetch",
       "fetch_status": "failed",
-      "error_code": "generic_fetch_no_metadata",
+      "error_code": "generic_fetch_http_404",
       "source_adapter_name": "unknown",
-      "domain": "posta.co.il",
-      "count": 5,
-      "self_heal_eligible_count": 5,
-      "latest_attempt_at": "2026-06-10T20:50:54.644074Z"
+      "domain": "law.co.il",
+      "count": 7,
+      "self_heal_eligible_count": 7,
+      "latest_attempt_at": "2026-06-12T07:35:35.298318Z"
     },
     {
       "attempt_kind": "generic_fetch",
@@ -274,19 +274,19 @@
       "error_code": "generic_fetch_http_403",
       "source_adapter_name": "unknown",
       "domain": "news1.co.il",
-      "count": 4,
-      "self_heal_eligible_count": 4,
-      "latest_attempt_at": "2026-06-11T18:28:41.651061Z"
+      "count": 6,
+      "self_heal_eligible_count": 6,
+      "latest_attempt_at": "2026-06-12T07:34:57.636114Z"
     },
     {
       "attempt_kind": "generic_fetch",
       "fetch_status": "failed",
-      "error_code": "generic_fetch_http_404",
+      "error_code": "generic_fetch_no_metadata",
       "source_adapter_name": "unknown",
-      "domain": "law.co.il",
-      "count": 4,
-      "self_heal_eligible_count": 4,
-      "latest_attempt_at": "2026-06-11T18:23:55.682859Z"
+      "domain": "posta.co.il",
+      "count": 6,
+      "self_heal_eligible_count": 6,
+      "latest_attempt_at": "2026-06-12T07:34:52.063107Z"
     },
     {
       "attempt_kind": "generic_fetch",
@@ -334,16 +334,16 @@
       "error_code": "unknown",
       "source_adapter_name": "unknown",
       "domain": "mako.co.il",
-      "count": 35,
+      "count": 44,
       "self_heal_eligible_count": 0,
-      "latest_attempt_at": "2026-06-11T18:29:13.575207Z"
+      "latest_attempt_at": "2026-06-12T07:35:31.409369Z"
     }
   ],
   "queue_drain": {
-    "max_candidate_budget": 100,
-    "persisted_attempted_candidate_count": 304,
-    "persisted_scrape_attempt_count": 2864,
-    "remaining_eligible_candidate_count": 11014,
+    "max_candidate_budget": 30,
+    "persisted_attempted_candidate_count": 323,
+    "persisted_scrape_attempt_count": 3019,
+    "remaining_eligible_candidate_count": 11022,
     "inferred_stop_reason": "budget_cap_reached",
     "persisted_attempted_candidate_order": [
       {
@@ -352,8 +352,8 @@
         "source": "test",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-12T21:25:38.202618Z",
-        "last_seen_at": "2026-06-11T21:25:35.395916Z",
+        "next_scrape_attempt_at": "2026-06-13T14:12:19.148728Z",
+        "last_seen_at": "2026-06-12T14:12:09.849166Z",
         "current_url": "https://example.com/article"
       },
       {
@@ -362,8 +362,8 @@
         "source": "test",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-12T21:25:24.354573Z",
-        "last_seen_at": "2026-06-11T21:25:21.525659Z",
+        "next_scrape_attempt_at": "2026-06-13T14:11:28.738078Z",
+        "last_seen_at": "2026-06-12T14:11:19.420594Z",
         "current_url": "https://example.com/0"
       },
       {
@@ -372,8 +372,8 @@
         "source": "test",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-12T21:25:24.868032Z",
-        "last_seen_at": "2026-06-11T21:25:21.525692Z",
+        "next_scrape_attempt_at": "2026-06-13T14:11:31.445005Z",
+        "last_seen_at": "2026-06-12T14:11:19.420629Z",
         "current_url": "https://example.com/1"
       },
       {
@@ -383,7 +383,7 @@
         "status": "scrape_succeeded",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
-        "last_seen_at": "2026-06-11T21:25:32.057438Z",
+        "last_seen_at": "2026-06-12T14:11:57.951266Z",
         "current_url": "https://example.com/rejected"
       },
       {
@@ -693,7 +693,7 @@
         "status": "scrape_succeeded",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
-        "last_seen_at": "2026-06-11T21:25:28.776594Z",
+        "last_seen_at": "2026-06-12T14:11:46.062814Z",
         "current_url": "https://example.com/provider-error"
       },
       {
@@ -2042,7 +2042,7 @@
         "source": "law.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:18:09.925685Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:22.843182Z",
         "last_seen_at": "2026-05-17T22:05:20.326569Z",
         "current_url": "https://www.law.co.il/computer-law/2026/02/09/yannai-v-movieland-cinemas-ltd/"
       },
@@ -2162,7 +2162,7 @@
         "source": "news1.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:18:27.988654Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:39.766583Z",
         "last_seen_at": "2026-05-16T20:50:56.710872Z",
         "current_url": "https://www.news1.co.il/BringHtmlDoc.aspx?DocID=512985&SubjectID=1"
       },
@@ -2392,7 +2392,7 @@
         "source": "law.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:47:01.939869Z",
+        "next_scrape_attempt_at": "2026-06-13T07:35:22.905641Z",
         "last_seen_at": "2026-05-20T11:43:10.913334Z",
         "current_url": "https://www.law.co.il/computer-law/2026/03/08/ben-am-israel-adv-v-cannabiz-ltd/"
       },
@@ -2592,7 +2592,7 @@
         "source": "news1",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:50:46.773955Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:57.636114Z",
         "last_seen_at": "2026-05-16T20:50:46.075624Z",
         "current_url": "https://www.news1.co.il/Archive/001-D-512981-00.html"
       },
@@ -2632,7 +2632,7 @@
         "source": "posta.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:50:54.644074Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:52.063107Z",
         "last_seen_at": "2026-05-17T21:47:33.667740Z",
         "current_url": "https://posta.co.il/article/44445-2/"
       },
@@ -2802,7 +2802,7 @@
         "source": "law.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T21:36:45.759006Z",
+        "next_scrape_attempt_at": "2026-06-13T07:35:35.298318Z",
         "last_seen_at": "2026-05-20T11:43:10.912722Z",
         "current_url": "https://www.law.co.il/computer-law/2026/03/05/cohen-v-sharon/"
       },
@@ -3385,6 +3385,196 @@
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-15T13:08:23.607690Z",
         "current_url": "https://www.ice.co.il/realestate/news/article/1110554"
+      },
+      {
+        "position": 305,
+        "candidate_id": "candidate_e26bb24ccfa10756b900e38b",
+        "source": "walla",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:04:59.890356Z",
+        "current_url": "https://news.walla.co.il/item/1445317"
+      },
+      {
+        "position": 306,
+        "candidate_id": "candidate_5fd134f7c24bc87c6a6c3a06",
+        "source": "ynet",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:44:43.112770Z",
+        "current_url": "https://www.ynet.co.il/yedioth/article/yokra14692349"
+      },
+      {
+        "position": 307,
+        "candidate_id": "candidate_074dc19eeb92ed31d444d331",
+        "source": "ice",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:04:47.154071Z",
+        "current_url": "https://www.ice.co.il/social/news/article/1102267"
+      },
+      {
+        "position": 308,
+        "candidate_id": "candidate_8cf6369aad6365a8d8c2f04e",
+        "source": "timeout.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:43:31.039618Z",
+        "current_url": "https://timeout.co.il/%D7%A4%D7%A1%D7%98%D7%99%D7%91%D7%9C-%D7%9E%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%90%D7%9C%D7%98%D7%A8%D7%A0%D7%98%D7%99%D7%91%D7%99%D7%AA/"
+      },
+      {
+        "position": 309,
+        "candidate_id": "candidate_22be8b5dceda006b4f212257",
+        "source": "walla",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:04:59.890245Z",
+        "current_url": "https://news.walla.co.il/item/3815737"
+      },
+      {
+        "position": 310,
+        "candidate_id": "candidate_18d3ebd0a60a09e4b15c2875",
+        "source": "ynet",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:44:43.112321Z",
+        "current_url": "https://www.ynet.co.il/yedioth/article/yokra14694094"
+      },
+      {
+        "position": 311,
+        "candidate_id": "candidate_4f84da9cd61126e681143816",
+        "source": "ice",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:04:47.153973Z",
+        "current_url": "https://www.ice.co.il/media/news/article/1102375"
+      },
+      {
+        "position": 312,
+        "candidate_id": "candidate_e8f1db3fa2542bc5d46d03dd",
+        "source": "timeout.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T22:43:15.887494Z",
+        "current_url": "https://timeout.co.il/%D7%94%D7%AA%D7%A0%D7%94%D7%92%D7%AA%D7%99-%D7%9B%D7%9E%D7%95-%D7%A4%D7%A1%D7%99%D7%9B%D7%95%D7%A4%D7%AA-%D7%94%D7%A9%D7%A3-%D7%99%D7%94%D7%95%D7%A0%D7%AA%D7%9F-%D7%91%D7%95%D7%A8%D7%95%D7%91/"
+      },
+      {
+        "position": 313,
+        "candidate_id": "candidate_e3dfe881c7e46f9de8ba5229",
+        "source": "ynet.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T21:47:33.885775Z",
+        "current_url": "https://www.ynet.co.il/yedioth/article/yokra14655765"
+      },
+      {
+        "position": 314,
+        "candidate_id": "candidate_7e478f31698936f7d315dc3d",
+        "source": "ice",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T21:40:01.051773Z",
+        "current_url": "https://www.ice.co.il/law/news/article/1100509"
+      },
+      {
+        "position": 315,
+        "candidate_id": "candidate_a85819bd0f26815b79ad417e",
+        "source": "ynet.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T21:47:29.686339Z",
+        "current_url": "https://www.ynet.co.il/yedioth/article/yokra14658915"
+      },
+      {
+        "position": 316,
+        "candidate_id": "candidate_a50c94acbe5ad9dace22af95",
+        "source": "ice",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-16T20:50:33.393326Z",
+        "current_url": "https://ice.co.il/local-news/news/article/1099183"
+      },
+      {
+        "position": 317,
+        "candidate_id": "candidate_4f71b547da694c4dbfd48752",
+        "source": "mako",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-17T21:55:08.865696Z",
+        "current_url": "https://mobile.mako.co.il/men-men_news/Article-e848793b8b40c91026.htm"
+      },
+      {
+        "position": 318,
+        "candidate_id": "candidate_714fcd22f0f80ebab4848e41",
+        "source": "ynet",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-06-02T10:03:41.552067Z",
+        "current_url": "https://www.ynet.co.il/architecture/article/rkmu4pkjzx"
+      },
+      {
+        "position": 319,
+        "candidate_id": "candidate_102b9e099166b25f0e76c2e5",
+        "source": "ynet.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-20T13:03:04.701001Z",
+        "current_url": "https://www.ynet.co.il/environment-science/article/8nm522ndz"
+      },
+      {
+        "position": 320,
+        "candidate_id": "candidate_713c50b30833e2b37e8bf0b3",
+        "source": "mignews.com",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-15T13:13:28.833205Z",
+        "current_url": "https://mignews.com/news/disasters/policiya-izrailya-spasla-inostranca-iz-mnogoletnego-rabstva.html"
+      },
+      {
+        "position": 321,
+        "candidate_id": "candidate_78d2e7bcbaead249797e8e4e",
+        "source": "ynet",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-20T12:15:31.368639Z",
+        "current_url": "https://www.ynet.co.il/health/article/rjrkquuczx"
+      },
+      {
+        "position": 322,
+        "candidate_id": "candidate_eaf32d273a34402f6190148d",
+        "source": "mako.co.il",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-20T12:16:04.221163Z",
+        "current_url": "https://www.mako.co.il/hix-feed/2026-m03_w03/shorts-bd8d8c99e950d91026.htm"
+      },
+      {
+        "position": 323,
+        "candidate_id": "candidate_4cf6c197c76c1e0158d4b53b",
+        "source": "ynet",
+        "status": "partially_scraped",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": null,
+        "last_seen_at": "2026-05-20T12:15:31.368396Z",
+        "current_url": "https://www.ynet.co.il/news/article/hj0ttzv5wg"
       }
     ],
     "remaining_eligible_candidate_order": [
@@ -7612,7 +7802,7 @@
         "position": 423,
         "candidate_id": "candidate_e26bb24ccfa10756b900e38b",
         "source": "walla",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:04:59.890356Z",
@@ -7622,7 +7812,7 @@
         "position": 424,
         "candidate_id": "candidate_22be8b5dceda006b4f212257",
         "source": "walla",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:04:59.890245Z",
@@ -35032,7 +35222,7 @@
         "position": 3165,
         "candidate_id": "candidate_4f71b547da694c4dbfd48752",
         "source": "mako",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T21:55:08.865696Z",
@@ -42742,7 +42932,7 @@
         "position": 3936,
         "candidate_id": "candidate_714fcd22f0f80ebab4848e41",
         "source": "ynet",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-06-02T10:03:41.552067Z",
@@ -47412,7 +47602,7 @@
         "position": 4403,
         "candidate_id": "candidate_78d2e7bcbaead249797e8e4e",
         "source": "ynet",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-20T12:15:31.368639Z",
@@ -47432,7 +47622,7 @@
         "position": 4405,
         "candidate_id": "candidate_4cf6c197c76c1e0158d4b53b",
         "source": "ynet",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-20T12:15:31.368396Z",
@@ -50122,7 +50312,7 @@
         "position": 4674,
         "candidate_id": "candidate_5fd134f7c24bc87c6a6c3a06",
         "source": "ynet",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:44:43.112770Z",
@@ -50192,7 +50382,7 @@
         "position": 4681,
         "candidate_id": "candidate_18d3ebd0a60a09e4b15c2875",
         "source": "ynet",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:44:43.112321Z",
@@ -69742,7 +69932,7 @@
         "position": 6636,
         "candidate_id": "candidate_074dc19eeb92ed31d444d331",
         "source": "ice",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:04:47.154071Z",
@@ -69762,7 +69952,7 @@
         "position": 6638,
         "candidate_id": "candidate_4f84da9cd61126e681143816",
         "source": "ice",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:04:47.153973Z",
@@ -72322,7 +72512,7 @@
         "position": 6894,
         "candidate_id": "candidate_7e478f31698936f7d315dc3d",
         "source": "ice",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T21:40:01.051773Z",
@@ -72882,7 +73072,7 @@
         "position": 6950,
         "candidate_id": "candidate_a50c94acbe5ad9dace22af95",
         "source": "ice",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-16T20:50:33.393326Z",
@@ -79402,7 +79592,7 @@
         "position": 7602,
         "candidate_id": "candidate_102b9e099166b25f0e76c2e5",
         "source": "ynet.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-20T13:03:04.701001Z",
@@ -85052,7 +85242,7 @@
         "position": 8167,
         "candidate_id": "candidate_eaf32d273a34402f6190148d",
         "source": "mako.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-20T12:16:04.221163Z",
@@ -91512,7 +91702,7 @@
         "position": 8813,
         "candidate_id": "candidate_8cf6369aad6365a8d8c2f04e",
         "source": "timeout.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:43:31.039618Z",
@@ -91762,7 +91952,7 @@
         "position": 8838,
         "candidate_id": "candidate_e8f1db3fa2542bc5d46d03dd",
         "source": "timeout.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T22:43:15.887494Z",
@@ -101842,7 +102032,7 @@
         "position": 9846,
         "candidate_id": "candidate_e3dfe881c7e46f9de8ba5229",
         "source": "ynet.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T21:47:33.885775Z",
@@ -102062,7 +102252,7 @@
         "position": 9868,
         "candidate_id": "candidate_a85819bd0f26815b79ad417e",
         "source": "ynet.co.il",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-17T21:47:29.686339Z",
@@ -111462,7 +111652,7 @@
         "position": 10808,
         "candidate_id": "candidate_713c50b30833e2b37e8bf0b3",
         "source": "mignews.com",
-        "status": "new",
+        "status": "partially_scraped",
         "retry_priority": 0,
         "next_scrape_attempt_at": null,
         "last_seen_at": "2026-05-15T13:13:28.833205Z",
@@ -113470,63 +113660,143 @@
       },
       {
         "position": 11009,
+        "candidate_id": "candidate_c8f604afe2fcffef2bdfbfd4",
+        "source": "law.co.il",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-12T18:23:55.682859Z",
+        "last_seen_at": "2026-05-20T11:43:09.166433Z",
+        "current_url": "https://www.law.co.il/computer-law/2026/03/11/blok-v-israel/"
+      },
+      {
+        "position": 11010,
+        "candidate_id": "candidate_afebd63b7246e7e454dae476",
+        "source": "kan",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-12T18:28:40.266379Z",
+        "last_seen_at": "2026-05-16T20:48:52.813102Z",
+        "current_url": "https://www.kan.org.il/content/kan-news/local/988873/"
+      },
+      {
+        "position": 11011,
+        "candidate_id": "candidate_aaee26a34ed3cbbef58b9d03",
+        "source": "news1.co.il",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-12T18:28:41.651061Z",
+        "last_seen_at": "2026-05-17T21:55:52.082126Z",
+        "current_url": "https://www.news1.co.il/BringHtmlDoc.aspx?docid=513779&subjectID=1"
+      },
+      {
+        "position": 11012,
+        "candidate_id": "candidate_5a41e63491efedc6148c7a40",
+        "source": "c14.co.il",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-12T18:28:47.303463Z",
+        "last_seen_at": "2026-05-17T21:47:29.686616Z",
+        "current_url": "https://www.c14.co.il/article/1442976"
+      },
+      {
+        "position": 11013,
+        "candidate_id": "candidate_e3a72cdeed8432fbd2efcb5c",
+        "source": "gov.il",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-12T18:28:47.818363Z",
+        "last_seen_at": "2026-05-16T20:45:14.166401Z",
+        "current_url": "https://www.gov.il/he/departments/units/office_of_the_anti_trafficking_coordinator/govil-landing-page"
+      },
+      {
+        "position": 11014,
         "candidate_id": "candidate_273cca80c9b5a90125c979bc",
         "source": "law.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:18:09.925685Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:22.843182Z",
         "last_seen_at": "2026-05-17T22:05:20.326569Z",
         "current_url": "https://www.law.co.il/computer-law/2026/02/09/yannai-v-movieland-cinemas-ltd/"
       },
       {
-        "position": 11010,
+        "position": 11015,
         "candidate_id": "candidate_24569b23fa97708b3121cd00",
         "source": "news1.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:18:27.988654Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:39.766583Z",
         "last_seen_at": "2026-05-16T20:50:56.710872Z",
         "current_url": "https://www.news1.co.il/BringHtmlDoc.aspx?DocID=512985&SubjectID=1"
       },
       {
-        "position": 11011,
-        "candidate_id": "candidate_4132e4b8b7cdd22b11a26de5",
-        "source": "law.co.il",
-        "status": "scrape_failed",
-        "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:47:01.939869Z",
-        "last_seen_at": "2026-05-20T11:43:10.913334Z",
-        "current_url": "https://www.law.co.il/computer-law/2026/03/08/ben-am-israel-adv-v-cannabiz-ltd/"
-      },
-      {
-        "position": 11012,
-        "candidate_id": "candidate_96609a9fb5b8374ad4f656fa",
-        "source": "news1",
-        "status": "scrape_failed",
-        "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:50:46.773955Z",
-        "last_seen_at": "2026-05-16T20:50:46.075624Z",
-        "current_url": "https://www.news1.co.il/Archive/001-D-512981-00.html"
-      },
-      {
-        "position": 11013,
+        "position": 11016,
         "candidate_id": "candidate_2055a436753102aead1b5cc5",
         "source": "posta.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T20:50:54.644074Z",
+        "next_scrape_attempt_at": "2026-06-13T07:34:52.063107Z",
         "last_seen_at": "2026-05-17T21:47:33.667740Z",
         "current_url": "https://posta.co.il/article/44445-2/"
       },
       {
-        "position": 11014,
+        "position": 11017,
+        "candidate_id": "candidate_96609a9fb5b8374ad4f656fa",
+        "source": "news1",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-13T07:34:57.636114Z",
+        "last_seen_at": "2026-05-16T20:50:46.075624Z",
+        "current_url": "https://www.news1.co.il/Archive/001-D-512981-00.html"
+      },
+      {
+        "position": 11018,
+        "candidate_id": "candidate_4132e4b8b7cdd22b11a26de5",
+        "source": "law.co.il",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-13T07:35:22.905641Z",
+        "last_seen_at": "2026-05-20T11:43:10.913334Z",
+        "current_url": "https://www.law.co.il/computer-law/2026/03/08/ben-am-israel-adv-v-cannabiz-ltd/"
+      },
+      {
+        "position": 11019,
         "candidate_id": "candidate_ca9545dd4b70c8183aec67c8",
         "source": "law.co.il",
         "status": "scrape_failed",
         "retry_priority": 0,
-        "next_scrape_attempt_at": "2026-06-11T21:36:45.759006Z",
+        "next_scrape_attempt_at": "2026-06-13T07:35:35.298318Z",
         "last_seen_at": "2026-05-20T11:43:10.912722Z",
         "current_url": "https://www.law.co.il/computer-law/2026/03/05/cohen-v-sharon/"
+      },
+      {
+        "position": 11020,
+        "candidate_id": "candidate_5312667f8f8f354fcb40536c",
+        "source": "test",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-13T14:11:28.738078Z",
+        "last_seen_at": "2026-06-12T14:11:19.420594Z",
+        "current_url": "https://example.com/0"
+      },
+      {
+        "position": 11021,
+        "candidate_id": "candidate_f2f9784142e4d11e32b55059",
+        "source": "test",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-13T14:11:31.445005Z",
+        "last_seen_at": "2026-06-12T14:11:19.420629Z",
+        "current_url": "https://example.com/1"
+      },
+      {
+        "position": 11022,
+        "candidate_id": "candidate_632538290468e7a39c06323c",
+        "source": "test",
+        "status": "scrape_failed",
+        "retry_priority": 0,
+        "next_scrape_attempt_at": "2026-06-13T14:12:19.148728Z",
+        "last_seen_at": "2026-06-12T14:12:09.849166Z",
+        "current_url": "https://example.com/article"
       }
     ],
     "attempted_source_mix": [
@@ -113648,7 +113918,7 @@
       },
       {
         "source": "ice",
-        "candidate_count": 57
+        "candidate_count": 61
       },
       {
         "source": "ice.co.il",
@@ -113716,11 +113986,11 @@
       },
       {
         "source": "mako",
-        "candidate_count": 11
+        "candidate_count": 12
       },
       {
         "source": "mako.co.il",
-        "candidate_count": 2
+        "candidate_count": 3
       },
       {
         "source": "manual_positive_seed",
@@ -113744,7 +114014,7 @@
       },
       {
         "source": "mignews.com",
-        "candidate_count": 1
+        "candidate_count": 2
       },
       {
         "source": "mishpahot-hantzaha.mod.gov.il",
@@ -113864,7 +114134,7 @@
       },
       {
         "source": "timeout.co.il",
-        "candidate_count": 8
+        "candidate_count": 10
       },
       {
         "source": "toraland.org.il",
@@ -113876,7 +114146,7 @@
       },
       {
         "source": "walla",
-        "candidate_count": 16
+        "candidate_count": 18
       },
       {
         "source": "yhb.org.il",
@@ -113884,11 +114154,11 @@
       },
       {
         "source": "ynet",
-        "candidate_count": 32
+        "candidate_count": 37
       },
       {
         "source": "ynet.co.il",
-        "candidate_count": 1
+        "candidate_count": 4
       },
       {
         "source": "ynetnews.com",
@@ -114070,7 +114340,7 @@
       },
       {
         "source": "c14.co.il",
-        "candidate_count": 30
+        "candidate_count": 31
       },
       {
         "source": "canary.haaretz.co.il",
@@ -114802,7 +115072,7 @@
       },
       {
         "source": "gov.il",
-        "candidate_count": 26
+        "candidate_count": 27
       },
       {
         "source": "govariestate.com",
@@ -115998,7 +116268,7 @@
       },
       {
         "source": "kan",
-        "candidate_count": 29
+        "candidate_count": 30
       },
       {
         "source": "kan-ashdod.co.il",
@@ -116306,7 +116576,7 @@
       },
       {
         "source": "law.co.il",
-        "candidate_count": 21
+        "candidate_count": 22
       },
       {
         "source": "law.haifa.ac.il",
@@ -117494,7 +117764,7 @@
       },
       {
         "source": "news1.co.il",
-        "candidate_count": 3
+        "candidate_count": 4
       },
       {
         "source": "newsgeek.co.il",
@@ -119257,6 +119527,10 @@
         "candidate_count": 1
       },
       {
+        "source": "test",
+        "candidate_count": 3
+      },
+      {
         "source": "teva.org.il",
         "candidate_count": 1
       },
@@ -120161,48 +120435,48 @@
   "partial_page_diagnostics": {
     "operational_matching_enabled": false,
     "operational_records_available": false,
-    "partial_candidate_count": 251,
+    "partial_candidate_count": 270,
     "retained_operational_record_candidate_count": 0,
     "retained_operational_record_count": 0,
     "metadata_only_partial_candidate_count": 0,
     "search_result_only_candidate_count": 22,
-    "generic_fetch_partial_candidate_count": 251,
+    "generic_fetch_partial_candidate_count": 270,
     "source_adapter_partial_candidate_count": 0,
-    "partial_after_source_adapter_attempt_count": 104,
-    "partial_without_source_adapter_attempt_count": 147,
+    "partial_after_source_adapter_attempt_count": 116,
+    "partial_without_source_adapter_attempt_count": 154,
     "blocked_generic_fetch_candidate_count": 9,
     "failed_generic_fetch_candidate_count": 13,
     "timeout_generic_fetch_candidate_count": 0,
     "partial_candidates_by_domain": [
       {
         "name": "ynet.co.il",
-        "count": 31
+        "count": 39
       },
       {
         "name": "ice.co.il",
-        "count": 29
+        "count": 33
+      },
+      {
+        "name": "news.walla.co.il",
+        "count": 18
       },
       {
         "name": "themarker.com",
         "count": 18
       },
       {
-        "name": "news.walla.co.il",
-        "count": 16
-      },
-      {
         "name": "mako.co.il",
-        "count": 13
+        "count": 14
       }
     ],
     "partial_candidates_by_source": [
       {
         "name": "ynet",
-        "count": 32
+        "count": 37
       },
       {
         "name": "ice",
-        "count": 28
+        "count": 32
       },
       {
         "name": "themarker",
@@ -120210,29 +120484,29 @@
       },
       {
         "name": "walla",
-        "count": 16
+        "count": 18
       },
       {
         "name": "mako",
-        "count": 11
+        "count": 12
       }
     ],
     "partial_attempts_by_kind": [
       {
         "name": "generic_fetch",
-        "count": 347
+        "count": 401
       }
     ],
     "partial_attempts_by_source_adapter": [
       {
         "name": "generic_fetch",
-        "count": 347
+        "count": 401
       }
     ],
     "generic_fetch_error_code_counts": [
       {
         "name": "generic_fetch_http_404",
-        "count": 1333
+        "count": 1376
       },
       {
         "name": "generic_fetch_error",
@@ -120240,11 +120514,11 @@
       },
       {
         "name": "generic_fetch_http_403",
-        "count": 12
+        "count": 14
       },
       {
         "name": "generic_fetch_no_metadata",
-        "count": 7
+        "count": 8
       },
       {
         "name": "generic_fetch_http_410",
@@ -120269,24 +120543,9 @@
   "source_suggestions": {
     "suggestions": [
       {
-        "domain": "example.com",
-        "candidate_count": 5,
-        "run_count": 1984,
-        "candidate_only_count": 0,
-        "search_result_only_count": 3,
-        "scrape_attempt_count": 2324,
-        "scrape_success_count": 964,
-        "scrape_partial_count": 0,
-        "scrape_failure_count": 1360,
-        "unsupported_count": 0,
-        "score": 3095.0,
-        "diagnostic_classification": null,
-        "diagnostic_note": null
-      },
-      {
         "domain": "themarker.com",
         "candidate_count": 1842,
-        "run_count": 39,
+        "run_count": 0,
         "candidate_only_count": 1824,
         "search_result_only_count": 0,
         "scrape_attempt_count": 18,
@@ -120294,14 +120553,29 @@
         "scrape_partial_count": 18,
         "scrape_failure_count": 0,
         "unsupported_count": 1445,
-        "score": 1614.5,
+        "score": 1575.5,
+        "diagnostic_classification": null,
+        "diagnostic_note": null
+      },
+      {
+        "domain": "example.com",
+        "candidate_count": 5,
+        "run_count": 0,
+        "candidate_only_count": 0,
+        "search_result_only_count": 3,
+        "scrape_attempt_count": 2394,
+        "scrape_success_count": 994,
+        "scrape_partial_count": 0,
+        "scrape_failure_count": 1400,
+        "unsupported_count": 0,
+        "score": 1146.0,
         "diagnostic_classification": null,
         "diagnostic_note": null
       },
       {
         "domain": "globes.co.il",
         "candidate_count": 1303,
-        "run_count": 39,
+        "run_count": 0,
         "candidate_only_count": 1292,
         "search_result_only_count": 0,
         "scrape_attempt_count": 13,
@@ -120309,14 +120583,14 @@
         "scrape_partial_count": 13,
         "scrape_failure_count": 0,
         "unsupported_count": 976,
-        "score": 1177.0,
+        "score": 1138.0,
         "diagnostic_classification": null,
         "diagnostic_note": null
       },
       {
         "domain": "sport1.maariv.co.il",
         "candidate_count": 1149,
-        "run_count": 31,
+        "run_count": 0,
         "candidate_only_count": 1149,
         "search_result_only_count": 0,
         "scrape_attempt_count": 0,
@@ -120324,14 +120598,14 @@
         "scrape_partial_count": 0,
         "scrape_failure_count": 0,
         "unsupported_count": 1037,
-        "score": 948.75,
+        "score": 917.75,
         "diagnostic_classification": null,
         "diagnostic_note": null
       },
       {
         "domain": "he.wikipedia.org",
         "candidate_count": 871,
-        "run_count": 32,
+        "run_count": 0,
         "candidate_only_count": 871,
         "search_result_only_count": 0,
         "scrape_attempt_count": 0,
@@ -120339,7 +120613,7 @@
         "scrape_partial_count": 0,
         "scrape_failure_count": 0,
         "unsupported_count": 765,
-        "score": 738.25,
+        "score": 706.25,
         "diagnostic_classification": null,
         "diagnostic_note": null
       }

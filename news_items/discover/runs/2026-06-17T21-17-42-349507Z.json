@@ -1,0 +1,31 @@
+{
+  "run_timestamp": "2026-06-17T21:17:42.349507Z",
+  "started_at": "2026-06-17T21:17:42.349507Z",
+  "finished_at": "2026-06-17T21:17:50.785765Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "config_name": "enforcement-news-local-search-brave-exa",
+  "config_path": "agents/news/local_search_brave_exa.yaml",
+  "days_searched": 21,
+  "source_count": 6,
+  "output_formats": [
+    "cli",
+    "email"
+  ],
+  "raw_article_count": 0,
+  "unseen_article_count": 0,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": false,
+  "items": [],
+  "warnings": [],
+  "errors": [
+    "brave: missing DENBUST_BRAVE_SEARCH_API_KEY",
+    "exa: missing DENBUST_EXA_API_KEY"
+  ],
+  "result_summary": "discovery persisted 0 merged candidate(s) from 0 discovered result(s)",
+  "release_manifest": null,
+  "backup_manifest": null
+}

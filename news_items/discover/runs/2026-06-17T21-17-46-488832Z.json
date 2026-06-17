@@ -1,0 +1,16 @@
+{
+  "run_id": "2026-06-17T21:17:42.349507+00:00:exa",
+  "started_at": "2026-06-17T21:17:46.488832Z",
+  "finished_at": "2026-06-17T21:17:47.198821Z",
+  "dataset_name": "news_items",
+  "job_name": "discover",
+  "status": "failed",
+  "query_count": 35,
+  "skipped_query_count": 0,
+  "candidate_count": 0,
+  "merged_candidate_count": 0,
+  "queued_for_scrape_count": 0,
+  "errors": [
+    "exa: missing DENBUST_EXA_API_KEY"
+  ]
+}
