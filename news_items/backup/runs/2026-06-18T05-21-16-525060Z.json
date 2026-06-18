@@ -1,0 +1,35 @@
+{
+  "run_timestamp": "2026-06-18T05:21:16.525060Z",
+  "started_at": "2026-06-18T05:21:16.525060Z",
+  "finished_at": "2026-06-18T05:21:16.525725Z",
+  "dataset_name": "news_items",
+  "job_name": "backup",
+  "config_name": "news-items-backup",
+  "config_path": "agents/backup/news_items.yaml",
+  "days_searched": 3,
+  "source_count": 0,
+  "output_formats": [
+    "cli"
+  ],
+  "raw_article_count": 0,
+  "unseen_article_count": 0,
+  "relevant_article_count": 0,
+  "unified_item_count": 0,
+  "seen_count_before": 0,
+  "seen_count_after": 0,
+  "fatal": false,
+  "items": [],
+  "warnings": [
+    "No backup targets configured."
+  ],
+  "errors": [],
+  "result_summary": "backup completed for 0 target(s)",
+  "release_manifest": null,
+  "backup_manifest": {
+    "dataset_name": "news_items",
+    "created_at": "2026-06-18T05:21:16.525688Z",
+    "release_version": "2026-06-13",
+    "targets": [],
+    "notes": "Latest news_items release bundle uploaded to configured backup targets."
+  }
+}
